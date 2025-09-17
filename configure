@@ -40,11 +40,18 @@ if [ "$INSTALL_OMNETPP" -eq 1 ]; then
 else
 	echo "Configure mode"
     ./configure
+    make -j4
 fi
 
 popd
 
 echo "Building grpc"
+cd liveOppServation
+. setenv
+mkdir -p bin
+./configure
+cd ..
+
 make -j$(nproc)
 
 echo "Building liveOppServation"
@@ -58,8 +65,9 @@ popd
 
 echo "Building liveOppServationFrontend"
 pushd liveOppServationFrontend
-$(poetry env activate)
-poetry update
+# . $(poetry env info -p)/bin/activate
+eval $(poetry env activate)
+poetry install
 popd
 
 echo "Configuration and build complete."
