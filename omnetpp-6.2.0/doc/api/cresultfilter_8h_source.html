@@ -1,0 +1,286 @@
+<!-- HTML header for doxygen 1.9.4-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OMNeT++ API: cresultfilter.h Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/omnetpp/omnetpp" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+  <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>  
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">OMNeT++ API<span id="projectnumber">&#160;6.2.0</span>
+   </div>
+   <div id="projectbrief">Discrete Event Simulation Library</div>
+  </td>
+ </tr>
+   <!--BEGIN FULL_SIDEBAR-->
+   <tr><td colspan="2">        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td></tr>
+   <!--END FULL_SIDEBAR-->
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('cresultfilter_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">cresultfilter.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//==========================================================================</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  CRESULTFILTER.H - part of</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//                     OMNeT++/OMNEST</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//            Discrete System Simulation in C++</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//==========================================================================</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/*--------------------------------------------------------------*</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">  Copyright (C) 1992-2017 Andras Varga</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">  Copyright (C) 2006-2017 OpenSim Ltd.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">  This file is distributed WITHOUT ANY WARRANTY. See the file</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">  `license&#39; for details on this and other legal matters.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*--------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifndef __OMNETPP_CRESULTFILTER_H</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define __OMNETPP_CRESULTFILTER_H</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;simkerneldefs.h&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;cresultlistener.h&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;onstartup.h&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;globals.h&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;cownedobject.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>omnetpp {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">class </span>cResultFilter;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">class </span>cProperty;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group__RegMacros.html#ga6f2d3c14629d4841a0e08a4f495a7f3a">   42</a></span>&#160;<span class="preprocessor">#define Register_ResultFilter(NAME, CLASSNAME) \</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">  __REGISTER_CLASS_X(CLASSNAME, omnetpp::cResultFilter, &quot;result filter&quot;, omnetpp::internal::resultFilters.getInstance()-&gt;add(new omnetpp::cResultFilterType(NAME,omnetpp::opp_typename(typeid(CLASSNAME)))) )</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group__RegMacros.html#ga1164b7174c4e3a02b0af6ba697790617">   58</a></span>&#160;<span class="preprocessor">#define Register_ResultFilter2(NAME, CLASSNAME, DESCRIPTION) \</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">  __REGISTER_CLASS_X(CLASSNAME, omnetpp::cResultFilter, &quot;result filter&quot;, omnetpp::internal::resultFilters.getInstance()-&gt;add(new omnetpp::cResultFilterType(NAME,omnetpp::opp_typename(typeid(CLASSNAME)),DESCRIPTION)) )</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cResultFilter.html">   72</a></span>&#160;<span class="keyword">class </span>SIM_API <a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> : <span class="keyword">public</span> <a class="code" href="classomnetpp_1_1cResultListener.html">cResultListener</a></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="structomnetpp_1_1cResultFilter_1_1Context.html">   78</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structomnetpp_1_1cResultFilter_1_1Context.html">Context</a> {</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="structomnetpp_1_1cResultFilter_1_1Context.html#a5b685c7432f84e6c4f83a2eed8a4c16c">   79</a></span>&#160;            <a class="code" href="classomnetpp_1_1cComponent.html">cComponent</a> *<a class="code" href="structomnetpp_1_1cResultFilter_1_1Context.html#a5b685c7432f84e6c4f83a2eed8a4c16c">component</a>;    </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="structomnetpp_1_1cResultFilter_1_1Context.html#a98c3beb911748715b31fd4ef65eb3d59">   80</a></span>&#160;            <a class="code" href="classomnetpp_1_1cProperty.html">cProperty</a> *<a class="code" href="structomnetpp_1_1cResultFilter_1_1Context.html#a98c3beb911748715b31fd4ef65eb3d59">attrsProperty</a>; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        };</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="classomnetpp_1_1cComponent.html">cComponent</a> *component = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="classomnetpp_1_1cProperty.html">cProperty</a> *attrsProperty = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="classomnetpp_1_1cResultListener.html">cResultListener</a> **delegates; <span class="comment">// nullptr-terminated array</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="comment">// methods for invoking the delegates</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">void</span> fire(<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *prev, <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> t, <span class="keywordtype">bool</span> b, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *details);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">void</span> fire(<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *prev, <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> t, <a class="code" href="group__Misc.html#ga420ab7092e727985b01e1b13ea5992c5">intval_t</a> l, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *details);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordtype">void</span> fire(<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *prev, <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> t, <a class="code" href="group__Misc.html#ga6ba6f9b4eb288fbc9e4a9664ac2b770d">uintval_t</a> l, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *details);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordtype">void</span> fire(<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *prev, <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> t, <span class="keywordtype">double</span> d, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *details);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordtype">void</span> fire(<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *prev, <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> t, <span class="keyword">const</span> <a class="code" href="classomnetpp_1_1SimTime.html">SimTime</a>&amp; v, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *details);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordtype">void</span> fire(<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *prev, <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> t, <span class="keyword">const</span> <span class="keywordtype">char</span> *s, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *details);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordtype">void</span> fire(<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *prev, <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> t, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *obj, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *details);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> callFinish(<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *prev) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> callEmitInitialValue() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> forEachChild(<a class="code" href="classomnetpp_1_1cVisitor.html">cVisitor</a> *v) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> emitInitialValue() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a>();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        ~<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a>();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> init(<a class="code" href="structomnetpp_1_1cResultFilter_1_1Context.html">Context</a> *ctx);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        [[deprecated]] <span class="keyword">virtual</span> <span class="keywordtype">void</span> init(<a class="code" href="classomnetpp_1_1cComponent.html">cComponent</a> *component, <a class="code" href="classomnetpp_1_1cProperty.html">cProperty</a> *attrsProperty) {} <span class="comment">// deprecated, left for backward compatibility</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *clone() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">double</span> getInitialDoubleValue()<span class="keyword"> const </span>{<span class="keywordflow">return</span> NAN;}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> addDelegate(cResultListener *delegate);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> removeDelegate(cResultListener *delegate);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> hasDelegate(cResultListener *delegate);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> getNumDelegates() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        cResultListener *getDelegate(<span class="keywordtype">int</span> k)<span class="keyword"> const </span>{<span class="keywordflow">return</span> delegates[k];}  <span class="comment">// unsafe</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        std::vector&lt;cResultListener*&gt; getDelegates() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;};</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cNumericResultFilter.html">  123</a></span>&#160;<span class="keyword">class </span>SIM_API <a class="code" href="classomnetpp_1_1cNumericResultFilter.html">cNumericResultFilter</a> : <span class="keyword">public</span> <a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="comment">// all receiveSignal() methods either throw error or delegate here;</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="comment">// return value: whether to invoke chained listeners (true) or to swallow the value (false)</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> process(<a class="code" href="classomnetpp_1_1SimTime.html">simtime_t</a>&amp; t, <span class="keywordtype">double</span>&amp; value, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *details) = 0;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> receiveSignal(<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *prev, <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> t, <span class="keywordtype">bool</span> b, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *details) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> receiveSignal(<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *prev, <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> t, <a class="code" href="group__Misc.html#ga420ab7092e727985b01e1b13ea5992c5">intval_t</a> l, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *details) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> receiveSignal(<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *prev, <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> t, <a class="code" href="group__Misc.html#ga6ba6f9b4eb288fbc9e4a9664ac2b770d">uintval_t</a> l, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *details) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> receiveSignal(<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *prev, <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> t, <span class="keywordtype">double</span> d, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *details) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> receiveSignal(<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *prev, <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> t, <span class="keyword">const</span> <a class="code" href="classomnetpp_1_1SimTime.html">SimTime</a>&amp; v, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *details) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> receiveSignal(<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *prev, <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> t, <span class="keyword">const</span> <span class="keywordtype">char</span> *s, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *details) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> receiveSignal(<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *prev, <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> t, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *obj, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *details) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;};</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cObjectResultFilter.html">  147</a></span>&#160;<span class="keyword">class </span>SIM_API <a class="code" href="classomnetpp_1_1cObjectResultFilter.html">cObjectResultFilter</a> : <span class="keyword">public</span> <a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;{</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> receiveSignal(<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *prev, <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> t, <span class="keywordtype">bool</span> b, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *details) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> receiveSignal(<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *prev, <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> t, <a class="code" href="group__Misc.html#ga420ab7092e727985b01e1b13ea5992c5">intval_t</a> l, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *details) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> receiveSignal(<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *prev, <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> t, <a class="code" href="group__Misc.html#ga6ba6f9b4eb288fbc9e4a9664ac2b770d">uintval_t</a> l, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *details) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> receiveSignal(<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *prev, <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> t, <span class="keywordtype">double</span> d, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *details) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> receiveSignal(<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *prev, <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> t, <span class="keyword">const</span> <a class="code" href="classomnetpp_1_1SimTime.html">SimTime</a>&amp; v, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *details) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> receiveSignal(<a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *prev, <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> t, <span class="keyword">const</span> <span class="keywordtype">char</span> *s, <a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *details) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;};</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cResultFilterType.html">  163</a></span>&#160;<span class="keyword">class </span>SIM_API <a class="code" href="classomnetpp_1_1cResultFilterType.html">cResultFilterType</a> : <span class="keyword">public</span> <a class="code" href="classomnetpp_1_1cNoncopyableOwnedObject.html">cNoncopyableOwnedObject</a></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;{</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    std::string description;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    std::string className;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <a class="code" href="classomnetpp_1_1cResultFilterType.html">cResultFilterType</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <span class="keyword">const</span> <span class="keywordtype">char</span> *className, <span class="keyword">const</span> <span class="keywordtype">char</span> *description=<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <a class="code" href="classomnetpp_1_1cResultFilter.html">cResultFilter</a> *create() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cResultFilterType.html#a7e04381ec22454e831a3db7b063c35c5">  183</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="classomnetpp_1_1cResultFilterType.html#a7e04381ec22454e831a3db7b063c35c5">getDescription</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> description.c_str();}</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keyword">static</span> <a class="code" href="classomnetpp_1_1cResultFilterType.html">cResultFilterType</a> *find(<span class="keyword">const</span> <span class="keywordtype">char</span> *name);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keyword">static</span> <a class="code" href="classomnetpp_1_1cResultFilterType.html">cResultFilterType</a> *get(<span class="keyword">const</span> <span class="keywordtype">char</span> *name);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;};</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;}  <span class="comment">// namespace omnetpp</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="agroup__SimTime_html_gaeb959690bf306a1c7909f592f74c70ee"><div class="ttname"><a href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">omnetpp::simtime_t_cref</a></div><div class="ttdeci">const typedef simtime_t &amp; simtime_t_cref</div><div class="ttdoc">Constant reference to a simtime_t.</div><div class="ttdef"><b>Definition:</b> simtime_t.h:48</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cObjectResultFilter_html"><div class="ttname"><a href="classomnetpp_1_1cObjectResultFilter.html">omnetpp::cObjectResultFilter</a></div><div class="ttdoc">Base class for filters that expect to receive an object.</div><div class="ttdef"><b>Definition:</b> cresultfilter.h:147</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cObject_html"><div class="ttname"><a href="classomnetpp_1_1cObject.html">omnetpp::cObject</a></div><div class="ttdoc">cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy....</div><div class="ttdef"><b>Definition:</b> cobject.h:92</div></div>
+<div class="ttc" id="astructomnetpp_1_1cResultFilter_1_1Context_html_a5b685c7432f84e6c4f83a2eed8a4c16c"><div class="ttname"><a href="structomnetpp_1_1cResultFilter_1_1Context.html#a5b685c7432f84e6c4f83a2eed8a4c16c">omnetpp::cResultFilter::Context::component</a></div><div class="ttdeci">cComponent * component</div><div class="ttdoc">The module/channel for which the statistic is being recorded; usually the module on which the @statis...</div><div class="ttdef"><b>Definition:</b> cresultfilter.h:79</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cVisitor_html"><div class="ttname"><a href="classomnetpp_1_1cVisitor.html">omnetpp::cVisitor</a></div><div class="ttdoc">Enables traversing the tree of (cObject-rooted) simulation objects.</div><div class="ttdef"><b>Definition:</b> cvisitor.h:56</div></div>
+<div class="ttc" id="aclassomnetpp_1_1SimTime_html"><div class="ttname"><a href="classomnetpp_1_1SimTime.html">omnetpp::SimTime</a></div><div class="ttdoc">int64_t-based, base-10 fixed-point simulation time.</div><div class="ttdef"><b>Definition:</b> simtime.h:66</div></div>
+<div class="ttc" id="agroup__Misc_html_ga6ba6f9b4eb288fbc9e4a9664ac2b770d"><div class="ttname"><a href="group__Misc.html#ga6ba6f9b4eb288fbc9e4a9664ac2b770d">omnetpp::uintval_t</a></div><div class="ttdeci">uint64_t uintval_t</div><div class="ttdoc">Unsigned integer type which is guaranteed to be at least 64 bits wide. It is used throughout the libr...</div><div class="ttdef"><b>Definition:</b> simkerneldefs.h:109</div></div>
+<div class="ttc" id="astructomnetpp_1_1cResultFilter_1_1Context_html_a98c3beb911748715b31fd4ef65eb3d59"><div class="ttname"><a href="structomnetpp_1_1cResultFilter_1_1Context.html#a98c3beb911748715b31fd4ef65eb3d59">omnetpp::cResultFilter::Context::attrsProperty</a></div><div class="ttdeci">cProperty * attrsProperty</div><div class="ttdoc">An optional property from which extra attributes can be taken; usually the @statistic property.</div><div class="ttdef"><b>Definition:</b> cresultfilter.h:80</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cNumericResultFilter_html"><div class="ttname"><a href="classomnetpp_1_1cNumericResultFilter.html">omnetpp::cNumericResultFilter</a></div><div class="ttdoc">Base class for filters that expect to receive an numeric value.</div><div class="ttdef"><b>Definition:</b> cresultfilter.h:123</div></div>
+<div class="ttc" id="agroup__Misc_html_ga420ab7092e727985b01e1b13ea5992c5"><div class="ttname"><a href="group__Misc.html#ga420ab7092e727985b01e1b13ea5992c5">omnetpp::intval_t</a></div><div class="ttdeci">int64_t intval_t</div><div class="ttdoc">Signed integer type which is guaranteed to be at least 64 bits wide. It is used throughout the librar...</div><div class="ttdef"><b>Definition:</b> simkerneldefs.h:101</div></div>
+<div class="ttc" id="astructomnetpp_1_1cResultFilter_1_1Context_html"><div class="ttname"><a href="structomnetpp_1_1cResultFilter_1_1Context.html">omnetpp::cResultFilter::Context</a></div><div class="ttdef"><b>Definition:</b> cresultfilter.h:78</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cComponent_html"><div class="ttname"><a href="classomnetpp_1_1cComponent.html">omnetpp::cComponent</a></div><div class="ttdoc">Common base for module and channel classes.</div><div class="ttdef"><b>Definition:</b> ccomponent.h:49</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cResultFilter_html"><div class="ttname"><a href="classomnetpp_1_1cResultFilter.html">omnetpp::cResultFilter</a></div><div class="ttdoc">Base class for result filters.</div><div class="ttdef"><b>Definition:</b> cresultfilter.h:72</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cNoncopyableOwnedObject_html"><div class="ttname"><a href="classomnetpp_1_1cNoncopyableOwnedObject.html">omnetpp::cNoncopyableOwnedObject</a></div><div class="ttdoc">Base class for cOwnedObject-based classes that do not wish to support assignment and duplication.</div><div class="ttdef"><b>Definition:</b> cownedobject.h:242</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cResultFilterType_html_a7e04381ec22454e831a3db7b063c35c5"><div class="ttname"><a href="classomnetpp_1_1cResultFilterType.html#a7e04381ec22454e831a3db7b063c35c5">omnetpp::cResultFilterType::getDescription</a></div><div class="ttdeci">const char * getDescription() const</div><div class="ttdef"><b>Definition:</b> cresultfilter.h:183</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cResultListener_html"><div class="ttname"><a href="classomnetpp_1_1cResultListener.html">omnetpp::cResultListener</a></div><div class="ttdoc">Common abstract base class for result filters and result recorders.</div><div class="ttdef"><b>Definition:</b> cresultlistener.h:34</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cResultFilterType_html"><div class="ttname"><a href="classomnetpp_1_1cResultFilterType.html">omnetpp::cResultFilterType</a></div><div class="ttdoc">Registers a cResultFilter.</div><div class="ttdef"><b>Definition:</b> cresultfilter.h:163</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cProperty_html"><div class="ttname"><a href="classomnetpp_1_1cProperty.html">omnetpp::cProperty</a></div><div class="ttdoc">Stores a (NED) property with its (possibly compound) value.</div><div class="ttdef"><b>Definition:</b> cproperty.h:38</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_d69ce13079b0b0a43a6d5bd8d76d2fb6.html">omnetpp</a></li><li class="navelem"><b>cresultfilter.h</b></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

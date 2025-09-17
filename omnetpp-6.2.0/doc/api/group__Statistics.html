@@ -1,0 +1,254 @@
+<!-- HTML header for doxygen 1.9.4-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OMNeT++ API: Statistical Result Collection</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/omnetpp/omnetpp" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+  <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>  
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">OMNeT++ API<span id="projectnumber">&#160;6.2.0</span>
+   </div>
+   <div id="projectbrief">Discrete Event Simulation Library</div>
+  </td>
+ </tr>
+   <!--BEGIN FULL_SIDEBAR-->
+   <tr><td colspan="2">        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td></tr>
+   <!--END FULL_SIDEBAR-->
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('group__Statistics.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
+  <div class="headertitle">
+<div class="title">Statistical Result Collection</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Description</h2>
+<p>The primary way of recording statistics from simulations is by means of signals and declared statistics, i.e. using @statistic properties in NED files. However, the simulation library also provides some classes in case programmatic result collection is needed. </p>
+<p>Scalar values can be recorded in the output scalar file with the recordScalar() method of the module or channel. To collect statistic summaries (mean, stddev, etc.) or histograms, use the <a class="el" href="classomnetpp_1_1cStdDev.html" title="Statistics class to collect min, max, mean, and standard deviation.">cStdDev</a> and <a class="el" href="classomnetpp_1_1cHistogram.html" title="Generic histogram class, capable of representing both unweighted and weighted distributions....">cHistogram</a> classes. Their contents can be recorded into the output scalar file with the recordStatistic() method of the module or channel, or with the record() method of the statistic object itself. To record output vectors (time series data), use the <a class="el" href="classomnetpp_1_1cOutVector.html" title="Responsible for recording an &quot;output vector&quot; into the simulation results file. An output vector is a ...">cOutVector</a> class.</p>
+<p>Declarative (@statistic-based) result recording is also extensible, via the <a class="el" href="classomnetpp_1_1cResultFilter.html" title="Base class for result filters.">cResultFilter</a> and <a class="el" href="classomnetpp_1_1cResultRecorder.html" title="Abstract base class for result recorders.">cResultRecorder</a> classes; see <a class="el" href="group__ResultFiltersRecorders.html">Result Filters and Recorders</a>.</p>
+<p>All result collection methods eventually delegate to "record" methods in <a class="el" href="classomnetpp_1_1cEnvir.html" title="cEnvir represents the &quot;environment&quot; or user interface of the simulation.">cEnvir</a>, i.e. the actual recording is decoupled from the result collection part, and can be changed without affecting the rest of the code.</p>
+<p>The central classes are:</p><ul>
+<li><a class="el" href="classomnetpp_1_1cStdDev.html" title="Statistics class to collect min, max, mean, and standard deviation.">cStdDev</a> computes statistics like (unweighted and weighted) mean, standard deviation, minimum and maximum value.</li>
+<li><a class="el" href="classomnetpp_1_1cHistogram.html" title="Generic histogram class, capable of representing both unweighted and weighted distributions....">cHistogram</a> is a generic histogram class. Bin creation can be customized via various histogram strategy classes like e.g. <a class="el" href="classomnetpp_1_1cAutoRangeHistogramStrategy.html" title="A generic, very configurable histogram strategy that is meant to provide a good quality histogram for...">cAutoRangeHistogramStrategy</a>.</li>
+<li><a class="el" href="classomnetpp_1_1cPSquare.html" title="Implements the P2 algorithm, which calculates quantile values without storing the observations....">cPSquare</a> is a class that uses the P<sup>2</sup> algorithm by Jain and Chlamtac. The algorithm calculates quantiles without storing the observations.</li>
+<li><a class="el" href="classomnetpp_1_1cOutVector.html" title="Responsible for recording an &quot;output vector&quot; into the simulation results file. An output vector is a ...">cOutVector</a> provides a way to record output vectors from the simulation.</li>
+</ul>
+<p>Some other classes closely related to the above ones are not listed here explicitly, but you can find them via 'See also' links from their main classes. </p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classomnetpp_1_1cHistogram.html">cHistogram</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic histogram class, capable of representing both unweighted and weighted distributions. Histogram data are stored as n+1 bin edges and n bin values, both being double-precision floating point values. Upper and lower outliers (as well as positive and negative infinities) are kept as counts (for unweighted statistics) or as sum of weights (for weighted statistics).  <a href="classomnetpp_1_1cHistogram.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classomnetpp_1_1cIHistogramStrategy.html">cIHistogramStrategy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for histogram strategy classes. Histogram strategies encapsulate the task of setting up and managing the bins in a <a class="el" href="classomnetpp_1_1cHistogram.html" title="Generic histogram class, capable of representing both unweighted and weighted distributions....">cHistogram</a>.  <a href="classomnetpp_1_1cIHistogramStrategy.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classomnetpp_1_1cFixedRangeHistogramStrategy.html">cFixedRangeHistogramStrategy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Histogram strategy that sets up uniform bins over a predetermined interval. The number of bins and the histogram mode (integers or reals) also need to be configured. This strategy does not use precollection, as all input for setting up the bins must be explicitly provided by the user.  <a href="classomnetpp_1_1cFixedRangeHistogramStrategy.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classomnetpp_1_1cPrecollectionBasedHistogramStrategy.html">cPrecollectionBasedHistogramStrategy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for histogram strategies that employ a precollection phase in order to gather input for setting up the bins. This class provides storage for the precollected values, and also a built-in algorithm for deciding when to stop precollection.  <a href="classomnetpp_1_1cPrecollectionBasedHistogramStrategy.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classomnetpp_1_1cDefaultHistogramStrategy.html">cDefaultHistogramStrategy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A strategy class used by the default setup of <a class="el" href="classomnetpp_1_1cHistogram.html" title="Generic histogram class, capable of representing both unweighted and weighted distributions....">cHistogram</a>. It is meant to provide a good quality uniform-bin histogram without requiring manual configuration.  <a href="classomnetpp_1_1cDefaultHistogramStrategy.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classomnetpp_1_1cAutoRangeHistogramStrategy.html">cAutoRangeHistogramStrategy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A generic, very configurable histogram strategy that is meant to provide a good quality histogram for practical distributions, and creates uniform bins. This strategy uses precollection to gather input information about the distribution before setting up the bins.  <a href="classomnetpp_1_1cAutoRangeHistogramStrategy.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classomnetpp_1_1cKSplit.html">cKSplit</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements k-split, an adaptive histogram-like density estimation algorithm. During result collection, k-split will dynamically subdivide "busy" bins (ones that collect a large number of observations), thereby refining the resolution of the histogram where needed.  <a href="classomnetpp_1_1cKSplit.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classomnetpp_1_1cOutVector.html">cOutVector</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responsible for recording an "output vector" into the simulation results file. An output vector is a time series where each value is recorded with its own timestamp. Time stamps are monotonically increasing. The vector is registered in the result file with the module (the owner of this object), a vector name, and optional attributes. The first two identify the vector, and the attributes convey additional meta information that may be used by result analysis tools.  <a href="classomnetpp_1_1cOutVector.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classomnetpp_1_1cPrecollectionBasedDensityEst.html">cPrecollectionBasedDensityEst</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for histogram-like density estimation classes.  <a href="classomnetpp_1_1cPrecollectionBasedDensityEst.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classomnetpp_1_1cPSquare.html">cPSquare</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements the P<sup>2</sup> algorithm, which calculates quantile values without storing the observations. See the seminal paper titled "The P^2 Algorithm for Dynamic Statistical Computing Calculation of
+Quantiles and Histograms Without Storing Observations" by Raj Jain and Imrich Chlamtac.  <a href="classomnetpp_1_1cPSquare.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classomnetpp_1_1cStatistic.html">cStatistic</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classomnetpp_1_1cStatistic.html" title="cStatistic is an abstract class for computing statistical properties of a random variable.">cStatistic</a> is an abstract class for computing statistical properties of a random variable.  <a href="classomnetpp_1_1cStatistic.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classomnetpp_1_1cStdDev.html">cStdDev</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statistics class to collect min, max, mean, and standard deviation.  <a href="classomnetpp_1_1cStdDev.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga0c3dc3cc8051375bfba8d2fe32fe4217"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Statistics.html#ga0c3dc3cc8051375bfba8d2fe32fe4217">CritFunc</a>) (const <a class="el" href="classomnetpp_1_1cKSplit.html">cKSplit</a> &amp;, <a class="el" href="structomnetpp_1_1cKSplit_1_1Grid.html">cKSplit::Grid</a> &amp;, int, const double *)</td></tr>
+<tr class="separator:ga0c3dc3cc8051375bfba8d2fe32fe4217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga64ad0d6a0d6011fe4d787f818e260258"><td class="memItemLeft" align="right" valign="top">typedef double(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Statistics.html#ga64ad0d6a0d6011fe4d787f818e260258">DivFunc</a>) (const <a class="el" href="classomnetpp_1_1cKSplit.html">cKSplit</a> &amp;, <a class="el" href="structomnetpp_1_1cKSplit_1_1Grid.html">cKSplit::Grid</a> &amp;, double, const double *)</td></tr>
+<tr class="separator:ga64ad0d6a0d6011fe4d787f818e260258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc7b47aabd355e314509ea1e535f7558"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Statistics.html#gacc7b47aabd355e314509ea1e535f7558">RecordFunc</a>) (void *, <a class="el" href="group__SimTime.html#ga5a8189d996907ac38e69e6a4c50cf4ec">simtime_t</a>, double)</td></tr>
+<tr class="memdesc:gacc7b47aabd355e314509ea1e535f7558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prototype for callback functions that are used to notify graphical user interfaces when values are recorded to an output vector (see <a class="el" href="classomnetpp_1_1cOutVector.html" title="Responsible for recording an &quot;output vector&quot; into the simulation results file. An output vector is a ...">cOutVector</a>).  <a href="group__Statistics.html#gacc7b47aabd355e314509ea1e535f7558">More...</a><br /></td></tr>
+<tr class="separator:gacc7b47aabd355e314509ea1e535f7558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga0c3dc3cc8051375bfba8d2fe32fe4217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0c3dc3cc8051375bfba8d2fe32fe4217">&#9670;&nbsp;</a></span>CritFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* CritFunc(const <a class="el" href="classomnetpp_1_1cKSplit.html">cKSplit</a> &amp;, <a class="el" href="structomnetpp_1_1cKSplit_1_1Grid.html">cKSplit::Grid</a> &amp;, int, const double *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Prototype for cell split criterion functions used by <a class="el" href="classomnetpp_1_1cKSplit.html" title="Implements k-split, an adaptive histogram-like density estimation algorithm. During result collection...">cKSplit</a> objects. </p>
+
+</div>
+</div>
+<a id="ga64ad0d6a0d6011fe4d787f818e260258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga64ad0d6a0d6011fe4d787f818e260258">&#9670;&nbsp;</a></span>DivFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef double(* DivFunc(const <a class="el" href="classomnetpp_1_1cKSplit.html">cKSplit</a> &amp;, <a class="el" href="structomnetpp_1_1cKSplit_1_1Grid.html">cKSplit::Grid</a> &amp;, double, const double *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Prototype for cell division criterion functions used by <a class="el" href="classomnetpp_1_1cKSplit.html" title="Implements k-split, an adaptive histogram-like density estimation algorithm. During result collection...">cKSplit</a> objects. </p>
+
+</div>
+</div>
+<a id="gacc7b47aabd355e314509ea1e535f7558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacc7b47aabd355e314509ea1e535f7558">&#9670;&nbsp;</a></span>RecordFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* RecordFunc) (void *, <a class="el" href="group__SimTime.html#ga5a8189d996907ac38e69e6a4c50cf4ec">simtime_t</a>, double)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prototype for callback functions that are used to notify graphical user interfaces when values are recorded to an output vector (see <a class="el" href="classomnetpp_1_1cOutVector.html" title="Responsible for recording an &quot;output vector&quot; into the simulation results file. An output vector is a ...">cOutVector</a>). </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

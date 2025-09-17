@@ -1,0 +1,4 @@
+<map id="cMatchExpression" name="cMatchExpression">
+<area shape="rect" id="node1" title="Decides whether an object matches an expression." alt="" coords="5,80,145,107"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1noncopyable.html" title="Utility class, to make it impossible to call the operator= and copy constructor of any class derived ..." alt="" coords="23,5,128,32"/>
+</map>

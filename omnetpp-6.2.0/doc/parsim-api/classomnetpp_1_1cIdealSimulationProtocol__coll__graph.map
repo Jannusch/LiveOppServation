@@ -1,0 +1,5 @@
+<map id="cIdealSimulationProtocol" name="cIdealSimulationProtocol">
+<area shape="rect" id="node1" title="Implements the Ideal Simulation Protocol, described in the paper &quot;Performance Evaluation of Conservat..." alt="" coords="5,155,189,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cParsimProtocolBase.html" title="Contains utility functions for implementing parallel simulation protocols." alt="" coords="18,80,177,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cParsimSynchronizer.html" title="Abstract base class for parallel simulation algorithms. Subclasses implement the &quot;null message algori..." alt="" coords="19,5,176,32"/>
+</map>

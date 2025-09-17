@@ -1,0 +1,4 @@
+<map id="cParsimSynchronizer" name="cParsimSynchronizer">
+<area shape="rect" id="node1" title="Abstract base class for parallel simulation algorithms. Subclasses implement the &quot;null message algori..." alt="" coords="5,5,163,32"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cParsimPartition.html" title="Represents one partition in a parallel simulation. Knows about partitions and the links between this ..." alt="" coords="21,95,147,121"/>
+</map>

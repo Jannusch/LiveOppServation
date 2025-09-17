@@ -1,0 +1,5 @@
+<map id="cConfiguration" name="cConfiguration">
+<area shape="rect" id="node1" title="Represents the configuration, as accessed by the simulation kernel." alt="" coords="13,80,129,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cConfigurationEx.html" title="Represents a configuration suitable for use with the Envir library." alt="" coords="5,155,137,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cObject.html" title="cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy...." alt="" coords="36,5,107,32"/>
+</map>

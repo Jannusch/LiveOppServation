@@ -1,0 +1,8 @@
+<map id="cAbstractLineFigure" name="cAbstractLineFigure">
+<area shape="rect" id="node1" title="Common base class for line figures." alt="" coords="93,155,243,181"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cArcFigure.html" title="A figure that displays an arc." alt="" coords="5,229,96,256"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cLineFigure.html" title="A figure that displays a straight line segment." alt="" coords="120,229,216,256"/>
+<area shape="rect" id="node6" href="$classomnetpp_1_1cPolylineFigure.html" title="A figure that displays a line that consists of multiple connecting straight line segments or of a sin..." alt="" coords="241,229,362,256"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cFigure.html" title="A lightweight graphical object for cCanvas." alt="" coords="133,80,203,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cOwnedObject.html" title="A cObject that keeps track of its owner. It serves as base class for many classes in the OMNeT++ libr..." alt="" coords="110,5,226,32"/>
+</map>

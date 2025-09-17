@@ -1,0 +1,5 @@
+<map id="cAdvancedLinkDelayLookahead" name="cAdvancedLinkDelayLookahead">
+<area shape="rect" id="node1" title="Lookahead calculation based on inter&#45;partition link delays only." alt="" coords="5,171,233,197"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cNMPLookahead.html" title="Base class of lookahead calculations for cNullMessageProtocol which implements the &quot;null message algo..." alt="" coords="55,95,184,121"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cParsimPartition.html" title="Represents one partition in a parallel simulation. Knows about partitions and the links between this ..." alt="" coords="56,5,183,32"/>
+</map>

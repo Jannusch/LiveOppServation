@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title="STL class." alt="" coords="5,81,92,108"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cException.html" title="Exception class." alt="" coords="140,81,233,108"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cDeleteModuleException.html" title="Thrown from deleteModule() when the active activity() module is about to be deleted,..." alt="" coords="281,5,465,32"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cRuntimeError.html" title="Thrown when the simulation kernel or other components detect a runtime error." alt="" coords="316,56,431,83"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cStackCleanupException.html" title="Used internally when deleting an activity() simple module." alt="" coords="282,107,465,133"/>
+<area shape="rect" id="node6" href="$classomnetpp_1_1cTerminationException.html" title="Thrown when the simulation is completed without error." alt="" coords="288,157,459,184"/>
+</map>

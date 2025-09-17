@@ -1,0 +1,6 @@
+<map id="Random Number Generation" name="Random Number Generation">
+<area shape="rect" id="node1" href="$group__RandomNumbersUtil.html" title="Utility functions." alt="" coords="289,5,416,31"/>
+<area shape="rect" id="node2" href="$group__RandomNumbersDiscr.html" title="Random variate generators for discrete distributions." alt="" coords="271,55,434,80"/>
+<area shape="rect" id="node3" href="$group__RandomNumbersCont.html" title="Random variate generators for continuous distributions." alt="" coords="261,104,444,129"/>
+<area shape="rect" id="node4" title="Draw random values from various distributions." alt="" coords="5,55,213,80"/>
+</map>

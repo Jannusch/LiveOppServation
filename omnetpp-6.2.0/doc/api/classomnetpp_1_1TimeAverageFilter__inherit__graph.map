@@ -1,0 +1,5 @@
+<map id="TimeAverageFilter" name="TimeAverageFilter">
+<area shape="rect" id="node1" title="Result filter that computes the time average of signal values. NaN values in the input denote interva..." alt="" coords="14,155,155,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cNumericResultFilter.html" title="Base class for filters that expect to receive an numeric value." alt="" coords="5,80,164,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cResultFilter.html" title="Base class for result filters." alt="" coords="33,5,136,32"/>
+</map>

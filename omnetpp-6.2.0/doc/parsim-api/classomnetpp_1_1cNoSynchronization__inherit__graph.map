@@ -1,0 +1,5 @@
+<map id="cNoSynchronization" name="cNoSynchronization">
+<area shape="rect" id="node1" title="&quot;Dummy&quot; implementation – just pass messages between partitions, without any synchronization...." alt="" coords="9,155,160,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cParsimProtocolBase.html" title="Contains utility functions for implementing parallel simulation protocols." alt="" coords="5,80,164,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cParsimSynchronizer.html" title="Abstract base class for parallel simulation algorithms. Subclasses implement the &quot;null message algori..." alt="" coords="6,5,163,32"/>
+</map>

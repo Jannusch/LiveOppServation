@@ -1,0 +1,11 @@
+<map id="cParImpl" name="cParImpl">
+<area shape="rect" id="node1" title="Internal class that stores values for cPar objects." alt="" coords="358,155,437,181"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1internal_1_1cBoolParImpl.html" title="A cParImpl subclass that stores a module/channel parameter of the type bool." alt="" coords="5,229,112,256"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1internal_1_1cDoubleParImpl.html" title="A cParImpl subclass that stores a module/channel parameter of the type double." alt="" coords="137,229,261,256"/>
+<area shape="rect" id="node6" href="$classomnetpp_1_1internal_1_1cIntParImpl.html" title="A cParImpl subclass that stores an integer module/channel parameter." alt="" coords="285,229,379,256"/>
+<area shape="rect" id="node7" href="$classomnetpp_1_1internal_1_1cObjectParImpl.html" title="A cParImpl subclass that stores a module/channel parameter of type &quot;object&quot;." alt="" coords="404,229,524,256"/>
+<area shape="rect" id="node8" href="$classomnetpp_1_1internal_1_1cStringParImpl.html" title="A cParImpl subclass that stores a module/channel parameter of the type string." alt="" coords="549,229,665,256"/>
+<area shape="rect" id="node9" href="$classomnetpp_1_1internal_1_1cXMLParImpl.html" title="A cParImpl subclass that stores a module/channel parameter of type XML." alt="" coords="689,229,796,256"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cNamedObject.html" title="Extends cObject with a name string. Also includes a &quot;flags&quot; member, with bits open for use by subclas..." alt="" coords="338,80,457,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cObject.html" title="cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy...." alt="" coords="362,5,433,32"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="cIHistogramStrategy" name="cIHistogramStrategy">
+<area shape="rect" id="node1" title="Interface for histogram strategy classes. Histogram strategies encapsulate the task of setting up and..." alt="" coords="165,80,321,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cFixedRangeHistogramStrategy.html" title="Histogram strategy that sets up uniform bins over a predetermined interval. The number of bins and th..." alt="" coords="5,162,232,189"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cPrecollectionBasedHistogramStrategy.html" title="Base class for histogram strategies that employ a precollection phase in order to gather input for se..." alt="" coords="256,155,477,196"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cObject.html" title="cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy...." alt="" coords="207,5,278,32"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cAutoRangeHistogramStrategy.html" title="A generic, very configurable histogram strategy that is meant to provide a good quality histogram for..." alt="" coords="138,244,361,271"/>
+<area shape="rect" id="node6" href="$classomnetpp_1_1cDefaultHistogramStrategy.html" title="A strategy class used by the default setup of cHistogram. It is meant to provide a good quality unifo..." alt="" coords="384,244,584,271"/>
+</map>

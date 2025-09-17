@@ -1,0 +1,5 @@
+<map id="cParsimProtocolBase" name="cParsimProtocolBase">
+<area shape="rect" id="node1" title="Contains utility functions for implementing parallel simulation protocols." alt="" coords="5,95,164,121"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cParsimSynchronizer.html" title="Abstract base class for parallel simulation algorithms. Subclasses implement the &quot;null message algori..." alt="" coords="99,5,257,32"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cParsimPartition.html" title="Represents one partition in a parallel simulation. Knows about partitions and the links between this ..." alt="" coords="188,95,315,121"/>
+</map>

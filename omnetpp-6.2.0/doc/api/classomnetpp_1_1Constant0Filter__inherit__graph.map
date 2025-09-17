@@ -1,0 +1,5 @@
+<map id="Constant0Filter" name="Constant0Filter">
+<area shape="rect" id="node1" title="Result filter that replaces every value with zero." alt="" coords="5,155,127,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1ConstantFilter.html" title="Result filter that replaces every value with a constant. Signal values do not need to be numeric." alt="" coords="9,80,123,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cResultFilter.html" title="Base class for result filters." alt="" coords="15,5,117,32"/>
+</map>

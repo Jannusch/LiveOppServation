@@ -1,0 +1,5 @@
+<map id="cComputedExpressionWatch&lt; T &gt;" name="cComputedExpressionWatch&lt; T &gt;">
+<area shape="rect" id="node1" title="Watch class for computed expressions. The watch will display the result of calling an encapsulated fu..." alt="" coords="5,155,251,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cWatchBase.html" title="Helper class to make primitive types and non&#45;cOwnedObject objects inspectable in Qtenv...." alt="" coords="77,80,179,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cNoncopyableOwnedObject.html" title="Base class for cOwnedObject&#45;based classes that do not wish to support assignment and duplication." alt="" coords="27,5,229,32"/>
+</map>

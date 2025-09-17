@@ -1,0 +1,306 @@
+<!-- HTML header for doxygen 1.9.4-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OMNeT++ NEDXML: nedresourcecache.h Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/omnetpp/omnetpp" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+  <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>  
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">OMNeT++ NEDXML<span id="projectnumber">&#160;6.2.0</span>
+   </div>
+   <div id="projectbrief">Discrete Event Simulation Library</div>
+  </td>
+ </tr>
+   <!--BEGIN FULL_SIDEBAR-->
+   <tr><td colspan="2">        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td></tr>
+   <!--END FULL_SIDEBAR-->
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('nedresourcecache_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">nedresourcecache.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="nedresourcecache_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//==========================================================================</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// NEDRESOURCECACHE.H -</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//                     OMNeT++/OMNEST</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//            Discrete System Simulation in C++</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//==========================================================================</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/*--------------------------------------------------------------*</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">  Copyright (C) 2002-2017 Andras Varga</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">  Copyright (C) 2006-2017 OpenSim Ltd.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">  This file is distributed WITHOUT ANY WARRANTY. See the file</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">  `license&#39; for details on this and other legal matters.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*--------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef __OMNETPP_NEDXML_NEDRESOURCECACHE_H</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define __OMNETPP_NEDXML_NEDRESOURCECACHE_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;nedelements.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nedtypeinfo_8h.html">nedtypeinfo.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceomnetpp.html">omnetpp</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>nedxml {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span>ErrorStore;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structomnetpp_1_1nedxml_1_1NedLookupContext.html">   37</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structomnetpp_1_1nedxml_1_1NedLookupContext.html">NedLookupContext</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structomnetpp_1_1nedxml_1_1NedLookupContext.html#a38bd8bff98ccdb0888ecfa2757ff93f4">   39</a></span>&#160;    <a class="code" href="classomnetpp_1_1nedxml_1_1ASTNode.html">ASTNode</a> *<a class="code" href="structomnetpp_1_1nedxml_1_1NedLookupContext.html#a38bd8bff98ccdb0888ecfa2757ff93f4">element</a>;  <span class="comment">// compound module or NED file</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structomnetpp_1_1nedxml_1_1NedLookupContext.html#af9d3de1f7f9ff554ce07ad3fcfa22162">   40</a></span>&#160;    std::string <a class="code" href="structomnetpp_1_1nedxml_1_1NedLookupContext.html#af9d3de1f7f9ff554ce07ad3fcfa22162">qname</a>;    <span class="comment">// fully qualified name, or (for NED files) package name</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structomnetpp_1_1nedxml_1_1NedLookupContext.html#a0375e0b485c1a453751591b83e70a65c">   41</a></span>&#160;    <a class="code" href="structomnetpp_1_1nedxml_1_1NedLookupContext.html#a0375e0b485c1a453751591b83e70a65c">NedLookupContext</a>(<a class="code" href="classomnetpp_1_1nedxml_1_1ASTNode.html">ASTNode</a> *e, <span class="keyword">const</span> <span class="keywordtype">char</span> *q) {<a class="code" href="structomnetpp_1_1nedxml_1_1NedLookupContext.html#a38bd8bff98ccdb0888ecfa2757ff93f4">element</a>=e;<a class="code" href="structomnetpp_1_1nedxml_1_1NedLookupContext.html#af9d3de1f7f9ff554ce07ad3fcfa22162">qname</a>=q;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html">   52</a></span>&#160;<span class="keyword">class </span><a class="code" href="nedxmldefs_8h.html#a3915af7fb1c0a123f29e86b0339a6782">NEDXML_API</a> <a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html">NedResourceCache</a></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1INedTypeNames.html">   56</a></span>&#160;      <span class="keyword">class </span><a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1INedTypeNames.html">INedTypeNames</a> {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;          <span class="keyword">virtual</span> <span class="keywordtype">bool</span> contains(<span class="keyword">const</span> <span class="keywordtype">char</span> *qname) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;          <span class="keyword">virtual</span> <span class="keywordtype">int</span> size() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;          <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *get(<span class="keywordtype">int</span> k) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1INedTypeNames.html#af48297c45d5946b428c8289cba0e2cec">   67</a></span>&#160;          <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1INedTypeNames.html#af48297c45d5946b428c8289cba0e2cec">~INedTypeNames</a>() {}  <span class="comment">// make the compiler happy</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      };</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames.html">   70</a></span>&#160;      <span class="keyword">class </span><a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames.html">CachedTypeNames</a> : <span class="keyword">public</span> <a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1INedTypeNames.html">INedTypeNames</a> {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames.html#a4266d06149ab98197c70243e13453977">   72</a></span>&#160;          <a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html">NedResourceCache</a> *<a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames.html#a4266d06149ab98197c70243e13453977">p</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames.html#af0bc43c808c683218a06e6a8012c6b84">   74</a></span>&#160;          <a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames.html#af0bc43c808c683218a06e6a8012c6b84">CachedTypeNames</a>(<a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html">NedResourceCache</a> *p) {this-&gt;p=p;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames.html#a083f92250f255122a300c81b6c276ae3">   75</a></span>&#160;          <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames.html#a083f92250f255122a300c81b6c276ae3">contains</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *qname)<span class="keyword"> const override </span>{<span class="keywordflow">return</span> p-&gt;<a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a35624edfb9d47a2c40a477dc212e9ac3">lookup</a>(qname)!=<span class="keyword">nullptr</span>;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames.html#a421227cff207a081949c04c8c70ce963">   76</a></span>&#160;          <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames.html#a421227cff207a081949c04c8c70ce963">size</a>()<span class="keyword"> const override </span>{<span class="keywordflow">return</span> p-&gt;<a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#ad2ef2173bceb757a4af350d3a50d6221">getTypeNames</a>().size();}</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames.html#a826187a607cb51315fb12eb94ef0a5d2">   77</a></span>&#160;          <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames.html#a826187a607cb51315fb12eb94ef0a5d2">get</a>(<span class="keywordtype">int</span> k)<span class="keyword"> const override </span>{<span class="keywordflow">return</span> p-&gt;<a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#ad2ef2173bceb757a4af350d3a50d6221">getTypeNames</a>()[k].c_str();}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      };</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// table of loaded NED files (by NED file name as absolute path, canonical representation)</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#afbae7c62c0b56a7091b083304b5c333b">   82</a></span>&#160;    std::map&lt;std::string,NedFileElement*&gt; <a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#afbae7c62c0b56a7091b083304b5c333b">nedFiles</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// &quot;package.ned&quot; files by package name (only one per package accepted)</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a74c4888a0351da91ca0be6cf26a2c0ff">   85</a></span>&#160;    std::map&lt;std::string, NedFileElement*&gt; <a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a74c4888a0351da91ca0be6cf26a2c0ff">packageDotNedFiles</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">// table of NED type declarations; key is fully qualified name, and elements point into nedFiles</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a93ce18c98bdea7bc96c261b034b194f7">   88</a></span>&#160;    std::map&lt;std::string, NedTypeInfo*&gt; <a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a93ce18c98bdea7bc96c261b034b194f7">nedTypes</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// cached keys of the nedTypes map, for getTypeNames()</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a369311ac297a2534a5a80599bd7e2e4a">   91</a></span>&#160;    std::vector&lt;std::string&gt; <a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a369311ac297a2534a5a80599bd7e2e4a">nedTypeNames</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// maps the loaded source NED folders (as absolute paths, canonical representation)</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// to package names</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a09af799878f7f9f2af8b7133bc151874">   95</a></span>&#160;    <span class="keyword">typedef</span> std::map&lt;std::string,std::string&gt; <a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a09af799878f7f9f2af8b7133bc151874">StringMap</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a5144b39c8dd866c5ba1f4ec4eceee02d">   96</a></span>&#160;    <a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a09af799878f7f9f2af8b7133bc151874">StringMap</a> <a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a5144b39c8dd866c5ba1f4ec4eceee02d">folderPackages</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> addFile(NedFileElement *node, <span class="keyword">const</span> <span class="keywordtype">char</span> *expectedPackage);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> registerBuiltinDeclarations();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> doLoadNedSourceFolder(<span class="keyword">const</span> <span class="keywordtype">char</span> *foldername, <span class="keyword">const</span> <span class="keywordtype">char</span> *expectedPackage, <span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; excludedFolders);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> doLoadNedFileOrText(<span class="keyword">const</span> <span class="keywordtype">char</span> *nedfname, <span class="keyword">const</span> <span class="keywordtype">char</span> *nedtext, <span class="keyword">const</span> <span class="keywordtype">char</span> *expectedPackage, <span class="keywordtype">bool</span> isXML);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">virtual</span> NedFileElement *parseAndValidateNedFileOrText(<span class="keyword">const</span> <span class="keywordtype">char</span> *nedfname, <span class="keyword">const</span> <span class="keywordtype">char</span> *nedtext, <span class="keywordtype">bool</span> isXML);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">virtual</span> std::string determineRootPackageName(<span class="keyword">const</span> <span class="keywordtype">char</span> *nedSourceFolderName);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">virtual</span> std::string getNedSourceFolderForFolder(<span class="keyword">const</span> <span class="keywordtype">char</span> *folder) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> collectNedTypesFrom(<a class="code" href="classomnetpp_1_1nedxml_1_1ASTNode.html">ASTNode</a> *node, <span class="keyword">const</span> std::string&amp; packagePrefix, <span class="keywordtype">bool</span> areInnerTypes);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html">NedTypeInfo</a> *createTypeInfo(<span class="keyword">const</span> <span class="keywordtype">char</span> *qname, <span class="keywordtype">bool</span> isInnerType, <a class="code" href="classomnetpp_1_1nedxml_1_1ASTNode.html">ASTNode</a> *node);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> registerNedType(<span class="keyword">const</span> <span class="keywordtype">char</span> *qname, <span class="keywordtype">bool</span> isInnerType, <a class="code" href="classomnetpp_1_1nedxml_1_1ASTNode.html">ASTNode</a> *node);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> hasResolvedTypeUnder(<span class="keyword">const</span> std::string&amp; packageName) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">virtual</span> std::string getFirstError(<a class="code" href="classomnetpp_1_1nedxml_1_1ErrorStore.html">ErrorStore</a> *errors, <span class="keyword">const</span> <span class="keywordtype">char</span> *prefix=<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a7d5b3a357f757980d5e2fc5e1662cf3a">  114</a></span>&#160;    <a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a7d5b3a357f757980d5e2fc5e1662cf3a">NedResourceCache</a>() {}</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html">NedResourceCache</a>();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> loadNedSourceFolder(<span class="keyword">const</span> <span class="keywordtype">char</span> *foldername, <span class="keyword">const</span> <span class="keywordtype">char</span> *excludedPackages);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> loadNedFile(<span class="keyword">const</span> <span class="keywordtype">char</span> *nedfname, <span class="keyword">const</span> <span class="keywordtype">char</span> *expectedPackage, <span class="keywordtype">bool</span> isXML);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> loadNedText(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <span class="keyword">const</span> <span class="keywordtype">char</span> *nedtext, <span class="keyword">const</span> <span class="keywordtype">char</span> *expectedPackage, <span class="keywordtype">bool</span> isXML);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> resolveAllNedTypes();</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> doneLoadingNedFiles();</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    std::vector&lt;NedFileElement*&gt; getPackageNedListForLookup(<span class="keyword">const</span> <span class="keywordtype">char</span> *packageName) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html">NedTypeInfo</a> *lookup(<span class="keyword">const</span> <span class="keywordtype">char</span> *qname) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html">NedTypeInfo</a> *getDecl(<span class="keyword">const</span> <span class="keywordtype">char</span> *qname);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keyword">virtual</span> std::string lookupNedType(<span class="keyword">const</span> <a class="code" href="structomnetpp_1_1nedxml_1_1NedLookupContext.html">NedLookupContext</a>&amp; context, <span class="keyword">const</span> <span class="keywordtype">char</span> *nedTypeName, <span class="keyword">const</span> INedTypeNames&amp; amongQNames);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a1028ab40ed2172333e73983a93e8f6c6">  192</a></span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a1028ab40ed2172333e73983a93e8f6c6">lookupNedType</a>(<span class="keyword">const</span> <a class="code" href="structomnetpp_1_1nedxml_1_1NedLookupContext.html">NedLookupContext</a>&amp; context, <span class="keyword">const</span> <span class="keywordtype">char</span> *nedTypeName) {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">return</span> lookupNedType(context, nedTypeName, <a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames.html">CachedTypeNames</a>{<span class="keyword">this</span>});</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#ad2ef2173bceb757a4af350d3a50d6221">  199</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; <a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#ad2ef2173bceb757a4af350d3a50d6221">getTypeNames</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> nedTypeNames;}</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keyword">virtual</span> std::string getNedPackageForFolder(<span class="keyword">const</span> <span class="keywordtype">char</span> *folder) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keyword">static</span> <a class="code" href="structomnetpp_1_1nedxml_1_1NedLookupContext.html">NedLookupContext</a> getParentContextOf(<span class="keyword">const</span> <span class="keywordtype">char</span> *qname, <a class="code" href="classomnetpp_1_1nedxml_1_1ASTNode.html">ASTNode</a> *node);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;};</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;}  <span class="comment">// namespace nedxml</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;}  <span class="comment">// namespace omnetpp</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedResourceCache_html"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedResourceCache.html">omnetpp::nedxml::NedResourceCache</a></div><div class="ttdoc">Stores loaded NED files, and keeps track of components in them.</div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:52</div></div>
+<div class="ttc" id="astructomnetpp_1_1nedxml_1_1NedLookupContext_html_a38bd8bff98ccdb0888ecfa2757ff93f4"><div class="ttname"><a href="structomnetpp_1_1nedxml_1_1NedLookupContext.html#a38bd8bff98ccdb0888ecfa2757ff93f4">omnetpp::nedxml::NedLookupContext::element</a></div><div class="ttdeci">ASTNode * element</div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:39</div></div>
+<div class="ttc" id="anedtypeinfo_8h_html"><div class="ttname"><a href="nedtypeinfo_8h.html">nedtypeinfo.h</a></div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames_html_a421227cff207a081949c04c8c70ce963"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames.html#a421227cff207a081949c04c8c70ce963">omnetpp::nedxml::NedResourceCache::CachedTypeNames::size</a></div><div class="ttdeci">virtual int size() const override</div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:76</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedResourceCache_html_a09af799878f7f9f2af8b7133bc151874"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a09af799878f7f9f2af8b7133bc151874">omnetpp::nedxml::NedResourceCache::StringMap</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; StringMap</div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:95</div></div>
+<div class="ttc" id="astructomnetpp_1_1nedxml_1_1NedLookupContext_html_af9d3de1f7f9ff554ce07ad3fcfa22162"><div class="ttname"><a href="structomnetpp_1_1nedxml_1_1NedLookupContext.html#af9d3de1f7f9ff554ce07ad3fcfa22162">omnetpp::nedxml::NedLookupContext::qname</a></div><div class="ttdeci">std::string qname</div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:40</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedResourceCache_html_a74c4888a0351da91ca0be6cf26a2c0ff"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a74c4888a0351da91ca0be6cf26a2c0ff">omnetpp::nedxml::NedResourceCache::packageDotNedFiles</a></div><div class="ttdeci">std::map&lt; std::string, NedFileElement * &gt; packageDotNedFiles</div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:85</div></div>
+<div class="ttc" id="astructomnetpp_1_1nedxml_1_1NedLookupContext_html"><div class="ttname"><a href="structomnetpp_1_1nedxml_1_1NedLookupContext.html">omnetpp::nedxml::NedLookupContext</a></div><div class="ttdoc">Context of NED type lookup, for NedResourceCache.</div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:37</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedResourceCache_html_a7d5b3a357f757980d5e2fc5e1662cf3a"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a7d5b3a357f757980d5e2fc5e1662cf3a">omnetpp::nedxml::NedResourceCache::NedResourceCache</a></div><div class="ttdeci">NedResourceCache()</div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:114</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedResourceCache_html_a35624edfb9d47a2c40a477dc212e9ac3"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a35624edfb9d47a2c40a477dc212e9ac3">omnetpp::nedxml::NedResourceCache::lookup</a></div><div class="ttdeci">virtual NedTypeInfo * lookup(const char *qname) const</div></div>
+<div class="ttc" id="anedxmldefs_8h_html_a3915af7fb1c0a123f29e86b0339a6782"><div class="ttname"><a href="nedxmldefs_8h.html#a3915af7fb1c0a123f29e86b0339a6782">NEDXML_API</a></div><div class="ttdeci">#define NEDXML_API</div><div class="ttdef"><b>Definition:</b> nedxmldefs.h:31</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedResourceCache_html_a1028ab40ed2172333e73983a93e8f6c6"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a1028ab40ed2172333e73983a93e8f6c6">omnetpp::nedxml::NedResourceCache::lookupNedType</a></div><div class="ttdeci">virtual std::string lookupNedType(const NedLookupContext &amp;context, const char *nedTypeName)</div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:192</div></div>
+<div class="ttc" id="anamespaceomnetpp_html"><div class="ttname"><a href="namespaceomnetpp.html">omnetpp</a></div><div class="ttdef"><b>Definition:</b> astbuilder.h:25</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames_html"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames.html">omnetpp::nedxml::NedResourceCache::CachedTypeNames</a></div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:70</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedResourceCache_html_afbae7c62c0b56a7091b083304b5c333b"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#afbae7c62c0b56a7091b083304b5c333b">omnetpp::nedxml::NedResourceCache::nedFiles</a></div><div class="ttdeci">std::map&lt; std::string, NedFileElement * &gt; nedFiles</div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:82</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedResourceCache_html_a369311ac297a2534a5a80599bd7e2e4a"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a369311ac297a2534a5a80599bd7e2e4a">omnetpp::nedxml::NedResourceCache::nedTypeNames</a></div><div class="ttdeci">std::vector&lt; std::string &gt; nedTypeNames</div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:91</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames_html_a083f92250f255122a300c81b6c276ae3"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames.html#a083f92250f255122a300c81b6c276ae3">omnetpp::nedxml::NedResourceCache::CachedTypeNames::contains</a></div><div class="ttdeci">virtual bool contains(const char *qname) const override</div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:75</div></div>
+<div class="ttc" id="astructomnetpp_1_1nedxml_1_1NedLookupContext_html_a0375e0b485c1a453751591b83e70a65c"><div class="ttname"><a href="structomnetpp_1_1nedxml_1_1NedLookupContext.html#a0375e0b485c1a453751591b83e70a65c">omnetpp::nedxml::NedLookupContext::NedLookupContext</a></div><div class="ttdeci">NedLookupContext(ASTNode *e, const char *q)</div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:41</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html">omnetpp::nedxml::NedTypeInfo</a></div><div class="ttdoc">Stores information on a NED type.</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:44</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1ASTNode_html"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1ASTNode.html">omnetpp::nedxml::ASTNode</a></div><div class="ttdef"><b>Definition:</b> astnode.h:87</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedResourceCache_1_1INedTypeNames_html"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1INedTypeNames.html">omnetpp::nedxml::NedResourceCache::INedTypeNames</a></div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:56</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedResourceCache_html_a5144b39c8dd866c5ba1f4ec4eceee02d"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a5144b39c8dd866c5ba1f4ec4eceee02d">omnetpp::nedxml::NedResourceCache::folderPackages</a></div><div class="ttdeci">StringMap folderPackages</div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:96</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames_html_a4266d06149ab98197c70243e13453977"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames.html#a4266d06149ab98197c70243e13453977">omnetpp::nedxml::NedResourceCache::CachedTypeNames::p</a></div><div class="ttdeci">NedResourceCache * p</div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:72</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1ErrorStore_html"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1ErrorStore.html">omnetpp::nedxml::ErrorStore</a></div><div class="ttdef"><b>Definition:</b> errorstore.h:37</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames_html_a826187a607cb51315fb12eb94ef0a5d2"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames.html#a826187a607cb51315fb12eb94ef0a5d2">omnetpp::nedxml::NedResourceCache::CachedTypeNames::get</a></div><div class="ttdeci">virtual const char * get(int k) const override</div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:77</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedResourceCache_1_1INedTypeNames_html_af48297c45d5946b428c8289cba0e2cec"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1INedTypeNames.html#af48297c45d5946b428c8289cba0e2cec">omnetpp::nedxml::NedResourceCache::INedTypeNames::~INedTypeNames</a></div><div class="ttdeci">virtual ~INedTypeNames()</div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:67</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedResourceCache_html_ad2ef2173bceb757a4af350d3a50d6221"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#ad2ef2173bceb757a4af350d3a50d6221">omnetpp::nedxml::NedResourceCache::getTypeNames</a></div><div class="ttdeci">virtual const std::vector&lt; std::string &gt; &amp; getTypeNames() const</div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:199</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedResourceCache_html_a93ce18c98bdea7bc96c261b034b194f7"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedResourceCache.html#a93ce18c98bdea7bc96c261b034b194f7">omnetpp::nedxml::NedResourceCache::nedTypes</a></div><div class="ttdeci">std::map&lt; std::string, NedTypeInfo * &gt; nedTypes</div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:88</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames_html_af0bc43c808c683218a06e6a8012c6b84"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedResourceCache_1_1CachedTypeNames.html#af0bc43c808c683218a06e6a8012c6b84">omnetpp::nedxml::NedResourceCache::CachedTypeNames::CachedTypeNames</a></div><div class="ttdeci">CachedTypeNames(NedResourceCache *p)</div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:74</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d925dd6b67e4361569c4c803b3fbdc0b.html">nedxml</a></li><li class="navelem"><a class="el" href="nedresourcecache_8h.html">nedresourcecache.h</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<map id="cFigure" name="cFigure">
+<area shape="rect" id="node1" title="A lightweight graphical object for cCanvas." alt="" coords="336,411,405,437"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cAbstractImageFigure.html" title="Abstract base class for figures that display an image." alt="" coords="453,56,617,83"/>
+<area shape="rect" id="node7" href="$classomnetpp_1_1cAbstractLineFigure.html" title="Common base class for line figures." alt="" coords="460,183,611,209"/>
+<area shape="rect" id="node11" href="$classomnetpp_1_1cAbstractShapeFigure.html" title="Abstract base class for various shapes." alt="" coords="454,385,617,412"/>
+<area shape="rect" id="node18" href="$classomnetpp_1_1cAbstractTextFigure.html" title="Abstract base class for figures that display text. Text may be multi&#45;line." alt="" coords="460,436,611,463"/>
+<area shape="rect" id="node21" href="$classomnetpp_1_1cGroupFigure.html" title="A figure with the sole purpose of grouping its children, and no visual representation." alt="" coords="481,487,589,513"/>
+<area shape="rect" id="node22" href="$classomnetpp_1_1cPanelFigure.html" title="Sets up an axis&#45;aligned, unscaled coordinate system for children, canceling the effect of any transfo..." alt="" coords="483,537,587,564"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cOwnedObject.html" title="A cObject that keeps track of its owner. It serves as base class for many classes in the OMNeT++ libr..." alt="" coords="172,411,288,437"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cNamedObject.html" title="Extends cObject with a name string. Also includes a &quot;flags&quot; member, with bits open for use by subclas..." alt="" coords="5,411,124,437"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cImageFigure.html" title="A figure that displays an image, typically an icon or a background image, loaded from the OMNeT++ ima..." alt="" coords="677,5,788,32"/>
+<area shape="rect" id="node6" href="$classomnetpp_1_1cPixmapFigure.html" title="A figure that displays an image that can be manipulated programmatically." alt="" coords="673,56,792,83"/>
+<area shape="rect" id="node8" href="$classomnetpp_1_1cArcFigure.html" title="A figure that displays an arc." alt="" coords="687,107,778,133"/>
+<area shape="rect" id="node9" href="$classomnetpp_1_1cLineFigure.html" title="A figure that displays a straight line segment." alt="" coords="685,157,781,184"/>
+<area shape="rect" id="node10" href="$classomnetpp_1_1cPolylineFigure.html" title="A figure that displays a line that consists of multiple connecting straight line segments or of a sin..." alt="" coords="672,208,793,235"/>
+<area shape="rect" id="node12" href="$classomnetpp_1_1cOvalFigure.html" title="A figure that draws a circle or ellipse." alt="" coords="683,259,782,285"/>
+<area shape="rect" id="node13" href="$classomnetpp_1_1cPathFigure.html" title="A figure that displays a &quot;path&quot;, a complex shape or line modeled after SVG paths." alt="" coords="684,309,781,336"/>
+<area shape="rect" id="node14" href="$classomnetpp_1_1cPieSliceFigure.html" title="A figure that displays a pie slice, that is, a section of an axis&#45;aligned disc or filled ellipse." alt="" coords="673,360,793,387"/>
+<area shape="rect" id="node15" href="$classomnetpp_1_1cPolygonFigure.html" title="A figure that displays a (closed) polygon, determined by a sequence of points." alt="" coords="672,411,793,437"/>
+<area shape="rect" id="node16" href="$classomnetpp_1_1cRectangleFigure.html" title="A figure that displays a rectangle, with optionally rounded corners." alt="" coords="665,461,800,488"/>
+<area shape="rect" id="node17" href="$classomnetpp_1_1cRingFigure.html" title="A figure that displays a ring, with explicitly controllable inner/outer radii." alt="" coords="683,512,782,539"/>
+<area shape="rect" id="node19" href="$classomnetpp_1_1cLabelFigure.html" title="A figure that displays text which is unaffected by zooming or transformations, except for its positio..." alt="" coords="681,563,785,589"/>
+<area shape="rect" id="node20" href="$classomnetpp_1_1cTextFigure.html" title="A figure that displays text which is affected by zooming and transformations." alt="" coords="685,613,781,640"/>
+</map>

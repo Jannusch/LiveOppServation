@@ -1,0 +1,63 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "attach",
+            "name": "attach to running simulation (debug mode)",
+            "program": "opp_run_dbg",
+        }
+        ,
+        {
+            "type": "lldb",
+            "request": "attach",
+            "name": "wait for (and attach to) running simulation (debug mode)",
+            "program": "opp_run_dbg",
+            "waitFor": true
+        }
+        ,
+        {
+            "name": "attach to running simulation (release mode)",
+            "type": "lldb",
+            "request": "attach",
+            "program": "opp_run",
+        }
+        ,
+        {
+            "type": "lldb",
+            "request": "attach",
+            "name": "wait for (and attach to) running simulation (release mode)",
+            "program": "opp_run",
+            "waitFor": true
+        }
+        ,
+        {
+            // launch server with `lldb-server-13 platform --server --listen 127.0.0.1:1234` in directory of simulation (or symbols from dynamic libraries loaded at runtime won't be found)
+            "name": "wait for (and attach to) running simulation (debug mode) (on 127.0.0.1:1234)",
+            "type": "lldb",
+            "request": "attach",
+            "program": "opp_run_dbg",
+            "waitFor": true,
+            "initCommands": [
+                "platform select remote-linux",
+                "settings set target.disable-aslr false",
+                "platform connect connect://127.0.0.1:1234",
+                "settings set target.inherit-env false",
+            ]
+        },
+        {
+            // launch server with `lldb-server-13 platform --server --listen 127.0.0.1:1234` in directory of simulation (or symbols from dynamic libraries loaded at runtime won't be found)
+            "name": "wait for (and attach to) sumo (debug mode) (on 127.0.0.1:1234)",
+            "type": "lldb",
+            "request": "attach",
+            "program": "sumoD",
+            "waitFor": true,
+            "initCommands": [
+                "platform select remote-linux",
+                "settings set target.disable-aslr false",
+                "platform connect connect://127.0.0.1:1235",
+                "settings set target.inherit-env false",
+            ]
+        }
+    ]
+}

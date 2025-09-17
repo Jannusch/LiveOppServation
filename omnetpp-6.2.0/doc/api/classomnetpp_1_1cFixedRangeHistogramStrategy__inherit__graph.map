@@ -1,0 +1,5 @@
+<map id="cFixedRangeHistogramStrategy" name="cFixedRangeHistogramStrategy">
+<area shape="rect" id="node1" title="Histogram strategy that sets up uniform bins over a predetermined interval. The number of bins and th..." alt="" coords="5,155,232,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cIHistogramStrategy.html" title="Interface for histogram strategy classes. Histogram strategies encapsulate the task of setting up and..." alt="" coords="41,80,197,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cObject.html" title="cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy...." alt="" coords="83,5,154,32"/>
+</map>

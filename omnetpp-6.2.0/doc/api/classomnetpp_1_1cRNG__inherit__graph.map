@@ -1,0 +1,6 @@
+<map id="cRNG" name="cRNG">
+<area shape="rect" id="node1" title="Abstract interface for random number generator classes." alt="" coords="75,80,134,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cLCG32.html" title="Implements a 32&#45;bit (2^31&#45;2 cycle length) linear congruential random number generator." alt="" coords="5,155,76,181"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cMersenneTwister.html" title="Wraps the Mersenne Twister RNG by Makoto Matsumoto and Takuji Nishimura." alt="" coords="101,155,239,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cObject.html" title="cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy...." alt="" coords="69,5,140,32"/>
+</map>

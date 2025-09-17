@@ -1,0 +1,7 @@
+<map id="cScheduler" name="cScheduler">
+<area shape="rect" id="node1" title="Abstract class to encapsulate event scheduling." alt="" coords="127,80,220,107"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cRealTimeScheduler.html" title="Real&#45;time scheduler class." alt="" coords="5,155,160,181"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cSequentialScheduler.html" title="Event scheduler for sequential simulation." alt="" coords="184,155,347,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cObject.html" title="cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy...." alt="" coords="55,5,126,32"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cISimulationLifecycleListener.html" title="A callback interface for receiving notifications at various stages simulations, including setting up,..." alt="" coords="151,5,364,32"/>
+</map>

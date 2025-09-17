@@ -1,0 +1,6 @@
+<map id="cModule" name="cModule">
+<area shape="rect" id="node1" title="This class represents modules in the simulation." alt="" coords="28,155,105,181"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cSimpleModule.html" title="Base class for all simple module classes." alt="" coords="5,229,128,256"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cComponent.html" title="Common base for module and channel classes." alt="" coords="15,80,119,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cSoftOwner.html" title="Internal class, used as a base class for modules and channels. It is not intended for subclassing out..." alt="" coords="19,5,115,32"/>
+</map>

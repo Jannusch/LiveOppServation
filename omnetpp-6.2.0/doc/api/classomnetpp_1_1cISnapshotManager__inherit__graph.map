@@ -1,0 +1,6 @@
+<map id="cISnapshotManager" name="cISnapshotManager">
+<area shape="rect" id="node1" title="Abstract base class for snapshot managers." alt="" coords="132,80,283,107"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cObject.html" title="cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy...." alt="" coords="5,5,76,32"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cISimulationLifecycleListener.html" title="A callback interface for receiving notifications at various stages simulations, including setting up,..." alt="" coords="101,5,314,32"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1noncopyable.html" title="Utility class, to make it impossible to call the operator= and copy constructor of any class derived ..." alt="" coords="339,5,444,32"/>
+</map>

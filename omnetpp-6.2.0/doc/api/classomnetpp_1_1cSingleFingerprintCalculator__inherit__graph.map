@@ -1,0 +1,6 @@
+<map id="cSingleFingerprintCalculator" name="cSingleFingerprintCalculator">
+<area shape="rect" id="node1" title="This class calculates the &quot;fingerprint&quot; of a simulation." alt="" coords="5,155,211,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cFingerprintCalculator.html" title="This class defines the interface for fingerprint calculators." alt="" coords="25,80,191,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cObject.html" title="cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy...." alt="" coords="17,5,87,32"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1noncopyable.html" title="Utility class, to make it impossible to call the operator= and copy constructor of any class derived ..." alt="" coords="111,5,217,32"/>
+</map>

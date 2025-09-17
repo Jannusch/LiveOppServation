@@ -1,0 +1,5 @@
+<map id="PacketBitsFilter" name="PacketBitsFilter">
+<area shape="rect" id="node1" title="Filter that expects a cPacket and outputs its length in bits (getBitLength()). Null (nullptr) values ..." alt="" coords="17,155,139,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cObjectResultFilter.html" title="Base class for filters that expect to receive an object." alt="" coords="5,80,151,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cResultFilter.html" title="Base class for result filters." alt="" coords="27,5,129,32"/>
+</map>

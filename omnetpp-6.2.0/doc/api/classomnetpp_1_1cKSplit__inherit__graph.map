@@ -1,0 +1,5 @@
+<map id="cKSplit" name="cKSplit">
+<area shape="rect" id="node1" title="Implements k&#45;split, an adaptive histogram&#45;like density estimation algorithm. During result collection..." alt="" coords="83,155,150,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cPrecollectionBasedDensityEst.html" title="Base class for histogram&#45;like density estimation classes." alt="" coords="5,80,228,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cAbstractHistogram.html" title="Interface and base class for histogram&#45;like density estimation classes." alt="" coords="41,5,192,32"/>
+</map>

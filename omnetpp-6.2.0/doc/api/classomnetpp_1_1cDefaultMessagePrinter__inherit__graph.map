@@ -1,0 +1,5 @@
+<map id="cDefaultMessagePrinter" name="cDefaultMessagePrinter">
+<area shape="rect" id="node1" title="A default message printer that displays the ID, kind, and length (for packets) of the message." alt="" coords="17,155,195,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cMessagePrinter.html" title="Base class for message printers." alt="" coords="41,80,171,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cNoncopyableOwnedObject.html" title="Base class for cOwnedObject&#45;based classes that do not wish to support assignment and duplication." alt="" coords="5,5,207,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="cDefaultHistogramStrategy" name="cDefaultHistogramStrategy">
+<area shape="rect" id="node1" title="A strategy class used by the default setup of cHistogram. It is meant to provide a good quality unifo..." alt="" coords="16,169,216,196"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cPrecollectionBasedHistogramStrategy.html" title="Base class for histogram strategies that employ a precollection phase in order to gather input for se..." alt="" coords="5,80,227,121"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cIHistogramStrategy.html" title="Interface for histogram strategy classes. Histogram strategies encapsulate the task of setting up and..." alt="" coords="38,5,194,32"/>
+</map>

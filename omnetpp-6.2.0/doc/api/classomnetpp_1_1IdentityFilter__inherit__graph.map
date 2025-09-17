@@ -1,0 +1,6 @@
+<map id="IdentityFilter" name="IdentityFilter">
+<area shape="rect" id="node1" title="This class is a no&#45;op filter." alt="" coords="14,155,119,181"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1MergeFilter.html" title="Filter that merges several inputs into one output." alt="" coords="19,229,115,256"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cResultFilter.html" title="Base class for result filters." alt="" coords="15,80,118,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cResultListener.html" title="Common abstract base class for result filters and result recorders." alt="" coords="5,5,128,32"/>
+</map>

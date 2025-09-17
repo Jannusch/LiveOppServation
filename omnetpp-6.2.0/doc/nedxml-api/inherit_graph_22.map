@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,144,57"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1nedxml_1_1NedCrossValidator.html" title="Performs cross validation. Should be called after tree passed DTD validation and syntax validation." alt="" coords="196,5,339,32"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1nedxml_1_1NedSyntaxValidator.html" title="Performs structural validation of components." alt="" coords="192,56,343,83"/>
+</map>

@@ -1,0 +1,97 @@
+// Copyright 2015 gRPC authors.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+syntax = "proto3";
+
+
+
+package liveOppServation;
+
+// The general data exchange stub
+service Greeter {
+
+  rpc RequestVectorsMetaData (MetaMessage) returns (stream VectorMetaData) {}
+
+  rpc RequestVectorData (VectorDataRequest) returns (DataList) {}
+
+  rpc RequestTimeInfo (MetaMessage) returns (TimeInfo) {}
+
+  rpc SetUuid (UuidSetRequest) returns (UuidSetReply) {}
+
+  rpc SetDebugWatch (DebugData) returns (Data) {}
+
+  rpc ReportDebugTrap (DebugTrap) returns (Data) {}
+}
+
+
+// I should make the id repeated to get multiple vectors at once
+message VectorDataRequest {
+  string client = 1;
+  uint64 id = 2;
+  uint64 start = 3;
+  uint64 end = 4;
+}
+
+message UuidSetRequest {
+  string sim_uuid = 1;
+  string front_uuid = 2;
+}
+
+message DebugData {
+  uint64 id = 1;
+  string operator_type = 2;
+  double value = 3;
+}
+
+message DebugTrap {
+  uint64 id = 1;
+  uint64 time = 2;
+}
+
+
+// We answer with the uuid, the simulation has. if it is the one from the client, we know, that we are the first one
+message UuidSetReply {
+  string sim_uuid = 1;
+}
+
+message VectorMetaData {
+  string name = 1;
+  string path = 2;
+  uint64 id = 3;
+  uint64 vec_handle = 4;
+}
+
+message MetaMessage {
+  string client = 1;
+}
+
+message Data {
+  uint64 data = 1;
+}
+
+message DataList {
+  // simtime of request
+  uint64 simtime = 1;
+  // vector id
+  uint64 id = 2;
+  // The data type of the results (maybe create an enum for this)
+  string type = 3;
+  repeated uint64 time = 4;
+  repeated double data = 5;
+}
+
+message TimeInfo {
+  string sim_id = 1;
+  int32 scaleexp = 2;
+}

@@ -1,0 +1,8 @@
+<map id="cComponentType" name="cComponentType">
+<area shape="rect" id="node1" title="Common base class for cModuleType and cChannelType." alt="" coords="63,155,197,181"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cChannelType.html" title="Abstract base class for creating a channel of a given type." alt="" coords="7,229,119,256"/>
+<area shape="rect" id="node6" href="$classomnetpp_1_1cModuleType.html" title="Abstract class for creating a module of a specific type." alt="" coords="143,229,250,256"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cNoncopyableOwnedObject.html" title="Base class for cOwnedObject&#45;based classes that do not wish to support assignment and duplication." alt="" coords="29,80,231,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cOwnedObject.html" title="A cObject that keeps track of its owner. It serves as base class for many classes in the OMNeT++ libr..." alt="" coords="5,5,121,32"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1noncopyable.html" title="Utility class, to make it impossible to call the operator= and copy constructor of any class derived ..." alt="" coords="145,5,251,32"/>
+</map>

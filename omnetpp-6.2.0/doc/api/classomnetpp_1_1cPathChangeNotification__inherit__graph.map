@@ -1,0 +1,10 @@
+<map id="cPathChangeNotification" name="cPathChangeNotification">
+<area shape="rect" id="node1" title="Base class for path change notifications." alt="" coords="400,81,581,108"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cPostPathCreateNotification.html" title="Model change notification fired after a connection path has been created." alt="" coords="629,5,832,32"/>
+<area shape="rect" id="node6" href="$classomnetpp_1_1cPostPathCutNotification.html" title="Model change notification fired after a connection path has been cut." alt="" coords="639,56,822,83"/>
+<area shape="rect" id="node7" href="$classomnetpp_1_1cPrePathCreateNotification.html" title="Model change notification fired just before a connection path is created." alt="" coords="633,107,829,133"/>
+<area shape="rect" id="node8" href="$classomnetpp_1_1cPrePathCutNotification.html" title="Model change notification fired just before a connection path is cut." alt="" coords="643,157,818,184"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cModelChangeNotification.html" title="Common base class for data objects that accompany PRE_MODEL_CHANGE and POST_MODEL_CHANGE signals." alt="" coords="159,81,352,108"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cObject.html" title="cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy...." alt="" coords="23,56,93,83"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1noncopyable.html" title="Utility class, to make it impossible to call the operator= and copy constructor of any class derived ..." alt="" coords="5,107,111,133"/>
+</map>

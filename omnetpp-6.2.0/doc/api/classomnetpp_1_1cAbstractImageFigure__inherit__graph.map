@@ -1,0 +1,8 @@
+<map id="cAbstractImageFigure" name="cAbstractImageFigure">
+<area shape="rect" id="node1" title="Abstract base class for figures that display an image." alt="" coords="48,155,212,181"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cImageFigure.html" title="A figure that displays an image, typically an icon or a background image, loaded from the OMNeT++ ima..." alt="" coords="5,229,116,256"/>
+<area shape="rect" id="node6" href="$classomnetpp_1_1cPixmapFigure.html" title="A figure that displays an image that can be manipulated programmatically." alt="" coords="140,229,259,256"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cFigure.html" title="A lightweight graphical object for cCanvas." alt="" coords="95,80,165,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cOwnedObject.html" title="A cObject that keeps track of its owner. It serves as base class for many classes in the OMNeT++ libr..." alt="" coords="72,5,188,32"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cIconFigure.html" title="A figure that displays an image, typically an icon or a background image, loaded from the OMNeT++ ima..." alt="" coords="13,304,109,331"/>
+</map>

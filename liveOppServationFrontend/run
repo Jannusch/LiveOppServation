@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+## generate grpc files with protoc
+poetry run python -m grpc_tools.protoc -I../liveOppServation/src/liveOppServation/modules --python_out=src/liveoppservationfrontend/ --pyi_out=src/liveoppservationfrontend --grpc_python_out=src/liveoppservationfrontend ../liveOppServation/src/liveOppServation/modules/liveoppservation.proto
+
+## run the actual program
+poetry run python src/liveoppservationfrontend/app.py

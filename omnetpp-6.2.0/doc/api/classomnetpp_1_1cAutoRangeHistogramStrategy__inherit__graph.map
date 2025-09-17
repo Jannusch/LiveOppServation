@@ -1,0 +1,5 @@
+<map id="cAutoRangeHistogramStrategy" name="cAutoRangeHistogramStrategy">
+<area shape="rect" id="node1" title="A generic, very configurable histogram strategy that is meant to provide a good quality histogram for..." alt="" coords="5,169,228,196"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cPrecollectionBasedHistogramStrategy.html" title="Base class for histogram strategies that employ a precollection phase in order to gather input for se..." alt="" coords="6,80,227,121"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cIHistogramStrategy.html" title="Interface for histogram strategy classes. Histogram strategies encapsulate the task of setting up and..." alt="" coords="39,5,195,32"/>
+</map>

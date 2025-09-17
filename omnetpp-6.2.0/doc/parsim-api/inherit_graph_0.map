@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classomnetpp_1_1cCommBufferBase.html" title="Adds buffer (re)allocation functions to cCommBuffer. This functionality is not always needed,..." alt="" coords="5,31,148,57"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cFileCommBuffer.html" title="Communication buffer that packs data in a text representation into a memory buffer." alt="" coords="201,5,335,32"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cMemCommBuffer.html" title="Communication buffer that packs data into a memory buffer without any transformation." alt="" coords="196,56,340,83"/>
+</map>

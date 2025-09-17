@@ -1,0 +1,5 @@
+<map id="cNMPLookahead" name="cNMPLookahead">
+<area shape="rect" id="node1" title="Base class of lookahead calculations for cNullMessageProtocol which implements the &quot;null message algo..." alt="" coords="164,5,293,32"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cAdvancedLinkDelayLookahead.html" title="Lookahead calculation based on inter&#45;partition link delays only." alt="" coords="5,80,233,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cLinkDelayLookahead.html" title="Lookahead calculation based on inter&#45;partition link delays only." alt="" coords="257,80,421,107"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="cPostPathCutNotification" name="cPostPathCutNotification">
+<area shape="rect" id="node1" title="Model change notification fired after a connection path has been cut." alt="" coords="11,155,193,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cPathChangeNotification.html" title="Base class for path change notifications." alt="" coords="11,80,193,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cModelChangeNotification.html" title="Common base class for data objects that accompany PRE_MODEL_CHANGE and POST_MODEL_CHANGE signals." alt="" coords="5,5,199,32"/>
+</map>

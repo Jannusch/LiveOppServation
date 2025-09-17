@@ -1,0 +1,8 @@
+<map id="MsgCompiler" name="MsgCompiler">
+<area shape="rect" id="node1" title="Generates C++ code from a MSG file object tree." alt="" coords="237,184,345,211"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1nedxml_1_1MsgAnalyzer.html" title="Part of the message compiler. Produces ClassInfo objects from the ASTNode tree. Assumes object tree h..." alt="" coords="137,95,243,121"/>
+<area shape="rect" id="node3" href="$structomnetpp_1_1nedxml_1_1MsgCompilerOptions.html" title="Options for MsgCompiler." alt="" coords="153,5,312,32"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1nedxml_1_1MsgTypeTable.html" title=" " alt="" coords="5,5,119,32"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1nedxml_1_1ErrorStore.html" title=" " alt="" coords="341,5,428,32"/>
+<area shape="rect" id="node6" href="$classomnetpp_1_1nedxml_1_1MsgCodeGenerator.html" title="Code generator part of the message compiler." alt="" coords="451,95,598,121"/>
+</map>

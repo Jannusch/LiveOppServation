@@ -1,0 +1,6 @@
+<map id="MsgAnalyzer" name="MsgAnalyzer">
+<area shape="rect" id="node1" title="Part of the message compiler. Produces ClassInfo objects from the ASTNode tree. Assumes object tree h..." alt="" coords="191,95,298,121"/>
+<area shape="rect" id="node2" href="$structomnetpp_1_1nedxml_1_1MsgCompilerOptions.html" title="Options for MsgCompiler." alt="" coords="5,5,164,32"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1nedxml_1_1MsgTypeTable.html" title=" " alt="" coords="188,5,301,32"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1nedxml_1_1ErrorStore.html" title=" " alt="" coords="325,5,412,32"/>
+</map>

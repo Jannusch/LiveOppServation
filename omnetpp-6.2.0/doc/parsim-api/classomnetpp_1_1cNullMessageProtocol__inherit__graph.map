@@ -1,0 +1,6 @@
+<map id="cNullMessageProtocol" name="cNullMessageProtocol">
+<area shape="rect" id="node1" title="Implements the &quot;null message algorithm&quot;. Lookahead calculation is encapsulated into a separate object..." alt="" coords="5,155,172,181"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cISPEventLogger.html" title="Implements phase one for the Ideal Simulation Protocol (ISP), namely, creating the log of &quot;external&quot; ..." alt="" coords="23,229,154,256"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cParsimProtocolBase.html" title="Contains utility functions for implementing parallel simulation protocols." alt="" coords="9,80,168,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cParsimSynchronizer.html" title="Abstract base class for parallel simulation algorithms. Subclasses implement the &quot;null message algori..." alt="" coords="10,5,167,32"/>
+</map>

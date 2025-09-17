@@ -1,0 +1,5 @@
+<map id="cGenericReadonlyWatch&lt; T &gt;" name="cGenericReadonlyWatch&lt; T &gt;">
+<area shape="rect" id="node1" title="Template Watch class, for any type that supports operator&lt;&lt;." alt="" coords="5,155,224,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cWatchBase.html" title="Helper class to make primitive types and non&#45;cOwnedObject objects inspectable in Qtenv...." alt="" coords="64,80,165,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cNoncopyableOwnedObject.html" title="Base class for cOwnedObject&#45;based classes that do not wish to support assignment and duplication." alt="" coords="14,5,215,32"/>
+</map>

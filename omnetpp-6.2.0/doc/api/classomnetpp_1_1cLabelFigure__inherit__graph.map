@@ -1,0 +1,5 @@
+<map id="cLabelFigure" name="cLabelFigure">
+<area shape="rect" id="node1" title="A figure that displays text which is unaffected by zooming or transformations, except for its positio..." alt="" coords="29,155,133,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cAbstractTextFigure.html" title="Abstract base class for figures that display text. Text may be multi&#45;line." alt="" coords="5,80,156,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cFigure.html" title="A lightweight graphical object for cCanvas." alt="" coords="46,5,115,32"/>
+</map>

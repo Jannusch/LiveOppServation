@@ -1,0 +1,5 @@
+<map id="cGenericAssignableWatch&lt; T &gt;" name="cGenericAssignableWatch&lt; T &gt;">
+<area shape="rect" id="node1" title="Template Watch class, for any type that supports operator&lt;&lt;, and operator&gt;&gt; for assignment." alt="" coords="5,155,233,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cWatchBase.html" title="Helper class to make primitive types and non&#45;cOwnedObject objects inspectable in Qtenv...." alt="" coords="69,80,170,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cNoncopyableOwnedObject.html" title="Base class for cOwnedObject&#45;based classes that do not wish to support assignment and duplication." alt="" coords="19,5,220,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="cPostModuleReparentNotification" name="cPostModuleReparentNotification">
+<area shape="rect" id="node1" title="Model change notification fired after a module has been reparented." alt="" coords="5,155,244,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cModelChangeNotification.html" title="Common base class for data objects that accompany PRE_MODEL_CHANGE and POST_MODEL_CHANGE signals." alt="" coords="28,80,221,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cObject.html" title="cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy...." alt="" coords="33,5,104,32"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1noncopyable.html" title="Utility class, to make it impossible to call the operator= and copy constructor of any class derived ..." alt="" coords="128,5,233,32"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="cEvent" name="cEvent">
+<area shape="rect" id="node1" title="Represents an event in the discrete event simulator." alt="" coords="31,155,98,181"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cMessage.html" title="The message class in OMNeT++. cMessage objects may represent events, messages, jobs or other entities..." alt="" coords="21,229,108,256"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cOwnedObject.html" title="A cObject that keeps track of its owner. It serves as base class for many classes in the OMNeT++ libr..." alt="" coords="7,80,123,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cNamedObject.html" title="Extends cObject with a name string. Also includes a &quot;flags&quot; member, with bits open for use by subclas..." alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cPacket.html" title="A subclass of cMessage to represent packets, frames, datagrams, application messages,..." alt="" coords="29,304,100,331"/>
+</map>

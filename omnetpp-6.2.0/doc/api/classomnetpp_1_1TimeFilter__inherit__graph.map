@@ -1,0 +1,5 @@
+<map id="TimeFilter" name="TimeFilter">
+<area shape="rect" id="node1" title="Result filter that yields the time of emitting the signal." alt="" coords="23,155,111,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cResultFilter.html" title="Base class for result filters." alt="" coords="15,80,118,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cResultListener.html" title="Common abstract base class for result filters and result recorders." alt="" coords="5,5,128,32"/>
+</map>

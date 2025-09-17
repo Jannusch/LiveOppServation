@@ -1,0 +1,222 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classomnetpp_1_1cExpression.html" title="Abstract base class for expression evaluators." alt="" coords="325,2047,425,2073"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cDynamicExpression.html" title="A stack&#45;based expression evaluator class, for dynamically created expressions." alt="" coords="583,1895,742,1921"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cOwnedDynamicExpression.html" title="An &quot;owned&quot; version cDynamicExpression to allow it to be assigned to module parameters of the type &quot;ob..." alt="" coords="851,1945,1054,1972"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cIListener.html" title="Interface for listeners in a simulation model." alt="" coords="69,892,155,919"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cListener.html" title="A do&#45;nothing implementation of cIListener, suitable as a base class for other listeners." alt="" coords="335,867,416,893"/>
+<area shape="rect" id="node6" href="$classomnetpp_1_1cResultListener.html" title="Common abstract base class for result filters and result recorders." alt="" coords="314,917,437,944"/>
+<area shape="rect" id="node7" href="$classomnetpp_1_1cResultFilter.html" title="Base class for result filters." alt="" coords="611,917,714,944"/>
+<area shape="rect" id="node33" href="$classomnetpp_1_1cResultRecorder.html" title="Abstract base class for result recorders." alt="" coords="599,512,727,539"/>
+<area shape="rect" id="node8" href="$classomnetpp_1_1cNumericResultFilter.html" title="Base class for filters that expect to receive an numeric value." alt="" coords="873,943,1032,969"/>
+<area shape="rect" id="node20" href="$classomnetpp_1_1cObjectResultFilter.html" title="Base class for filters that expect to receive an object." alt="" coords="880,1221,1025,1248"/>
+<area shape="rect" id="node23" href="$classomnetpp_1_1ConstantFilter.html" title="Result filter that replaces every value with a constant. Signal values do not need to be numeric." alt="" coords="896,1297,1009,1324"/>
+<area shape="rect" id="node26" href="$classomnetpp_1_1DemuxFilter.html" title="Result filter that demultiplexes its input to several outputs. The selector (a.ka...." alt="" coords="901,1348,1004,1375"/>
+<area shape="rect" id="node27" href="$classomnetpp_1_1IdentityFilter.html" title="This class is a no&#45;op filter." alt="" coords="900,651,1005,677"/>
+<area shape="rect" id="node29" href="$classomnetpp_1_1TimeFilter.html" title="Result filter that yields the time of emitting the signal." alt="" coords="909,791,997,817"/>
+<area shape="rect" id="node30" href="$classomnetpp_1_1TotalCountFilter.html" title="Result filter for counting the input values, including NaN and nullptr values." alt="" coords="891,841,1015,868"/>
+<area shape="rect" id="node32" href="$classomnetpp_1_1WarmupPeriodFilter.html" title="Result filter that absorbs input values during the configured warm&#45;up period (see warmup&#45;period confi..." alt="" coords="877,892,1028,919"/>
+<area shape="rect" id="node9" href="$classomnetpp_1_1AverageFilter.html" title="Result filter that computes the arithmetic mean of signal values. NaN values in the input are ignored..." alt="" coords="1141,917,1249,944"/>
+<area shape="rect" id="node10" href="$classomnetpp_1_1CountNanFilter.html" title="Filter that counts NaN values in the input." alt="" coords="1136,968,1255,995"/>
+<area shape="rect" id="node11" href="$classomnetpp_1_1ErrorNanFilter.html" title="Filter that raises a runtime error if it sees a NaN in the input." alt="" coords="1139,1019,1251,1045"/>
+<area shape="rect" id="node12" href="$classomnetpp_1_1MaxFilter.html" title="Result filter that computes the maximum of signal values. NaN values in the input are ignored." alt="" coords="1154,1069,1237,1096"/>
+<area shape="rect" id="node13" href="$classomnetpp_1_1MeanFilter.html" title="Result filter that computes the (time&#45;weighted or unweighted) mean of signal values...." alt="" coords="1150,1120,1241,1147"/>
+<area shape="rect" id="node14" href="$classomnetpp_1_1MinFilter.html" title="Result filter that computes the minimum of signal values. NaN values in the input are ignored." alt="" coords="1156,1171,1235,1197"/>
+<area shape="rect" id="node15" href="$classomnetpp_1_1RemoveRepeatsFilter.html" title="Result filter that removes repeated values." alt="" coords="1114,664,1277,691"/>
+<area shape="rect" id="node16" href="$classomnetpp_1_1SkipNanFilter.html" title="Filter that removes (filters out) NaNs, and lets through all other values." alt="" coords="1141,715,1250,741"/>
+<area shape="rect" id="node17" href="$classomnetpp_1_1SumFilter.html" title="Filter that outputs the sum of signal values. NaN values in the input are ignored." alt="" coords="1153,765,1237,792"/>
+<area shape="rect" id="node18" href="$classomnetpp_1_1SumPerDurationFilter.html" title="Filter that outputs the sum of signal values divided by the measurement interval (simtime minus warmu..." alt="" coords="1115,816,1276,843"/>
+<area shape="rect" id="node19" href="$classomnetpp_1_1TimeAverageFilter.html" title="Result filter that computes the time average of signal values. NaN values in the input denote interva..." alt="" coords="1125,867,1266,893"/>
+<area shape="rect" id="node21" href="$classomnetpp_1_1PacketBitsFilter.html" title="Filter that expects a cPacket and outputs its length in bits (getBitLength()). Null (nullptr) values ..." alt="" coords="1134,1221,1257,1248"/>
+<area shape="rect" id="node22" href="$classomnetpp_1_1PacketBytesFilter.html" title="Filter that expects a cPacket and outputs its length in bytes (getByteLength()). Null (nullptr) value..." alt="" coords="1128,1272,1263,1299"/>
+<area shape="rect" id="node24" href="$classomnetpp_1_1Constant0Filter.html" title="Result filter that replaces every value with zero." alt="" coords="1135,1323,1256,1349"/>
+<area shape="rect" id="node25" href="$classomnetpp_1_1Constant1Filter.html" title="Result filter that replaces every value with 1.0." alt="" coords="1135,1373,1256,1400"/>
+<area shape="rect" id="node28" href="$classomnetpp_1_1MergeFilter.html" title="Filter that merges several inputs into one output." alt="" coords="1147,563,1243,589"/>
+<area shape="rect" id="node31" href="$classomnetpp_1_1CountFilter.html" title="Result filter for counting signals. Signal values do not need to be numeric to be counted...." alt="" coords="1149,613,1242,640"/>
+<area shape="rect" id="node34" href="$classomnetpp_1_1cNumericResultRecorder.html" title="Abstract base class for numeric result recorders." alt="" coords="861,259,1044,285"/>
+<area shape="rect" id="node45" href="$classomnetpp_1_1TotalCountRecorder.html" title="Listener for recording the count of signal values, including NaN and nullptr." alt="" coords="878,512,1027,539"/>
+<area shape="rect" id="node35" href="$classomnetpp_1_1AverageRecorder.html" title="Listener for recording the arithmetic mean of signal values. NaN values in the input are ignored." alt="" coords="1129,157,1262,184"/>
+<area shape="rect" id="node36" href="$classomnetpp_1_1ErrorNanRecorder.html" title="Recorder that raises a runtime error if it sees a NaN in the input (and never records anything)." alt="" coords="1127,208,1264,235"/>
+<area shape="rect" id="node37" href="$classomnetpp_1_1LastValueRecorder.html" title="Listener for recording the last non&#45;NaN signal value." alt="" coords="1124,259,1267,285"/>
+<area shape="rect" id="node38" href="$classomnetpp_1_1MaxRecorder.html" title="Listener for recording the maximum of signal values. NaN values in the input are ignored." alt="" coords="1141,309,1249,336"/>
+<area shape="rect" id="node39" href="$classomnetpp_1_1MeanRecorder.html" title="Listener for recording the (time&#45;weighted or unweighted) mean of signal values. NaN values in the inp..." alt="" coords="1137,360,1253,387"/>
+<area shape="rect" id="node40" href="$classomnetpp_1_1MinRecorder.html" title="Listener for recording the minimum of signal values. NaN values in the input are ignored." alt="" coords="1143,411,1247,437"/>
+<area shape="rect" id="node41" href="$classomnetpp_1_1StatisticsRecorder.html" title="Listener for recording signal values via a cStatistic. NaN values in the input are ignored,..." alt="" coords="1125,461,1265,488"/>
+<area shape="rect" id="node42" href="$classomnetpp_1_1SumRecorder.html" title="Listener for recording the sum of signal values. NaN values in the input are ignored." alt="" coords="1141,5,1250,32"/>
+<area shape="rect" id="node43" href="$classomnetpp_1_1TimeAverageRecorder.html" title="Listener for recording the time average of signal values. NaN values in the input denote intervals to..." alt="" coords="1112,56,1279,83"/>
+<area shape="rect" id="node44" href="$classomnetpp_1_1VectorRecorder.html" title="Listener for recording a signal to an output vector." alt="" coords="1135,107,1256,133"/>
+<area shape="rect" id="node46" href="$classomnetpp_1_1CountRecorder.html" title="Listener for recording the count of signal values. Signal values do not need to be numeric to be coun..." alt="" coords="1136,512,1255,539"/>
+<area shape="rect" id="node47" href="$classomnetpp_1_1cISimulationLifecycleListener.html" title="A callback interface for receiving notifications at various stages simulations, including setting up,..." alt="" coords="5,1616,219,1643"/>
+<area shape="rect" id="node48" href="$classomnetpp_1_1cIOutputScalarManager.html" title="Abstract base class for handling recording of output scalar data." alt="" coords="288,1895,463,1921"/>
+<area shape="rect" id="node49" href="$classomnetpp_1_1cIOutputVectorManager.html" title="Abstract base class for output vector managers for cEnvir." alt="" coords="288,1591,463,1617"/>
+<area shape="rect" id="node50" href="$classomnetpp_1_1cISnapshotManager.html" title="Abstract base class for snapshot managers." alt="" coords="300,1641,451,1668"/>
+<area shape="rect" id="node51" href="$classomnetpp_1_1cScheduler.html" title="Abstract class to encapsulate event scheduling." alt="" coords="329,1439,422,1465"/>
+<area shape="rect" id="node52" href="$classomnetpp_1_1cRealTimeScheduler.html" title="Real&#45;time scheduler class." alt="" coords="585,1439,740,1465"/>
+<area shape="rect" id="node53" href="$classomnetpp_1_1cSequentialScheduler.html" title="Event scheduler for sequential simulation." alt="" coords="581,1388,744,1415"/>
+<area shape="rect" id="node54" href="$classomnetpp_1_1cITimestampedValue.html" title="Interface for emitting timestamped values as signals, primarily for result recording." alt="" coords="33,1359,191,1385"/>
+<area shape="rect" id="node55" href="$classomnetpp_1_1cChannel_1_1MessageSentSignalValue.html" title="Signal value that accompanies the &quot;messageSent&quot; signal." alt="" coords="267,1322,484,1363"/>
+<area shape="rect" id="node56" href="$classomnetpp_1_1cTimestampedValue.html" title="A straightforward implementation of cITimestampedValue." alt="" coords="298,1388,453,1415"/>
+<area shape="rect" id="node57" href="$classomnetpp_1_1cObject.html" title="cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy...." alt="" coords="77,1768,147,1795"/>
+<area shape="rect" id="node58" href="$classomnetpp_1_1cCommBuffer.html" title="Buffer for the communications layer of parallel simulation." alt="" coords="320,1844,431,1871"/>
+<area shape="rect" id="node59" href="$classomnetpp_1_1cConfiguration.html" title="Represents the configuration, as accessed by the simulation kernel." alt="" coords="317,1945,433,1972"/>
+<area shape="rect" id="node61" href="$classomnetpp_1_1cExpression_1_1Context.html" title="Contextual information for evaluating the expression." alt="" coords="296,1996,455,2023"/>
+<area shape="rect" id="node62" href="$classomnetpp_1_1cFingerprintCalculator.html" title="This class defines the interface for fingerprint calculators." alt="" coords="293,2351,458,2377"/>
+<area shape="rect" id="node65" href="$classomnetpp_1_1cGate.html" title="Represents a module gate." alt="" coords="345,2199,405,2225"/>
+<area shape="rect" id="node66" href="$classomnetpp_1_1cIEventlogManager.html" title="Abstract base class for eventlog managers for cEnvir." alt="" coords="302,2148,449,2175"/>
+<area shape="rect" id="node67" href="$classomnetpp_1_1cIHistogramStrategy.html" title="Interface for histogram strategy classes. Histogram strategies encapsulate the task of setting up and..." alt="" coords="297,1793,453,1820"/>
+<area shape="rect" id="node72" href="$classomnetpp_1_1cModelChangeNotification.html" title="Common base class for data objects that accompany PRE_MODEL_CHANGE and POST_MODEL_CHANGE signals." alt="" coords="279,2908,472,2935"/>
+<area shape="rect" id="node100" href="$classomnetpp_1_1cNamedObject.html" title="Extends cObject with a name string. Also includes a &quot;flags&quot; member, with bits open for use by subclas..." alt="" coords="316,2097,435,2124"/>
+<area shape="rect" id="node212" href="$classomnetpp_1_1cPar.html" title="Represents a module or channel parameter." alt="" coords="351,1540,400,1567"/>
+<area shape="rect" id="node213" href="$classomnetpp_1_1cParsimCommunications.html" title="Basic communications layer for parallel simulation. It provides an abstraction layer above MPI,..." alt="" coords="284,1692,467,1719"/>
+<area shape="rect" id="node214" href="$classomnetpp_1_1cProperties.html" title="A collection of properties (cProperty)." alt="" coords="328,1743,423,1769"/>
+<area shape="rect" id="node215" href="$classomnetpp_1_1cRNG.html" title="Abstract interface for random number generator classes." alt="" coords="346,1489,405,1516"/>
+<area shape="rect" id="node60" href="$classomnetpp_1_1cConfigurationEx.html" title="Represents a configuration suitable for use with the Envir library." alt="" coords="597,1844,729,1871"/>
+<area shape="rect" id="node63" href="$classomnetpp_1_1cMultiFingerprintCalculator.html" title="This class calculates multiple fingerprints simultaneously." alt="" coords="563,2351,762,2377"/>
+<area shape="rect" id="node64" href="$classomnetpp_1_1cSingleFingerprintCalculator.html" title="This class calculates the &quot;fingerprint&quot; of a simulation." alt="" coords="560,2401,765,2428"/>
+<area shape="rect" id="node68" href="$classomnetpp_1_1cFixedRangeHistogramStrategy.html" title="Histogram strategy that sets up uniform bins over a predetermined interval. The number of bins and th..." alt="" coords="549,1793,776,1820"/>
+<area shape="rect" id="node69" href="$classomnetpp_1_1cPrecollectionBasedHistogramStrategy.html" title="Base class for histogram strategies that employ a precollection phase in order to gather input for se..." alt="" coords="552,1634,773,1675"/>
+<area shape="rect" id="node70" href="$classomnetpp_1_1cAutoRangeHistogramStrategy.html" title="A generic, very configurable histogram strategy that is meant to provide a good quality histogram for..." alt="" coords="841,1591,1064,1617"/>
+<area shape="rect" id="node71" href="$classomnetpp_1_1cDefaultHistogramStrategy.html" title="A strategy class used by the default setup of cHistogram. It is meant to provide a good quality unifo..." alt="" coords="853,1641,1053,1668"/>
+<area shape="rect" id="node73" href="$classomnetpp_1_1cPathChangeNotification.html" title="Base class for path change notifications." alt="" coords="572,3657,753,3684"/>
+<area shape="rect" id="node78" href="$classomnetpp_1_1cPostComponentInitializeNotification.html" title="Model change notification fired after a component is initialized." alt="" coords="569,3162,757,3203"/>
+<area shape="rect" id="node79" href="$classomnetpp_1_1cPostDisplayStringChangeNotification.html" title="Model change notification fired after a dispay string change." alt="" coords="566,3227,759,3269"/>
+<area shape="rect" id="node80" href="$classomnetpp_1_1cPostGateAddNotification.html" title="Model change notification fired after a gate or gate vector has been added to the module." alt="" coords="569,3293,757,3320"/>
+<area shape="rect" id="node81" href="$classomnetpp_1_1cPostGateConnectNotification.html" title="Model change notification fired after a gate has been connected." alt="" coords="555,3344,771,3371"/>
+<area shape="rect" id="node82" href="$classomnetpp_1_1cPostGateDeleteNotification.html" title="Model change notification fired after a gate has been deleted." alt="" coords="559,3395,766,3421"/>
+<area shape="rect" id="node83" href="$classomnetpp_1_1cPostGateDisconnectNotification.html" title="Model change notification fired after a gate is disconnected." alt="" coords="545,3445,780,3472"/>
+<area shape="rect" id="node84" href="$classomnetpp_1_1cPostGateVectorResizeNotification.html" title="Model change notification fired after a gate vector has been resized." alt="" coords="539,3496,786,3523"/>
+<area shape="rect" id="node85" href="$classomnetpp_1_1cPostModuleAddNotification.html" title="Model change notification fired just after a module is inserted into the network." alt="" coords="560,3547,765,3573"/>
+<area shape="rect" id="node86" href="$classomnetpp_1_1cPostModuleBuildNotification.html" title="Model change notification fired after a module is built." alt="" coords="556,2452,769,2479"/>
+<area shape="rect" id="node87" href="$classomnetpp_1_1cPostModuleDeleteNotification.html" title="Model change notification fired after a module has been deleted." alt="" coords="551,2503,774,2529"/>
+<area shape="rect" id="node88" href="$classomnetpp_1_1cPostModuleReparentNotification.html" title="Model change notification fired after a module has been reparented." alt="" coords="543,2553,782,2580"/>
+<area shape="rect" id="node89" href="$classomnetpp_1_1cPostParameterChangeNotification.html" title="Model change notification fired after a parameter change." alt="" coords="539,2604,787,2631"/>
+<area shape="rect" id="node90" href="$classomnetpp_1_1cPreDisplayStringChangeNotification.html" title="Model change notification fired just before a display string change." alt="" coords="532,2655,793,2681"/>
+<area shape="rect" id="node91" href="$classomnetpp_1_1cPreGateAddNotification.html" title="Model change notification fired just before a gate or gate vector is added to the module." alt="" coords="572,2705,753,2732"/>
+<area shape="rect" id="node92" href="$classomnetpp_1_1cPreGateConnectNotification.html" title="Model change notification fired just before a gate is connected." alt="" coords="558,2756,767,2783"/>
+<area shape="rect" id="node93" href="$classomnetpp_1_1cPreGateDeleteNotification.html" title="Model change notification fired just before a gate is deleted." alt="" coords="563,2807,762,2833"/>
+<area shape="rect" id="node94" href="$classomnetpp_1_1cPreGateDisconnectNotification.html" title="Model change notification fired just before a gate has been disconnected." alt="" coords="549,2857,777,2884"/>
+<area shape="rect" id="node95" href="$classomnetpp_1_1cPreGateVectorResizeNotification.html" title="Model change notification fired just before a gate vector is resized." alt="" coords="543,2908,783,2935"/>
+<area shape="rect" id="node96" href="$classomnetpp_1_1cPreModuleAddNotification.html" title="Model change notification fired just before a module is inserted into the network." alt="" coords="563,2959,762,2985"/>
+<area shape="rect" id="node97" href="$classomnetpp_1_1cPreModuleDeleteNotification.html" title="Model change notification fired just before a module is deleted." alt="" coords="555,3009,771,3036"/>
+<area shape="rect" id="node98" href="$classomnetpp_1_1cPreModuleReparentNotification.html" title="Model change notification fired just before a module is reparented." alt="" coords="547,3060,779,3087"/>
+<area shape="rect" id="node99" href="$classomnetpp_1_1cPreParameterChangeNotification.html" title="Model change notification fired just before a parameter change." alt="" coords="542,3111,783,3137"/>
+<area shape="rect" id="node74" href="$classomnetpp_1_1cPostPathCreateNotification.html" title="Model change notification fired after a connection path has been created." alt="" coords="851,3607,1054,3633"/>
+<area shape="rect" id="node75" href="$classomnetpp_1_1cPostPathCutNotification.html" title="Model change notification fired after a connection path has been cut." alt="" coords="861,3657,1044,3684"/>
+<area shape="rect" id="node76" href="$classomnetpp_1_1cPrePathCreateNotification.html" title="Model change notification fired just before a connection path is created." alt="" coords="855,3708,1051,3735"/>
+<area shape="rect" id="node77" href="$classomnetpp_1_1cPrePathCutNotification.html" title="Model change notification fired just before a connection path is cut." alt="" coords="865,3759,1040,3785"/>
+<area shape="rect" id="node101" href="$classomnetpp_1_1cOwnedObject.html" title="A cObject that keeps track of its owner. It serves as base class for many classes in the OMNeT++ libr..." alt="" coords="605,2199,721,2225"/>
+<area shape="rect" id="node202" href="$classomnetpp_1_1cProperty.html" title="Stores a (NED) property with its (possibly compound) value." alt="" coords="621,1945,705,1972"/>
+<area shape="rect" id="node203" href="$classomnetpp_1_1cRegistrationList.html" title="Implements a list or table of objects with qualified names." alt="" coords="597,2249,728,2276"/>
+<area shape="rect" id="node204" href="$classomnetpp_1_1cSimulation.html" title="Simulation manager class." alt="" coords="613,2300,712,2327"/>
+<area shape="rect" id="node205" href="$classomnetpp_1_1internal_1_1cParImpl.html" title="Internal class that stores values for cPar objects." alt="" coords="623,1996,702,2023"/>
+<area shape="rect" id="node102" href="$classomnetpp_1_1cArray.html" title="Vector&#45;like container for objects derived from cObject." alt="" coords="921,2351,985,2377"/>
+<area shape="rect" id="node103" href="$classomnetpp_1_1cCanvas.html" title="Provides a scene graph based 2D drawing API for modules." alt="" coords="914,2401,991,2428"/>
+<area shape="rect" id="node104" href="$classomnetpp_1_1cEnum.html" title="Provides string representation for enums." alt="" coords="919,2452,986,2479"/>
+<area shape="rect" id="node105" href="$classomnetpp_1_1cEvent.html" title="Represents an event in the discrete event simulator." alt="" coords="919,2604,986,2631"/>
+<area shape="rect" id="node108" href="$classomnetpp_1_1cFigure.html" title="A lightweight graphical object for cCanvas." alt="" coords="918,2792,987,2819"/>
+<area shape="rect" id="node129" href="$classomnetpp_1_1cFSM.html" title="Store the state of an FSM. This class is used in conjunction with the FSM_Switch() and other FSM_ mac..." alt="" coords="925,2843,981,2869"/>
+<area shape="rect" id="node130" href="$classomnetpp_1_1cFutureEventSet.html" title="Abstract base class for the future event set (FES), a central data structure for discrete event simul..." alt="" coords="889,2893,1017,2920"/>
+<area shape="rect" id="node132" href="$classomnetpp_1_1cMsgPar.html" title="Allows a value (string, bool, double, etc) to be attached to a cMessage object." alt="" coords="915,2944,991,2971"/>
+<area shape="rect" id="node133" href="$classomnetpp_1_1cNoncopyableOwnedObject.html" title="Base class for cOwnedObject&#45;based classes that do not wish to support assignment and duplication." alt="" coords="852,3556,1053,3583"/>
+<area shape="rect" id="node165" href="$classomnetpp_1_1cOsgCanvas.html" title="Wraps an OpenSceneGraph scene, allowing 3D visualization in graphical user interfaces that support it..." alt="" coords="901,2047,1004,2073"/>
+<area shape="rect" id="node166" href="$classomnetpp_1_1cQueue.html" title="Queue class for objects derived from cObject." alt="" coords="917,2097,988,2124"/>
+<area shape="rect" id="node168" href="$classomnetpp_1_1cRandom.html" title="Abstract interface for random variate generator classes." alt="" coords="911,2148,994,2175"/>
+<area shape="rect" id="node196" href="$classomnetpp_1_1cTopology.html" title="Routing support. The cTopology class was designed primarily to support routing in telecommunication o..." alt="" coords="909,2199,996,2225"/>
+<area shape="rect" id="node197" href="$classomnetpp_1_1cValueContainer.html" title="Common base class for cValue&#45;based containers." alt="" coords="889,2249,1017,2276"/>
+<area shape="rect" id="node201" href="$classomnetpp_1_1cXMLElement.html" title="Represents an XML element in an XML configuration file." alt="" coords="897,2300,1008,2327"/>
+<area shape="rect" id="node106" href="$classomnetpp_1_1cMessage.html" title="The message class in OMNeT++. cMessage objects may represent events, messages, jobs or other entities..." alt="" coords="1152,2691,1239,2717"/>
+<area shape="rect" id="node107" href="$classomnetpp_1_1cPacket.html" title="A subclass of cMessage to represent packets, frames, datagrams, application messages,..." alt="" coords="1414,2660,1485,2687"/>
+<area shape="rect" id="node109" href="$classomnetpp_1_1cAbstractImageFigure.html" title="Abstract base class for figures that display an image." alt="" coords="1113,2843,1277,2869"/>
+<area shape="rect" id="node113" href="$classomnetpp_1_1cAbstractLineFigure.html" title="Common base class for line figures." alt="" coords="1120,2893,1271,2920"/>
+<area shape="rect" id="node117" href="$classomnetpp_1_1cAbstractShapeFigure.html" title="Abstract base class for various shapes." alt="" coords="1114,3065,1277,3092"/>
+<area shape="rect" id="node124" href="$classomnetpp_1_1cAbstractTextFigure.html" title="Abstract base class for figures that display text. Text may be multi&#45;line." alt="" coords="1120,3156,1271,3183"/>
+<area shape="rect" id="node127" href="$classomnetpp_1_1cGroupFigure.html" title="A figure with the sole purpose of grouping its children, and no visual representation." alt="" coords="1141,2741,1249,2768"/>
+<area shape="rect" id="node128" href="$classomnetpp_1_1cPanelFigure.html" title="Sets up an axis&#45;aligned, unscaled coordinate system for children, canceling the effect of any transfo..." alt="" coords="1143,2792,1247,2819"/>
+<area shape="rect" id="node110" href="$classomnetpp_1_1cImageFigure.html" title="A figure that displays an image, typically an icon or a background image, loaded from the OMNeT++ ima..." alt="" coords="1394,2761,1505,2788"/>
+<area shape="rect" id="node112" href="$classomnetpp_1_1cPixmapFigure.html" title="A figure that displays an image that can be manipulated programmatically." alt="" coords="1390,2711,1509,2737"/>
+<area shape="rect" id="node111" href="$classomnetpp_1_1cIconFigure.html" title="A figure that displays an image, typically an icon or a background image, loaded from the OMNeT++ ima..." alt="" coords="1647,2761,1743,2788"/>
+<area shape="rect" id="node114" href="$classomnetpp_1_1cArcFigure.html" title="A figure that displays an arc." alt="" coords="1404,2812,1495,2839"/>
+<area shape="rect" id="node115" href="$classomnetpp_1_1cLineFigure.html" title="A figure that displays a straight line segment." alt="" coords="1401,2863,1497,2889"/>
+<area shape="rect" id="node116" href="$classomnetpp_1_1cPolylineFigure.html" title="A figure that displays a line that consists of multiple connecting straight line segments or of a sin..." alt="" coords="1389,2913,1510,2940"/>
+<area shape="rect" id="node118" href="$classomnetpp_1_1cOvalFigure.html" title="A figure that draws a circle or ellipse." alt="" coords="1400,3116,1499,3143"/>
+<area shape="rect" id="node119" href="$classomnetpp_1_1cPathFigure.html" title="A figure that displays a &quot;path&quot;, a complex shape or line modeled after SVG paths." alt="" coords="1401,3167,1498,3193"/>
+<area shape="rect" id="node120" href="$classomnetpp_1_1cPieSliceFigure.html" title="A figure that displays a pie slice, that is, a section of an axis&#45;aligned disc or filled ellipse." alt="" coords="1389,3217,1509,3244"/>
+<area shape="rect" id="node121" href="$classomnetpp_1_1cPolygonFigure.html" title="A figure that displays a (closed) polygon, determined by a sequence of points." alt="" coords="1389,2964,1510,2991"/>
+<area shape="rect" id="node122" href="$classomnetpp_1_1cRectangleFigure.html" title="A figure that displays a rectangle, with optionally rounded corners." alt="" coords="1382,3015,1517,3041"/>
+<area shape="rect" id="node123" href="$classomnetpp_1_1cRingFigure.html" title="A figure that displays a ring, with explicitly controllable inner/outer radii." alt="" coords="1400,3065,1499,3092"/>
+<area shape="rect" id="node125" href="$classomnetpp_1_1cLabelFigure.html" title="A figure that displays text which is unaffected by zooming or transformations, except for its positio..." alt="" coords="1397,3319,1501,3345"/>
+<area shape="rect" id="node126" href="$classomnetpp_1_1cTextFigure.html" title="A figure that displays text which is affected by zooming and transformations." alt="" coords="1401,3268,1497,3295"/>
+<area shape="rect" id="node131" href="$classomnetpp_1_1cEventHeap.html" title="The default, binary heap based implementation of the future event set." alt="" coords="1145,3207,1245,3233"/>
+<area shape="rect" id="node134" href="$classomnetpp_1_1cClassDescriptor.html" title="Abstract base class for class descriptors." alt="" coords="1130,3708,1261,3735"/>
+<area shape="rect" id="node135" href="$classomnetpp_1_1cComponentType.html" title="Common base class for cModuleType and cChannelType." alt="" coords="1128,3811,1263,3837"/>
+<area shape="rect" id="node138" href="$classomnetpp_1_1cConfigOption.html" title="Describes a configuration option." alt="" coords="1139,3861,1252,3888"/>
+<area shape="rect" id="node139" href="$classomnetpp_1_1cMessagePrinter.html" title="Base class for message printers." alt="" coords="1130,3912,1261,3939"/>
+<area shape="rect" id="node141" href="$classomnetpp_1_1cNedFunction.html" title="Registration class for extending NED with arbitrary new functions." alt="" coords="1140,3303,1251,3329"/>
+<area shape="rect" id="node142" href="$classomnetpp_1_1cNedMathFunction.html" title="Registration class for extending NED with new mathematical functions." alt="" coords="1124,3353,1267,3380"/>
+<area shape="rect" id="node143" href="$classomnetpp_1_1cObjectFactory.html" title="The class behind the createOne() function and the Register_Class() macro." alt="" coords="1136,3404,1255,3431"/>
+<area shape="rect" id="node144" href="$classomnetpp_1_1cOutVector.html" title="Responsible for recording an &quot;output vector&quot; into the simulation results file. An output vector is a ..." alt="" coords="1149,3455,1242,3481"/>
+<area shape="rect" id="node145" href="$classomnetpp_1_1cResultFilterType.html" title="Registers a cResultFilter." alt="" coords="1129,3505,1262,3532"/>
+<area shape="rect" id="node146" href="$classomnetpp_1_1cResultRecorderType.html" title="Registers a cResultRecorder." alt="" coords="1116,3556,1275,3583"/>
+<area shape="rect" id="node147" href="$classomnetpp_1_1cSoftOwner.html" title="Internal class, used as a base class for modules and channels. It is not intended for subclassing out..." alt="" coords="1147,3607,1243,3633"/>
+<area shape="rect" id="node155" href="$classomnetpp_1_1cWatchBase.html" title="Helper class to make primitive types and non&#45;cOwnedObject objects inspectable in Qtenv...." alt="" coords="1145,3657,1246,3684"/>
+<area shape="rect" id="node136" href="$classomnetpp_1_1cChannelType.html" title="Abstract base class for creating a channel of a given type." alt="" coords="1393,3927,1505,3953"/>
+<area shape="rect" id="node137" href="$classomnetpp_1_1cModuleType.html" title="Abstract class for creating a module of a specific type." alt="" coords="1396,3876,1503,3903"/>
+<area shape="rect" id="node140" href="$classomnetpp_1_1cDefaultMessagePrinter.html" title="A default message printer that displays the ID, kind, and length (for packets) of the message." alt="" coords="1360,3977,1539,4004"/>
+<area shape="rect" id="node148" href="$classomnetpp_1_1cComponent.html" title="Common base for module and channel classes." alt="" coords="1397,3369,1501,3396"/>
+<area shape="rect" id="node149" href="$classomnetpp_1_1cChannel.html" title="Base class for channels." alt="" coords="1654,3400,1737,3427"/>
+<area shape="rect" id="node153" href="$classomnetpp_1_1cModule.html" title="This class represents modules in the simulation." alt="" coords="1657,3337,1734,3364"/>
+<area shape="rect" id="node150" href="$classomnetpp_1_1cDatarateChannel.html" title="A transmission channel model that supports propagation delay, transmission duration computed from a d..." alt="" coords="1861,3375,1999,3401"/>
+<area shape="rect" id="node151" href="$classomnetpp_1_1cDelayChannel.html" title="Channel with propagation delay." alt="" coords="1870,3425,1990,3452"/>
+<area shape="rect" id="node152" href="$classomnetpp_1_1cIdealChannel.html" title="Channel with zero propagation delay, zero transmission delay (infinite datarate), and always enabled." alt="" coords="1873,3476,1987,3503"/>
+<area shape="rect" id="node154" href="$classomnetpp_1_1cSimpleModule.html" title="Base class for all simple module classes." alt="" coords="1869,3324,1991,3351"/>
+<area shape="rect" id="node156" href="$classomnetpp_1_1cComputedExpressionWatch.html" title="Watch class for computed expressions. The watch will display the result of calling an encapsulated fu..." alt="" coords="1327,3420,1572,3447"/>
+<area shape="rect" id="node157" href="$classomnetpp_1_1cGenericAssignableWatch.html" title="Template Watch class, for any type that supports operator&lt;&lt;, and operator&gt;&gt; for assignment." alt="" coords="1335,3471,1563,3497"/>
+<area shape="rect" id="node158" href="$classomnetpp_1_1cGenericReadonlyWatch.html" title="Template Watch class, for any type that supports operator&lt;&lt;." alt="" coords="1340,3521,1559,3548"/>
+<area shape="rect" id="node159" href="$classomnetpp_1_1cWatch__bool.html" title="Watch class, specifically for bool." alt="" coords="1397,3572,1501,3599"/>
+<area shape="rect" id="node160" href="$classomnetpp_1_1cWatch__char.html" title="Watch class, specifically for char." alt="" coords="1397,3623,1501,3649"/>
+<area shape="rect" id="node161" href="$classomnetpp_1_1cWatch__cObject.html" title="Watch class, specifically for objects subclassed from cObject." alt="" coords="1387,3673,1512,3700"/>
+<area shape="rect" id="node162" href="$classomnetpp_1_1cWatch__cObjectPtr.html" title="Watch class, specifically for pointers to objects subclassed from cObject." alt="" coords="1378,3724,1521,3751"/>
+<area shape="rect" id="node163" href="$classomnetpp_1_1cWatch__stdstring.html" title="Watch class, specifically for std::string." alt="" coords="1383,3775,1516,3801"/>
+<area shape="rect" id="node164" href="$classomnetpp_1_1cWatch__uchar.html" title="Watch class, specifically for unsigned char." alt="" coords="1393,3825,1505,3852"/>
+<area shape="rect" id="node167" href="$classomnetpp_1_1cPacketQueue.html" title="A queue class specialized for cPacket objects." alt="" coords="1139,1424,1252,1451"/>
+<area shape="rect" id="node169" href="$classomnetpp_1_1cBernoulli.html" title="Generates random numbers that are the results of Bernoulli trials." alt="" coords="1152,1981,1239,2008"/>
+<area shape="rect" id="node170" href="$classomnetpp_1_1cBeta.html" title="Generates random numbers from the beta distribution." alt="" coords="1166,2032,1225,2059"/>
+<area shape="rect" id="node171" href="$classomnetpp_1_1cBinomial.html" title="Generates random numbers from the binomial distribution." alt="" coords="1152,2083,1239,2109"/>
+<area shape="rect" id="node172" href="$classomnetpp_1_1cCauchy.html" title="Generates random numbers from the Cauchy distribution." alt="" coords="1157,2133,1234,2160"/>
+<area shape="rect" id="node173" href="$classomnetpp_1_1cChiSquare.html" title="Generates random numbers from the chi&#45;square distribution." alt="" coords="1148,2184,1243,2211"/>
+<area shape="rect" id="node174" href="$classomnetpp_1_1cErlang.html" title="Generates random numbers from the Erlang distribution." alt="" coords="1160,2235,1231,2261"/>
+<area shape="rect" id="node175" href="$classomnetpp_1_1cExponential.html" title="Generates random numbers from the exponential distribution." alt="" coords="1142,2285,1249,2312"/>
+<area shape="rect" id="node176" href="$classomnetpp_1_1cGamma.html" title="Generates random numbers from the gamma distribution." alt="" coords="1155,2336,1236,2363"/>
+<area shape="rect" id="node177" href="$classomnetpp_1_1cGeometric.html" title="Generates random numbers from the geometric distribution." alt="" coords="1147,2387,1244,2413"/>
+<area shape="rect" id="node178" href="$classomnetpp_1_1cIntUniform.html" title="Generates random numbers from the discrete uniform distribution." alt="" coords="1146,2437,1245,2464"/>
+<area shape="rect" id="node179" href="$classomnetpp_1_1cIntUniformExcl.html" title="Generates random numbers from the discrete uniform distribution." alt="" coords="1132,2488,1259,2515"/>
+<area shape="rect" id="node180" href="$classomnetpp_1_1cNegBinomial.html" title="Generates random numbers from the negative binomial distribution." alt="" coords="1139,1475,1252,1501"/>
+<area shape="rect" id="node181" href="$classomnetpp_1_1cNormal.html" title="Generates random numbers from the normal distribution." alt="" coords="1157,1525,1234,1552"/>
+<area shape="rect" id="node182" href="$classomnetpp_1_1cParetoShifted.html" title="Generates random numbers from the shifted Pareto distribution." alt="" coords="1138,1576,1253,1603"/>
+<area shape="rect" id="node183" href="$classomnetpp_1_1cPoisson.html" title="Generates random numbers from the Poisson distribution." alt="" coords="1156,1627,1235,1653"/>
+<area shape="rect" id="node184" href="$classomnetpp_1_1cStatistic.html" title="cStatistic is an abstract class for computing statistical properties of a random variable." alt="" coords="1154,1677,1237,1704"/>
+<area shape="rect" id="node191" href="$classomnetpp_1_1cStudentT.html" title="Generates random numbers from Student&#39;s T distribution." alt="" coords="1152,1728,1239,1755"/>
+<area shape="rect" id="node192" href="$classomnetpp_1_1cTriang.html" title="Generates random numbers from the triangular distribution." alt="" coords="1161,1779,1229,1805"/>
+<area shape="rect" id="node193" href="$classomnetpp_1_1cTruncNormal.html" title="Generates random numbers from the truncated normal distribution." alt="" coords="1140,1829,1251,1856"/>
+<area shape="rect" id="node194" href="$classomnetpp_1_1cUniform.html" title="Generates random numbers from the uniform distribution." alt="" coords="1154,1880,1237,1907"/>
+<area shape="rect" id="node195" href="$classomnetpp_1_1cWeibull.html" title="Generates random numbers from the Weibull distribution." alt="" coords="1157,1931,1234,1957"/>
+<area shape="rect" id="node185" href="$classomnetpp_1_1cStdDev.html" title="Statistics class to collect min, max, mean, and standard deviation." alt="" coords="1411,1677,1487,1704"/>
+<area shape="rect" id="node186" href="$classomnetpp_1_1cAbstractHistogram.html" title="Interface and base class for histogram&#45;like density estimation classes." alt="" coords="1620,1677,1771,1704"/>
+<area shape="rect" id="node187" href="$classomnetpp_1_1cHistogram.html" title="Generic histogram class, capable of representing both unweighted and weighted distributions...." alt="" coords="1881,1677,1979,1704"/>
+<area shape="rect" id="node188" href="$classomnetpp_1_1cPrecollectionBasedDensityEst.html" title="Base class for histogram&#45;like density estimation classes." alt="" coords="1819,1728,2041,1755"/>
+<area shape="rect" id="node190" href="$classomnetpp_1_1cPSquare.html" title="Implements the P2 algorithm, which calculates quantile values without storing the observations...." alt="" coords="1889,1627,1971,1653"/>
+<area shape="rect" id="node189" href="$classomnetpp_1_1cKSplit.html" title="Implements k&#45;split, an adaptive histogram&#45;like density estimation algorithm. During result collection..." alt="" coords="2089,1728,2156,1755"/>
+<area shape="rect" id="node198" href="$classomnetpp_1_1cValueArray.html" title="Container class based on std::vector&lt;cValue&gt; objects." alt="" coords="1145,2589,1245,2616"/>
+<area shape="rect" id="node199" href="$classomnetpp_1_1cValueHolder.html" title="cOwnedObject&#45;based container/wrapper to hold a single cValue." alt="" coords="1141,2640,1249,2667"/>
+<area shape="rect" id="node200" href="$classomnetpp_1_1cValueMap.html" title="Key&#45;value container class based on std::map&lt;std::string,cValue&gt;." alt="" coords="1149,2539,1242,2565"/>
+<area shape="rect" id="node206" href="$classomnetpp_1_1internal_1_1cBoolParImpl.html" title="A cParImpl subclass that stores a module/channel parameter of the type bool." alt="" coords="899,1793,1006,1820"/>
+<area shape="rect" id="node207" href="$classomnetpp_1_1internal_1_1cDoubleParImpl.html" title="A cParImpl subclass that stores a module/channel parameter of the type double." alt="" coords="891,1844,1015,1871"/>
+<area shape="rect" id="node208" href="$classomnetpp_1_1internal_1_1cIntParImpl.html" title="A cParImpl subclass that stores an integer module/channel parameter." alt="" coords="905,1895,1000,1921"/>
+<area shape="rect" id="node209" href="$classomnetpp_1_1internal_1_1cObjectParImpl.html" title="A cParImpl subclass that stores a module/channel parameter of type &quot;object&quot;." alt="" coords="893,1996,1013,2023"/>
+<area shape="rect" id="node210" href="$classomnetpp_1_1internal_1_1cStringParImpl.html" title="A cParImpl subclass that stores a module/channel parameter of the type string." alt="" coords="895,1692,1011,1719"/>
+<area shape="rect" id="node211" href="$classomnetpp_1_1internal_1_1cXMLParImpl.html" title="A cParImpl subclass that stores a module/channel parameter of type XML." alt="" coords="899,1743,1006,1769"/>
+<area shape="rect" id="node216" href="$classomnetpp_1_1cLCG32.html" title="Implements a 32&#45;bit (2^31&#45;2 cycle length) linear congruential random number generator." alt="" coords="627,1540,698,1567"/>
+<area shape="rect" id="node217" href="$classomnetpp_1_1cMersenneTwister.html" title="Wraps the Mersenne Twister RNG by Makoto Matsumoto and Takuji Nishimura." alt="" coords="593,1489,732,1516"/>
+<area shape="rect" id="node218" href="$classomnetpp_1_1noncopyable.html" title="Utility class, to make it impossible to call the operator= and copy constructor of any class derived ..." alt="" coords="59,2275,165,2301"/>
+<area shape="rect" id="node219" href="$classomnetpp_1_1cHasher.html" title="Utility class to calculate the hash of some data." alt="" coords="338,2959,413,2985"/>
+<area shape="rect" id="node220" href="$classomnetpp_1_1cMatchExpression.html" title="Decides whether an object matches an expression." alt="" coords="305,3009,445,3036"/>
+</map>

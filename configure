@@ -1,0 +1,62 @@
+#!/usr/bin/env bash
+
+set -e
+
+INSTALL_OMNETPP=0
+
+print_help() {
+  echo "Usage: $0 [--install-omnetpp] [--help]"
+  echo "  --install-omnetpp   Run ./install instead of ./configure for OMNeT++."
+  echo "  --help              Show this help message and exit."
+}
+
+while [[ $# -gt 0 ]]; do
+  case $1 in
+  --install-omnetpp)
+      INSTALL_OMNETPP=1
+      shift # past argument
+      ;;
+  --help)
+    print_help
+    exit 0
+    ;;
+    *)
+      POSITIONAL_ARGS+=("$1") # save positional arg
+      shift # past argument
+      ;;
+  esac
+done
+
+
+pushd omnetpp
+. setenv
+
+if [ "$INSTALL_OMNETPP" -eq 1 ]; then
+    echo "Install mode"
+	./install.sh
+else
+	echo "Configure mode"
+    ./configure
+fi
+
+popd
+
+echo "Building grpc"
+make -j$(nproc)
+
+echo "Building liveOppServation"
+
+pushd liveOppServation
+. setenv
+./configure
+make -j$(nproc)
+
+popd
+
+echo "Building liveOppServationFrontend"
+pushd liveOppServationFrontend
+$(poetry env activate)
+poetry update
+popd
+
+echo "Configuration and build complete."

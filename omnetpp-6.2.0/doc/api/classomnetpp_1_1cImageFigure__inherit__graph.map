@@ -1,0 +1,6 @@
+<map id="cImageFigure" name="cImageFigure">
+<area shape="rect" id="node1" title="A figure that displays an image, typically an icon or a background image, loaded from the OMNeT++ ima..." alt="" coords="32,155,143,181"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cIconFigure.html" title="A figure that displays an image, typically an icon or a background image, loaded from the OMNeT++ ima..." alt="" coords="39,229,135,256"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cAbstractImageFigure.html" title="Abstract base class for figures that display an image." alt="" coords="5,80,169,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cFigure.html" title="A lightweight graphical object for cCanvas." alt="" coords="53,5,122,32"/>
+</map>

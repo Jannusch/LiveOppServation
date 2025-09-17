@@ -4,13 +4,18 @@ src/*.dll
 src/*.dylib
 src/**/*_m.h
 src/**/*_m.cc
+src/out/
+src/bin/
+
+.cache/
+bin/
 
 doc/doxy
 doc/neddoc
 
 /bin/liveOppServation_run
 
-/out
+/out/*
 
 examples/**/results
 examples/**/.tkenvrc

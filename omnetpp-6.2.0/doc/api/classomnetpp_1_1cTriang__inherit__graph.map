@@ -1,0 +1,5 @@
+<map id="cTriang" name="cTriang">
+<area shape="rect" id="node1" title="Generates random numbers from the triangular distribution." alt="" coords="29,155,97,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cRandom.html" title="Abstract interface for random variate generator classes." alt="" coords="22,80,105,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cOwnedObject.html" title="A cObject that keeps track of its owner. It serves as base class for many classes in the OMNeT++ libr..." alt="" coords="5,5,121,32"/>
+</map>

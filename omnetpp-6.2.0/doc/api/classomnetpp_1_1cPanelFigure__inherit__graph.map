@@ -1,0 +1,5 @@
+<map id="cPanelFigure" name="cPanelFigure">
+<area shape="rect" id="node1" title="Sets up an axis&#45;aligned, unscaled coordinate system for children, canceling the effect of any transfo..." alt="" coords="11,155,115,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cFigure.html" title="A lightweight graphical object for cCanvas." alt="" coords="29,80,98,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cOwnedObject.html" title="A cObject that keeps track of its owner. It serves as base class for many classes in the OMNeT++ libr..." alt="" coords="5,5,121,32"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="cException" name="cException">
+<area shape="rect" id="node1" title="Exception class." alt="" coords="311,5,404,32"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cDeleteModuleException.html" title="Thrown from deleteModule() when the active activity() module is about to be deleted,..." alt="" coords="5,80,189,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cRuntimeError.html" title="Thrown when the simulation kernel or other components detect a runtime error." alt="" coords="213,80,328,107"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cStackCleanupException.html" title="Used internally when deleting an activity() simple module." alt="" coords="353,80,535,107"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cTerminationException.html" title="Thrown when the simulation is completed without error." alt="" coords="560,80,731,107"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="cStringParImpl" name="cStringParImpl">
+<area shape="rect" id="node1" title="A cParImpl subclass that stores a module/channel parameter of the type string." alt="" coords="7,155,123,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1internal_1_1cParImpl.html" title="Internal class that stores values for cPar objects." alt="" coords="25,80,104,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cNamedObject.html" title="Extends cObject with a name string. Also includes a &quot;flags&quot; member, with bits open for use by subclas..." alt="" coords="5,5,124,32"/>
+</map>

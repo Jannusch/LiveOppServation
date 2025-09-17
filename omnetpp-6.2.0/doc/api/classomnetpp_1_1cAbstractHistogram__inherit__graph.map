@@ -1,0 +1,9 @@
+<map id="cAbstractHistogram" name="cAbstractHistogram">
+<area shape="rect" id="node1" title="Interface and base class for histogram&#45;like density estimation classes." alt="" coords="163,155,313,181"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cHistogram.html" title="Generic histogram class, capable of representing both unweighted and weighted distributions...." alt="" coords="5,229,103,256"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cPrecollectionBasedDensityEst.html" title="Base class for histogram&#45;like density estimation classes." alt="" coords="127,229,349,256"/>
+<area shape="rect" id="node7" href="$classomnetpp_1_1cPSquare.html" title="Implements the P2 algorithm, which calculates quantile values without storing the observations...." alt="" coords="373,229,455,256"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cStdDev.html" title="Statistics class to collect min, max, mean, and standard deviation." alt="" coords="200,80,276,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cStatistic.html" title="cStatistic is an abstract class for computing statistical properties of a random variable." alt="" coords="197,5,279,32"/>
+<area shape="rect" id="node6" href="$classomnetpp_1_1cKSplit.html" title="Implements k&#45;split, an adaptive histogram&#45;like density estimation algorithm. During result collection..." alt="" coords="205,304,271,331"/>
+</map>

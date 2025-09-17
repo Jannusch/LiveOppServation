@@ -1,0 +1,6 @@
+<map id="cPrecollectionBasedDensityEst" name="cPrecollectionBasedDensityEst">
+<area shape="rect" id="node1" title="Base class for histogram&#45;like density estimation classes." alt="" coords="5,155,228,181"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cKSplit.html" title="Implements k&#45;split, an adaptive histogram&#45;like density estimation algorithm. During result collection..." alt="" coords="83,229,150,256"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cAbstractHistogram.html" title="Interface and base class for histogram&#45;like density estimation classes." alt="" coords="41,80,192,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cStdDev.html" title="Statistics class to collect min, max, mean, and standard deviation." alt="" coords="79,5,155,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="cProperty" name="cProperty">
+<area shape="rect" id="node1" title="Stores a (NED) property with its (possibly compound) value." alt="" coords="23,155,107,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cNamedObject.html" title="Extends cObject with a name string. Also includes a &quot;flags&quot; member, with bits open for use by subclas..." alt="" coords="5,80,124,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cObject.html" title="cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy...." alt="" coords="29,5,100,32"/>
+</map>

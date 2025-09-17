@@ -1,0 +1,444 @@
+<!-- HTML header for doxygen 1.9.4-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OMNeT++ API: ctopology.h Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/omnetpp/omnetpp" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+  <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>  
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">OMNeT++ API<span id="projectnumber">&#160;6.2.0</span>
+   </div>
+   <div id="projectbrief">Discrete Event Simulation Library</div>
+  </td>
+ </tr>
+   <!--BEGIN FULL_SIDEBAR-->
+   <tr><td colspan="2">        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td></tr>
+   <!--END FULL_SIDEBAR-->
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('ctopology_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ctopology.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//==========================================================================</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  CTOPOLOGY.H - part of</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//                     OMNeT++/OMNEST</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//            Discrete System Simulation in C++</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//==========================================================================</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/*--------------------------------------------------------------*</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">  Copyright (C) 1992-2017 Andras Varga</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">  Copyright (C) 2006-2017 OpenSim Ltd.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">  This file is distributed WITHOUT ANY WARRANTY. See the file</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">  `license&#39; for details on this and other legal matters.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*--------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifndef __OMNETPP_CTOPOLOGY_H</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define __OMNETPP_CTOPOLOGY_H</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;cownedobject.h&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;csimulation.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;cmodule.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;cgate.h&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span>omnetpp {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class </span>cPar;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// not all compilers define INFINITY (gcc does)</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifndef INFINITY</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define INFINITY HUGE_VAL</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology.html">   55</a></span>&#160;<span class="keyword">class </span>SIM_API <a class="code" href="classomnetpp_1_1cTopology.html">cTopology</a> : <span class="keyword">public</span> <a class="code" href="classomnetpp_1_1cOwnedObject.html">cOwnedObject</a></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">class </span><a class="code" href="classomnetpp_1_1cTopology_1_1Link.html">Link</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">class </span><a class="code" href="classomnetpp_1_1cTopology_1_1LinkIn.html">LinkIn</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">class </span><a class="code" href="classomnetpp_1_1cTopology_1_1LinkOut.html">LinkOut</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Node.html">   65</a></span>&#160;    <span class="keyword">class </span>SIM_API <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html">Node</a></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classomnetpp_1_1cTopology.html">cTopology</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordtype">int</span> moduleId;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">double</span> weight;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">bool</span> enabled;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        std::vector&lt;Link*&gt; inLinks;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        std::vector&lt;Link*&gt; outLinks;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="comment">// variables used by the shortest-path algorithms</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">double</span> dist;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="classomnetpp_1_1cTopology_1_1Link.html">Link</a> *outPath;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Node.html#a42b4652ff50a5c824e5d8449a12df382">   84</a></span>&#160;        <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html#a42b4652ff50a5c824e5d8449a12df382">Node</a>(<span class="keywordtype">int</span> moduleId=-1) {this-&gt;moduleId=moduleId; weight=0; enabled=<span class="keyword">true</span>; dist=INFINITY; outPath=<span class="keyword">nullptr</span>;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classomnetpp_1_1cTopology_1_1Node.html">Node</a>() {}</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Node.html#ad57430d5274b39a292df7247a252b5b5">   93</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html#ad57430d5274b39a292df7247a252b5b5">getModuleId</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> moduleId;}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Node.html#a2d434f37732b4a993432532b42c1714b">   98</a></span>&#160;        <a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *<a class="code" href="classomnetpp_1_1cTopology_1_1Node.html#a2d434f37732b4a993432532b42c1714b">getModule</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> <a class="code" href="group__Misc.html#ga9e1dcc79e9e31ef10df26a0e94d15b72">getSimulation</a>()-&gt;<a class="code" href="classomnetpp_1_1cSimulation.html#a4ca7929dc35933f1605becdf1f241023">getModule</a>(moduleId);}</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Node.html#a021a96f005d2d318d4cdf05f227c8089">  104</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html#a021a96f005d2d318d4cdf05f227c8089">getWeight</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> weight;}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Node.html#a3c4eccda2af9562108b034562e1cdc8e">  110</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html#a3c4eccda2af9562108b034562e1cdc8e">setWeight</a>(<span class="keywordtype">double</span> d)  {weight=d;}</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Node.html#aacb819fb241851fd9fc045271baa4034">  116</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html#aacb819fb241851fd9fc045271baa4034">isEnabled</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> enabled;}</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Node.html#a486f22824bd83c5308a0d70ffac6f758">  122</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html#a486f22824bd83c5308a0d70ffac6f758">enable</a>()  {enabled=<span class="keyword">true</span>;}</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Node.html#a8cfbbe53c1cf6e3054736daea3044c0f">  128</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html#a8cfbbe53c1cf6e3054736daea3044c0f">disable</a>()  {enabled=<span class="keyword">false</span>;}</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Node.html#afbd7654c30e01c3be1935170b7c4ce91">  137</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html#afbd7654c30e01c3be1935170b7c4ce91">getNumInLinks</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> inLinks.size();}</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <a class="code" href="classomnetpp_1_1cTopology_1_1LinkIn.html">LinkIn</a> *getLinkIn(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Node.html#a77970774ec2bead5383bb43bc6f35061">  147</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html#a77970774ec2bead5383bb43bc6f35061">getNumOutLinks</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> outLinks.size();}</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <a class="code" href="classomnetpp_1_1cTopology_1_1LinkOut.html">LinkOut</a> *getLinkOut(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Node.html#a6f0ec3e3bb83f62551a33225e69a7f5a">  161</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html#a6f0ec3e3bb83f62551a33225e69a7f5a">getDistanceToTarget</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> dist;}</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Node.html#ab6677e3937da3eb4545de51473fd7b49">  167</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html#ab6677e3937da3eb4545de51473fd7b49">getNumPaths</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> outPath?1:0;}</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Node.html#a7ffaba853fe05b741f4e7df4772ec3f6">  174</a></span>&#160;        <a class="code" href="classomnetpp_1_1cTopology_1_1LinkOut.html">LinkOut</a> *<a class="code" href="classomnetpp_1_1cTopology_1_1Node.html#a7ffaba853fe05b741f4e7df4772ec3f6">getPath</a>(<span class="keywordtype">int</span>)<span class="keyword"> const  </span>{<span class="keywordflow">return</span> (<a class="code" href="classomnetpp_1_1cTopology_1_1LinkOut.html">LinkOut</a> *)outPath;}</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    };</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Link.html">  182</a></span>&#160;    <span class="keyword">class </span>SIM_API <a class="code" href="classomnetpp_1_1cTopology_1_1Link.html">Link</a></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classomnetpp_1_1cTopology.html">cTopology</a>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html">Node</a> *srcNode;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordtype">int</span> srcGateId;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html">Node</a> *destNode;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordtype">int</span> destGateId;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordtype">double</span> weight;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordtype">bool</span> enabled;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Link.html#af16a171cd67ab9d1b2e76a2efa7abd89">  198</a></span>&#160;        <a class="code" href="classomnetpp_1_1cTopology_1_1Link.html#af16a171cd67ab9d1b2e76a2efa7abd89">Link</a>(<span class="keywordtype">double</span> weight=1) {srcNode=destNode=<span class="keyword">nullptr</span>; srcGateId=destGateId=-1; this-&gt;weight=weight; enabled=<span class="keyword">true</span>;}</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classomnetpp_1_1cTopology_1_1Link.html">Link</a>() {}</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Link.html#a021a96f005d2d318d4cdf05f227c8089">  205</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Link.html#a021a96f005d2d318d4cdf05f227c8089">getWeight</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> weight;}</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Link.html#a3c4eccda2af9562108b034562e1cdc8e">  211</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Link.html#a3c4eccda2af9562108b034562e1cdc8e">setWeight</a>(<span class="keywordtype">double</span> d)  {weight=d;}</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Link.html#aacb819fb241851fd9fc045271baa4034">  217</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Link.html#aacb819fb241851fd9fc045271baa4034">isEnabled</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> enabled;}</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Link.html#a486f22824bd83c5308a0d70ffac6f758">  223</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Link.html#a486f22824bd83c5308a0d70ffac6f758">enable</a>()  {enabled=<span class="keyword">true</span>;}</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Link.html#a8cfbbe53c1cf6e3054736daea3044c0f">  229</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Link.html#a8cfbbe53c1cf6e3054736daea3044c0f">disable</a>()  {enabled=<span class="keyword">false</span>;}</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    };</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1LinkIn.html">  241</a></span>&#160;    <span class="keyword">class </span>SIM_API <a class="code" href="classomnetpp_1_1cTopology_1_1LinkIn.html">LinkIn</a> : <span class="keyword">public</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Link.html">Link</a></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <a class="code" href="classomnetpp_1_1cTopology_1_1LinkIn.html">LinkIn</a>(<span class="keywordtype">double</span> weight=1) : <a class="code" href="classomnetpp_1_1cTopology_1_1Link.html">Link</a>(weight) {}</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00250"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1LinkIn.html#a03882d64beb6b8f4144b444aa1f8408a">  250</a></span>&#160;        <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html">Node</a> *<a class="code" href="classomnetpp_1_1cTopology_1_1LinkIn.html#a03882d64beb6b8f4144b444aa1f8408a">getRemoteNode</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> srcNode;}</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
+<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1LinkIn.html#a7394a01db172de21c6dd2f1df8c0f65e">  255</a></span>&#160;        <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html">Node</a> *<a class="code" href="classomnetpp_1_1cTopology_1_1LinkIn.html#a7394a01db172de21c6dd2f1df8c0f65e">getLocalNode</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> destNode;}</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1LinkIn.html#a26f3db68a80fc1454c2633868a73e684">  260</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classomnetpp_1_1cTopology_1_1LinkIn.html#a26f3db68a80fc1454c2633868a73e684">getRemoteGateId</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> srcGateId;}</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00265"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1LinkIn.html#a767f16fb3a092272cf5c094725c6d73f">  265</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classomnetpp_1_1cTopology_1_1LinkIn.html#a767f16fb3a092272cf5c094725c6d73f">getLocalGateId</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> destGateId;}</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1LinkIn.html#a7fb9da61f3471c9a170ad1cd65c4cb20">  270</a></span>&#160;        <a class="code" href="classomnetpp_1_1cGate.html">cGate</a> *<a class="code" href="classomnetpp_1_1cTopology_1_1LinkIn.html#a7fb9da61f3471c9a170ad1cd65c4cb20">getRemoteGate</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> srcNode-&gt;getModule()-&gt;gate(srcGateId);}</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
+<div class="line"><a name="l00275"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1LinkIn.html#aa4eb31a67502890be681906c9a44eea9">  275</a></span>&#160;        <a class="code" href="classomnetpp_1_1cGate.html">cGate</a> *<a class="code" href="classomnetpp_1_1cTopology_1_1LinkIn.html#aa4eb31a67502890be681906c9a44eea9">getLocalGate</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> destNode-&gt;getModule()-&gt;gate(destGateId);}</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    };</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1LinkOut.html">  287</a></span>&#160;    <span class="keyword">class </span>SIM_API <a class="code" href="classomnetpp_1_1cTopology_1_1LinkOut.html">LinkOut</a> : <span class="keyword">public</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Link.html">Link</a></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    {</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <a class="code" href="classomnetpp_1_1cTopology_1_1LinkOut.html">LinkOut</a>(<span class="keywordtype">double</span> weight=1) : <a class="code" href="classomnetpp_1_1cTopology_1_1Link.html">Link</a>(weight) {}</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1LinkOut.html#a03882d64beb6b8f4144b444aa1f8408a">  296</a></span>&#160;        <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html">Node</a> *<a class="code" href="classomnetpp_1_1cTopology_1_1LinkOut.html#a03882d64beb6b8f4144b444aa1f8408a">getRemoteNode</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> destNode;}</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1LinkOut.html#a7394a01db172de21c6dd2f1df8c0f65e">  301</a></span>&#160;        <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html">Node</a> *<a class="code" href="classomnetpp_1_1cTopology_1_1LinkOut.html#a7394a01db172de21c6dd2f1df8c0f65e">getLocalNode</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> srcNode;}</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
+<div class="line"><a name="l00306"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1LinkOut.html#a26f3db68a80fc1454c2633868a73e684">  306</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classomnetpp_1_1cTopology_1_1LinkOut.html#a26f3db68a80fc1454c2633868a73e684">getRemoteGateId</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> destGateId;}</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
+<div class="line"><a name="l00311"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1LinkOut.html#a767f16fb3a092272cf5c094725c6d73f">  311</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classomnetpp_1_1cTopology_1_1LinkOut.html#a767f16fb3a092272cf5c094725c6d73f">getLocalGateId</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> srcGateId;}</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
+<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1LinkOut.html#a7fb9da61f3471c9a170ad1cd65c4cb20">  316</a></span>&#160;        <a class="code" href="classomnetpp_1_1cGate.html">cGate</a> *<a class="code" href="classomnetpp_1_1cTopology_1_1LinkOut.html#a7fb9da61f3471c9a170ad1cd65c4cb20">getRemoteGate</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> destNode-&gt;getModule()-&gt;gate(destGateId);}</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
+<div class="line"><a name="l00321"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1LinkOut.html#aa4eb31a67502890be681906c9a44eea9">  321</a></span>&#160;        <a class="code" href="classomnetpp_1_1cGate.html">cGate</a> *<a class="code" href="classomnetpp_1_1cTopology_1_1LinkOut.html#aa4eb31a67502890be681906c9a44eea9">getLocalGate</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> srcNode-&gt;getModule()-&gt;gate(srcGateId);}</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    };</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
+<div class="line"><a name="l00330"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology_1_1Predicate.html">  330</a></span>&#160;    <span class="keyword">class </span>SIM_API <a class="code" href="classomnetpp_1_1cTopology_1_1Predicate.html">Predicate</a></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    {</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;      <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classomnetpp_1_1cTopology_1_1Predicate.html">Predicate</a>() {}</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> matches(<a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *module) = 0;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    };</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160; </div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    std::vector&lt;Node*&gt; nodes;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html">Node</a> *target = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="comment">// note: the purpose of the (unsigned int) cast is that nodes with moduleId==-1 are inserted at the end of the vector</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> lessByModuleId(<a class="code" href="classomnetpp_1_1cTopology_1_1Node.html">Node</a> *a, <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html">Node</a> *b) { <span class="keywordflow">return</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)a-&gt;moduleId &lt; (<span class="keywordtype">unsigned</span> int)b-&gt;moduleId; }</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> isModuleIdLess(Node *a, <span class="keywordtype">int</span> moduleId) { <span class="keywordflow">return</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)a-&gt;moduleId &lt; (<span class="keywordtype">unsigned</span> int)moduleId; }</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordtype">void</span> unlinkFromSourceNode(Link *link);</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keywordtype">void</span> unlinkFromDestNode(Link *link);</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> parsimPack(cCommBuffer *)<span class="keyword"> const override </span>{<span class="keywordflow">throw</span> cRuntimeError(<span class="keyword">this</span>, E_CANTPACK);}</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> parsimUnpack(cCommBuffer *)<span class="keyword"> override </span>{<span class="keywordflow">throw</span> cRuntimeError(<span class="keyword">this</span>, E_CANTPACK);}</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160; </div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keyword">explicit</span> cTopology(<span class="keyword">const</span> <span class="keywordtype">char</span> *name=<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    cTopology(<span class="keyword">const</span> cTopology&amp; topo);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="keyword">virtual</span> ~cTopology();</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    cTopology&amp; operator=(<span class="keyword">const</span> cTopology&amp; topo);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160; </div>
+<div class="line"><a name="l00384"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology.html#a17e85b922af137a41b4e9fe4122fd4db">  384</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1cTopology.html">cTopology</a> *<a class="code" href="classomnetpp_1_1cTopology.html#a17e85b922af137a41b4e9fe4122fd4db">dup</a>()<span class="keyword"> const override  </span>{<span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classomnetpp_1_1cTopology.html">cTopology</a>(*<span class="keyword">this</span>);}</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; </div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keyword">virtual</span> std::string str() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160; </div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> extractFromNetwork(<span class="keywordtype">bool</span> (*selfunc)(<a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *,<span class="keywordtype">void</span> *), <span class="keywordtype">void</span> *userdata=<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160; </div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> extractFromNetwork(Predicate *predicate);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; </div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> extractFromNetwork(std::function&lt;<span class="keywordtype">bool</span>(<a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *)&gt; predicate);</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> extractByModulePath(<span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; fullPathPatterns);</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160; </div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> extractByNedTypeName(<span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; nedTypeNames);</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160; </div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> extractByProperty(<span class="keyword">const</span> <span class="keywordtype">char</span> *propertyName, <span class="keyword">const</span> <span class="keywordtype">char</span> *value=<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160; </div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> extractByParameter(<span class="keyword">const</span> <span class="keywordtype">char</span> *paramName, <span class="keyword">const</span> <span class="keywordtype">char</span> *paramValue=<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160; </div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> clear();</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160; </div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> addNode(Node *node);</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160; </div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> deleteNode(Node *node);</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160; </div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> addLink(Link *link, Node *srcNode, Node *destNode);</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160; </div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> addLink(Link *link, <a class="code" href="classomnetpp_1_1cGate.html">cGate</a> *srcGate, <a class="code" href="classomnetpp_1_1cGate.html">cGate</a> *destGate);</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160; </div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> deleteLink(Link *link);</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160; </div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160; </div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160; </div>
+<div class="line"><a name="l00526"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology.html#a22eaf223055f89b94db5278877cf33ba">  526</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classomnetpp_1_1cTopology.html#a22eaf223055f89b94db5278877cf33ba">getNumNodes</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> nodes.size();}</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160; </div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    <span class="keyword">virtual</span> Node *getNode(<span class="keywordtype">int</span> i) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160; </div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    <span class="keyword">virtual</span> Node *getNodeFor(<a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *mod) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160; </div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;<span class="comment">     * To be implemented:</span></div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;<span class="comment">     *    -  void unweightedMultiShortestPathsTo(Node *target);</span></div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;<span class="comment">     *    -  void weightedMultiShortestPathsTo(Node *target);</span></div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160; </div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> calculateUnweightedSingleShortestPathsTo(Node *target);</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160; </div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> calculateWeightedSingleShortestPathsTo(Node *target);</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160; </div>
+<div class="line"><a name="l00569"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology.html#aa8c520a1ea51cceb66e29ceca6a44036">  569</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html">Node</a> *<a class="code" href="classomnetpp_1_1cTopology.html#aa8c520a1ea51cceb66e29ceca6a44036">getTargetNode</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> target;}</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160; </div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00576"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology.html#a0dddeda87a7b009195217e175cd02de2">  576</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html">Node</a> *<a class="code" href="classomnetpp_1_1cTopology.html#a0dddeda87a7b009195217e175cd02de2">createNode</a>(<a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *module) { <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Node.html">Node</a>(module-&gt;<a class="code" href="classomnetpp_1_1cComponent.html#a4753a5331a3ccc5974088b45b2b532ab">getId</a>()); }</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160; </div>
+<div class="line"><a name="l00581"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cTopology.html#a02b1a1e27b0e4687ad5606c669956a97">  581</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Link.html">Link</a> *<a class="code" href="classomnetpp_1_1cTopology.html#a02b1a1e27b0e4687ad5606c669956a97">createLink</a>() { <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classomnetpp_1_1cTopology_1_1Link.html">Link</a>(); }</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;};</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160; </div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;}  <span class="comment">// namespace omnetpp</span></div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160; </div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclassomnetpp_1_1cModule_html"><div class="ttname"><a href="classomnetpp_1_1cModule.html">omnetpp::cModule</a></div><div class="ttdoc">This class represents modules in the simulation.</div><div class="ttdef"><b>Definition:</b> cmodule.h:48</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_html_a02b1a1e27b0e4687ad5606c669956a97"><div class="ttname"><a href="classomnetpp_1_1cTopology.html#a02b1a1e27b0e4687ad5606c669956a97">omnetpp::cTopology::createLink</a></div><div class="ttdeci">virtual Link * createLink()</div><div class="ttdef"><b>Definition:</b> ctopology.h:581</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Node_html_a77970774ec2bead5383bb43bc6f35061"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Node.html#a77970774ec2bead5383bb43bc6f35061">omnetpp::cTopology::Node::getNumOutLinks</a></div><div class="ttdeci">int getNumOutLinks() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:147</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Node_html_ab6677e3937da3eb4545de51473fd7b49"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Node.html#ab6677e3937da3eb4545de51473fd7b49">omnetpp::cTopology::Node::getNumPaths</a></div><div class="ttdeci">int getNumPaths() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:167</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1LinkOut_html"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1LinkOut.html">omnetpp::cTopology::LinkOut</a></div><div class="ttdoc">Supporting class for cTopology.</div><div class="ttdef"><b>Definition:</b> ctopology.h:287</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1LinkOut_html_a26f3db68a80fc1454c2633868a73e684"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1LinkOut.html#a26f3db68a80fc1454c2633868a73e684">omnetpp::cTopology::LinkOut::getRemoteGateId</a></div><div class="ttdeci">int getRemoteGateId() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:306</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1LinkIn_html"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1LinkIn.html">omnetpp::cTopology::LinkIn</a></div><div class="ttdoc">Supporting class for cTopology.</div><div class="ttdef"><b>Definition:</b> ctopology.h:241</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1LinkOut_html_a7fb9da61f3471c9a170ad1cd65c4cb20"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1LinkOut.html#a7fb9da61f3471c9a170ad1cd65c4cb20">omnetpp::cTopology::LinkOut::getRemoteGate</a></div><div class="ttdeci">cGate * getRemoteGate() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:316</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Link_html_aacb819fb241851fd9fc045271baa4034"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Link.html#aacb819fb241851fd9fc045271baa4034">omnetpp::cTopology::Link::isEnabled</a></div><div class="ttdeci">bool isEnabled() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:217</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Node_html_a021a96f005d2d318d4cdf05f227c8089"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Node.html#a021a96f005d2d318d4cdf05f227c8089">omnetpp::cTopology::Node::getWeight</a></div><div class="ttdeci">double getWeight() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:104</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Node_html_afbd7654c30e01c3be1935170b7c4ce91"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Node.html#afbd7654c30e01c3be1935170b7c4ce91">omnetpp::cTopology::Node::getNumInLinks</a></div><div class="ttdeci">int getNumInLinks() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:137</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Node_html_a2d434f37732b4a993432532b42c1714b"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Node.html#a2d434f37732b4a993432532b42c1714b">omnetpp::cTopology::Node::getModule</a></div><div class="ttdeci">cModule * getModule() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:98</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Node_html"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Node.html">omnetpp::cTopology::Node</a></div><div class="ttdoc">Supporting class for cTopology, represents a node in the graph.</div><div class="ttdef"><b>Definition:</b> ctopology.h:65</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_html_a22eaf223055f89b94db5278877cf33ba"><div class="ttname"><a href="classomnetpp_1_1cTopology.html#a22eaf223055f89b94db5278877cf33ba">omnetpp::cTopology::getNumNodes</a></div><div class="ttdeci">virtual int getNumNodes() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:526</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Node_html_a7ffaba853fe05b741f4e7df4772ec3f6"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Node.html#a7ffaba853fe05b741f4e7df4772ec3f6">omnetpp::cTopology::Node::getPath</a></div><div class="ttdeci">LinkOut * getPath(int) const</div><div class="ttdef"><b>Definition:</b> ctopology.h:174</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Link_html_a486f22824bd83c5308a0d70ffac6f758"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Link.html#a486f22824bd83c5308a0d70ffac6f758">omnetpp::cTopology::Link::enable</a></div><div class="ttdeci">void enable()</div><div class="ttdef"><b>Definition:</b> ctopology.h:223</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_html_a17e85b922af137a41b4e9fe4122fd4db"><div class="ttname"><a href="classomnetpp_1_1cTopology.html#a17e85b922af137a41b4e9fe4122fd4db">omnetpp::cTopology::dup</a></div><div class="ttdeci">virtual cTopology * dup() const override</div><div class="ttdef"><b>Definition:</b> ctopology.h:384</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_a4ca7929dc35933f1605becdf1f241023"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#a4ca7929dc35933f1605becdf1f241023">omnetpp::cSimulation::getModule</a></div><div class="ttdeci">cModule * getModule(int id) const</div><div class="ttdef"><b>Definition:</b> csimulation.h:240</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1LinkIn_html_a26f3db68a80fc1454c2633868a73e684"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1LinkIn.html#a26f3db68a80fc1454c2633868a73e684">omnetpp::cTopology::LinkIn::getRemoteGateId</a></div><div class="ttdeci">int getRemoteGateId() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:260</div></div>
+<div class="ttc" id="agroup__Misc_html_ga9e1dcc79e9e31ef10df26a0e94d15b72"><div class="ttname"><a href="group__Misc.html#ga9e1dcc79e9e31ef10df26a0e94d15b72">omnetpp::getSimulation</a></div><div class="ttdeci">cSimulation * getSimulation()</div><div class="ttdoc">Returns the currently active simulation, or nullptr if there is none.</div><div class="ttdef"><b>Definition:</b> csimulation.h:608</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cGate_html"><div class="ttname"><a href="classomnetpp_1_1cGate.html">omnetpp::cGate</a></div><div class="ttdoc">Represents a module gate.</div><div class="ttdef"><b>Definition:</b> cgate.h:62</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1LinkOut_html_a767f16fb3a092272cf5c094725c6d73f"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1LinkOut.html#a767f16fb3a092272cf5c094725c6d73f">omnetpp::cTopology::LinkOut::getLocalGateId</a></div><div class="ttdeci">int getLocalGateId() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:311</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Link_html_a3c4eccda2af9562108b034562e1cdc8e"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Link.html#a3c4eccda2af9562108b034562e1cdc8e">omnetpp::cTopology::Link::setWeight</a></div><div class="ttdeci">void setWeight(double d)</div><div class="ttdef"><b>Definition:</b> ctopology.h:211</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Node_html_a8cfbbe53c1cf6e3054736daea3044c0f"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Node.html#a8cfbbe53c1cf6e3054736daea3044c0f">omnetpp::cTopology::Node::disable</a></div><div class="ttdeci">void disable()</div><div class="ttdef"><b>Definition:</b> ctopology.h:128</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Node_html_a42b4652ff50a5c824e5d8449a12df382"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Node.html#a42b4652ff50a5c824e5d8449a12df382">omnetpp::cTopology::Node::Node</a></div><div class="ttdeci">Node(int moduleId=-1)</div><div class="ttdef"><b>Definition:</b> ctopology.h:84</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1LinkOut_html_a03882d64beb6b8f4144b444aa1f8408a"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1LinkOut.html#a03882d64beb6b8f4144b444aa1f8408a">omnetpp::cTopology::LinkOut::getRemoteNode</a></div><div class="ttdeci">Node * getRemoteNode() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:296</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Node_html_a486f22824bd83c5308a0d70ffac6f758"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Node.html#a486f22824bd83c5308a0d70ffac6f758">omnetpp::cTopology::Node::enable</a></div><div class="ttdeci">void enable()</div><div class="ttdef"><b>Definition:</b> ctopology.h:122</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_html_a0dddeda87a7b009195217e175cd02de2"><div class="ttname"><a href="classomnetpp_1_1cTopology.html#a0dddeda87a7b009195217e175cd02de2">omnetpp::cTopology::createNode</a></div><div class="ttdeci">virtual Node * createNode(cModule *module)</div><div class="ttdef"><b>Definition:</b> ctopology.h:576</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cComponent_html_a4753a5331a3ccc5974088b45b2b532ab"><div class="ttname"><a href="classomnetpp_1_1cComponent.html#a4753a5331a3ccc5974088b45b2b532ab">omnetpp::cComponent::getId</a></div><div class="ttdeci">int getId() const</div><div class="ttdef"><b>Definition:</b> ccomponent.h:433</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1LinkOut_html_aa4eb31a67502890be681906c9a44eea9"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1LinkOut.html#aa4eb31a67502890be681906c9a44eea9">omnetpp::cTopology::LinkOut::getLocalGate</a></div><div class="ttdeci">cGate * getLocalGate() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:321</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Link_html_a8cfbbe53c1cf6e3054736daea3044c0f"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Link.html#a8cfbbe53c1cf6e3054736daea3044c0f">omnetpp::cTopology::Link::disable</a></div><div class="ttdeci">void disable()</div><div class="ttdef"><b>Definition:</b> ctopology.h:229</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_html_aa8c520a1ea51cceb66e29ceca6a44036"><div class="ttname"><a href="classomnetpp_1_1cTopology.html#aa8c520a1ea51cceb66e29ceca6a44036">omnetpp::cTopology::getTargetNode</a></div><div class="ttdeci">virtual Node * getTargetNode() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:569</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Predicate_html"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Predicate.html">omnetpp::cTopology::Predicate</a></div><div class="ttdoc">Base class for selector objects used in extract...() methods of cTopology.</div><div class="ttdef"><b>Definition:</b> ctopology.h:330</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Node_html_a6f0ec3e3bb83f62551a33225e69a7f5a"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Node.html#a6f0ec3e3bb83f62551a33225e69a7f5a">omnetpp::cTopology::Node::getDistanceToTarget</a></div><div class="ttdeci">double getDistanceToTarget() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:161</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Link_html_a021a96f005d2d318d4cdf05f227c8089"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Link.html#a021a96f005d2d318d4cdf05f227c8089">omnetpp::cTopology::Link::getWeight</a></div><div class="ttdeci">double getWeight() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:205</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Link_html_af16a171cd67ab9d1b2e76a2efa7abd89"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Link.html#af16a171cd67ab9d1b2e76a2efa7abd89">omnetpp::cTopology::Link::Link</a></div><div class="ttdeci">Link(double weight=1)</div><div class="ttdef"><b>Definition:</b> ctopology.h:198</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Link_html"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Link.html">omnetpp::cTopology::Link</a></div><div class="ttdoc">Supporting class for cTopology, represents a link in the graph.</div><div class="ttdef"><b>Definition:</b> ctopology.h:182</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_html"><div class="ttname"><a href="classomnetpp_1_1cTopology.html">omnetpp::cTopology</a></div><div class="ttdoc">Routing support. The cTopology class was designed primarily to support routing in telecommunication o...</div><div class="ttdef"><b>Definition:</b> ctopology.h:55</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1LinkIn_html_a03882d64beb6b8f4144b444aa1f8408a"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1LinkIn.html#a03882d64beb6b8f4144b444aa1f8408a">omnetpp::cTopology::LinkIn::getRemoteNode</a></div><div class="ttdeci">Node * getRemoteNode() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:250</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1LinkIn_html_a7394a01db172de21c6dd2f1df8c0f65e"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1LinkIn.html#a7394a01db172de21c6dd2f1df8c0f65e">omnetpp::cTopology::LinkIn::getLocalNode</a></div><div class="ttdeci">Node * getLocalNode() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:255</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1LinkIn_html_a767f16fb3a092272cf5c094725c6d73f"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1LinkIn.html#a767f16fb3a092272cf5c094725c6d73f">omnetpp::cTopology::LinkIn::getLocalGateId</a></div><div class="ttdeci">int getLocalGateId() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:265</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1LinkIn_html_a7fb9da61f3471c9a170ad1cd65c4cb20"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1LinkIn.html#a7fb9da61f3471c9a170ad1cd65c4cb20">omnetpp::cTopology::LinkIn::getRemoteGate</a></div><div class="ttdeci">cGate * getRemoteGate() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:270</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1LinkIn_html_aa4eb31a67502890be681906c9a44eea9"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1LinkIn.html#aa4eb31a67502890be681906c9a44eea9">omnetpp::cTopology::LinkIn::getLocalGate</a></div><div class="ttdeci">cGate * getLocalGate() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:275</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Node_html_aacb819fb241851fd9fc045271baa4034"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Node.html#aacb819fb241851fd9fc045271baa4034">omnetpp::cTopology::Node::isEnabled</a></div><div class="ttdeci">bool isEnabled() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:116</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Node_html_ad57430d5274b39a292df7247a252b5b5"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Node.html#ad57430d5274b39a292df7247a252b5b5">omnetpp::cTopology::Node::getModuleId</a></div><div class="ttdeci">int getModuleId() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:93</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1LinkOut_html_a7394a01db172de21c6dd2f1df8c0f65e"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1LinkOut.html#a7394a01db172de21c6dd2f1df8c0f65e">omnetpp::cTopology::LinkOut::getLocalNode</a></div><div class="ttdeci">Node * getLocalNode() const</div><div class="ttdef"><b>Definition:</b> ctopology.h:301</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cTopology_1_1Node_html_a3c4eccda2af9562108b034562e1cdc8e"><div class="ttname"><a href="classomnetpp_1_1cTopology_1_1Node.html#a3c4eccda2af9562108b034562e1cdc8e">omnetpp::cTopology::Node::setWeight</a></div><div class="ttdeci">void setWeight(double d)</div><div class="ttdef"><b>Definition:</b> ctopology.h:110</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cOwnedObject_html"><div class="ttname"><a href="classomnetpp_1_1cOwnedObject.html">omnetpp::cOwnedObject</a></div><div class="ttdoc">A cObject that keeps track of its owner. It serves as base class for many classes in the OMNeT++ libr...</div><div class="ttdef"><b>Definition:</b> cownedobject.h:105</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_d69ce13079b0b0a43a6d5bd8d76d2fb6.html">omnetpp</a></li><li class="navelem"><b>ctopology.h</b></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

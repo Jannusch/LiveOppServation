@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classomnetpp_1_1cEnvir.html" title="cEnvir represents the &quot;environment&quot; or user interface of the simulation." alt="" coords="5,31,68,57"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cNullEnvir.html" title="A do&#45;nothing cEnvir implementation." alt="" coords="133,5,221,32"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cRunnableEnvir.html" title="A cEnvir that can be instantiated as a user interface, like Cmdenv and Tkenv." alt="" coords="116,56,239,83"/>
+</map>

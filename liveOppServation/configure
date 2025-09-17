@@ -64,14 +64,11 @@ if args:
 
 
 # Start with default flags
-makemake_flags = ['-f', '--deep', '--make-so', '-I', '.', '-o', 'liveOppServation', '-O', 'out', '-L', '../omnetpp/lib', '-I', '../omnetpp/src', '-L', '../omnetpp/src']
+makemake_flags = ['-f', '--deep', '--make-so', '-I', '.', '-o', 'liveOppServation', '-O', 'out', '-L', '../../omnetpp/lib', '-I', '../../omnetpp/src', '-L', '../../omnetpp/src', '-l', 'grpc++',  '-I', '../../install/lib', '-L', '../../install/lib',]
 run_libs = [os.path.join('src', 'liveOppServation')]
 run_neds = [os.path.join('src', 'liveOppServation')]
 run_excs = []
 run_imgs = [os.path.join('images')]
-
-
-
 
 # Start creating files
 if not os.path.isdir('out'):

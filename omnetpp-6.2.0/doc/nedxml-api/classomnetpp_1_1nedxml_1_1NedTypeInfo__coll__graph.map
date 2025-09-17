@@ -1,0 +1,5 @@
+<map id="NedTypeInfo" name="NedTypeInfo">
+<area shape="rect" id="node1" title="Stores information on a NED type." alt="" coords="97,95,200,121"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1nedxml_1_1NedResourceCache.html" title="Stores loaded NED files, and keeps track of components in them." alt="" coords="5,5,153,32"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1nedxml_1_1ASTNode.html" title=" " alt="" coords="177,5,259,32"/>
+</map>

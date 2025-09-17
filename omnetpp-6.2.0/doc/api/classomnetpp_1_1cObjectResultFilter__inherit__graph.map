@@ -1,0 +1,7 @@
+<map id="cObjectResultFilter" name="cObjectResultFilter">
+<area shape="rect" id="node1" title="Base class for filters that expect to receive an object." alt="" coords="70,155,215,181"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1PacketBitsFilter.html" title="Filter that expects a cPacket and outputs its length in bits (getBitLength()). Null (nullptr) values ..." alt="" coords="5,229,128,256"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1PacketBytesFilter.html" title="Filter that expects a cPacket and outputs its length in bytes (getByteLength()). Null (nullptr) value..." alt="" coords="153,229,287,256"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cResultFilter.html" title="Base class for result filters." alt="" coords="91,80,194,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cResultListener.html" title="Common abstract base class for result filters and result recorders." alt="" coords="81,5,204,32"/>
+</map>

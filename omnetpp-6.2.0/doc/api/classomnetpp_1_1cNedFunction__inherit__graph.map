@@ -1,0 +1,6 @@
+<map id="cNedFunction" name="cNedFunction">
+<area shape="rect" id="node1" title="Registration class for extending NED with arbitrary new functions." alt="" coords="75,155,185,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cNoncopyableOwnedObject.html" title="Base class for cOwnedObject&#45;based classes that do not wish to support assignment and duplication." alt="" coords="29,80,231,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cOwnedObject.html" title="A cObject that keeps track of its owner. It serves as base class for many classes in the OMNeT++ libr..." alt="" coords="5,5,121,32"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1noncopyable.html" title="Utility class, to make it impossible to call the operator= and copy constructor of any class derived ..." alt="" coords="145,5,251,32"/>
+</map>

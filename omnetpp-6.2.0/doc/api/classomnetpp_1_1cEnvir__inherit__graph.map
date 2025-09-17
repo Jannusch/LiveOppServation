@@ -1,0 +1,5 @@
+<map id="cEnvir" name="cEnvir">
+<area shape="rect" id="node1" title="cEnvir represents the &quot;environment&quot; or user interface of the simulation." alt="" coords="82,5,145,32"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cNullEnvir.html" title="A do&#45;nothing cEnvir implementation." alt="" coords="5,80,93,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cRunnableEnvir.html" title="A cEnvir that can be instantiated as a user interface, like Cmdenv and Tkenv." alt="" coords="117,80,240,107"/>
+</map>

@@ -1,0 +1,441 @@
+<!-- HTML header for doxygen 1.9.4-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OMNeT++ API: csimulation.h Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/omnetpp/omnetpp" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+  <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>  
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">OMNeT++ API<span id="projectnumber">&#160;6.2.0</span>
+   </div>
+   <div id="projectbrief">Discrete Event Simulation Library</div>
+  </td>
+ </tr>
+   <!--BEGIN FULL_SIDEBAR-->
+   <tr><td colspan="2">        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td></tr>
+   <!--END FULL_SIDEBAR-->
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('csimulation_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">csimulation.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//==========================================================================</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//   CSIMULATION.H  -  header for</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//                     OMNeT++/OMNEST</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//            Discrete System Simulation in C++</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//==========================================================================</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/*--------------------------------------------------------------*</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">  Copyright (C) 1992-2017 Andras Varga</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">  Copyright (C) 2006-2017 OpenSim Ltd.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">  This file is distributed WITHOUT ANY WARRANTY. See the file</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">  `license&#39; for details on this and other legal matters.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*--------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifndef __OMNETPP_CSIMULATION_H</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define __OMNETPP_CSIMULATION_H</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;simkerneldefs.h&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;simtime_t.h&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;ccomponent.h&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;ccontextswitcher.h&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;cexception.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>omnetpp {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">class </span>cEvent;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">class </span>cMessage;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class </span>cGate;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span>cComponent;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">class </span>cModule;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">class </span>cChannel;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span>cSimpleModule;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span>cSimulation;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">class </span>cException;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">class </span>cFutureEventSet;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span>cScheduler;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">class </span>cParsimPartition;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">class </span>cNedFileLoader;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">class </span>cFingerprintCalculator;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">class </span>cModuleType;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">class </span>cEnvir;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">class </span>cSoftOwner;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">class </span>cUsageCollector; <span class="comment">// (internal)</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;SIM_API <span class="keyword">extern</span> cSoftOwner globalOwningContext; <span class="comment">// also in globals.h</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html">   64</a></span>&#160;<span class="keyword">class </span>SIM_API <a class="code" href="classomnetpp_1_1cSimulation.html">cSimulation</a> : <span class="keyword">public</span> <a class="code" href="classomnetpp_1_1cNamedObject.html">cNamedObject</a>, <a class="code" href="classomnetpp_1_1noncopyable.html">noncopyable</a></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classomnetpp_1_1cSimpleModule.html">cSimpleModule</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// global variables</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">static</span> <a class="code" href="classomnetpp_1_1cSimulation.html">cSimulation</a> *activeSimulation;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">static</span> <a class="code" href="classomnetpp_1_1cEnvir.html">cEnvir</a> *activeEnvir;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">static</span> <a class="code" href="classomnetpp_1_1cEnvir.html">cEnvir</a> *staticEnvir; <span class="comment">// the environment to activate when activeSimulation becomes nullptr</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// variables of the module vector</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">int</span> size = 0;                       <span class="comment">// size of componentv[]</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">int</span> delta = 32;                     <span class="comment">// if needed, grows by delta</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="classomnetpp_1_1cComponent.html">cComponent</a> **componentv = <span class="keyword">nullptr</span>;  <span class="comment">// vector of modules/channels, componentv[0] is not used for historical reasons</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">int</span> lastComponentId = 0;            <span class="comment">// index of last used pos. in componentv[]</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// simulation vars</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="classomnetpp_1_1cEnvir.html">cEnvir</a> *envir = <span class="keyword">nullptr</span>;            <span class="comment">// the environment that belongs to this simulation object</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *systemModule = <span class="keyword">nullptr</span>;    <span class="comment">// pointer to system (root) module</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="classomnetpp_1_1cSimpleModule.html">cSimpleModule</a> *currentActivityModule = <span class="keyword">nullptr</span>; <span class="comment">// the module currently executing activity() (nullptr if handleMessage() or in main)</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="classomnetpp_1_1cComponent.html">cComponent</a> *contextComponent = <span class="keyword">nullptr</span>;  <span class="comment">// component in context (or nullptr)</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    ContextType contextType;            <span class="comment">// the innermost context type</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="classomnetpp_1_1cModuleType.html">cModuleType</a> *networkType = <span class="keyword">nullptr</span>; <span class="comment">// network type</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="classomnetpp_1_1cFutureEventSet.html">cFutureEventSet</a> *fes = <span class="keyword">nullptr</span>;     <span class="comment">// stores future events</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="classomnetpp_1_1cScheduler.html">cScheduler</a> *scheduler = <span class="keyword">nullptr</span>;    <span class="comment">// event scheduler</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="classomnetpp_1_1SimTime.html">simtime_t</a> warmupPeriod;             <span class="comment">// warm-up period</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    ContextType simulationStage;        <span class="comment">// simulation stage</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="classomnetpp_1_1SimTime.html">simtime_t</a> currentSimtime;           <span class="comment">// simulation time (time of current event)</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="group__Misc.html#gaebe35226c5c889df9d1cf602b9339aeb">eventnumber_t</a> currentEventNumber = 0; <span class="comment">// sequence number of current event</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="classomnetpp_1_1cException.html">cException</a> *exception;    <span class="comment">// helper variable to get exceptions back from activity()</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">bool</span> trapOnNextEvent = <span class="keyword">false</span>;  <span class="comment">// when set, next handleMessage or activity() will execute debugger interrupt</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">bool</span> parameterMutabilityCheck = <span class="keyword">true</span>;  <span class="comment">// when disabled, module parameters can be set without them being declared @mutable</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="classomnetpp_1_1cFingerprintCalculator.html">cFingerprintCalculator</a> *fingerprint = <span class="keyword">nullptr</span>; <span class="comment">// used for fingerprint calculation</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    cUsageCollector *usageCollector = <span class="keyword">nullptr</span>; <span class="comment">// used for coverage tests and for detecting unread parameters</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">// internal</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> checkActive()  {<span class="keywordflow">if</span> (getActiveSimulation()!=<span class="keyword">this</span>) <span class="keywordflow">throw</span> <a class="code" href="classomnetpp_1_1cRuntimeError.html">cRuntimeError</a>(<span class="keyword">this</span>, E_WRONGSIM);}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">// internal</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> setParameterMutabilityCheck(<span class="keywordtype">bool</span> b) {parameterMutabilityCheck = b;}</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">bool</span> getParameterMutabilityCheck()<span class="keyword"> const </span>{<span class="keywordflow">return</span> parameterMutabilityCheck;}</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// internal, for cUsageCollector</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span> parametersAdded(<a class="code" href="classomnetpp_1_1cComponent.html">cComponent</a> *component);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> parameterAccessed(<a class="code" href="classomnetpp_1_1cPar.html">cPar</a> *par);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="classomnetpp_1_1cSimulation.html">cSimulation</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <a class="code" href="classomnetpp_1_1cEnvir.html">cEnvir</a> *env);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classomnetpp_1_1cSimulation.html">cSimulation</a>();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> forEachChild(<a class="code" href="classomnetpp_1_1cVisitor.html">cVisitor</a> *v) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keyword">virtual</span> std::string getFullPath() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#ae677cba64809c8914558eed1bc31c1c7">  148</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="classomnetpp_1_1cSimulation.html">cSimulation</a> *<a class="code" href="classomnetpp_1_1cSimulation.html#ae677cba64809c8914558eed1bc31c1c7">getActiveSimulation</a>()  {<span class="keywordflow">return</span> activeSimulation;}</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#a6944156bfb54ed66b3a6206608975f00">  154</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="classomnetpp_1_1cEnvir.html">cEnvir</a> *<a class="code" href="classomnetpp_1_1cSimulation.html#a6944156bfb54ed66b3a6206608975f00">getActiveEnvir</a>()  {<span class="keywordflow">return</span> activeEnvir;}</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> setActiveSimulation(<a class="code" href="classomnetpp_1_1cSimulation.html">cSimulation</a> *sim);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> setStaticEnvir(<a class="code" href="classomnetpp_1_1cEnvir.html">cEnvir</a> *env);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#a2efd8a63eda423d420f8042d0edf2834">  172</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="classomnetpp_1_1cEnvir.html">cEnvir</a> *<a class="code" href="classomnetpp_1_1cSimulation.html#a2efd8a63eda423d420f8042d0edf2834">getStaticEnvir</a>()  {<span class="keywordflow">return</span> staticEnvir;}</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#a0f36ad85f13c1966c5a94f4572309621">  177</a></span>&#160;    <a class="code" href="classomnetpp_1_1cEnvir.html">cEnvir</a> *<a class="code" href="classomnetpp_1_1cSimulation.html#a0f36ad85f13c1966c5a94f4572309621">getEnvir</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> envir;}</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordtype">int</span> registerComponent(<a class="code" href="classomnetpp_1_1cComponent.html">cComponent</a> *component);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordtype">void</span> deregisterComponent(<a class="code" href="classomnetpp_1_1cComponent.html">cComponent</a> *component);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#af7d31019693943291fd46b29b3b79831">  200</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classomnetpp_1_1cSimulation.html#af7d31019693943291fd46b29b3b79831">getLastComponentId</a>()<span class="keyword"> const    </span>{<span class="keywordflow">return</span> lastComponentId;}</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *getModuleByPath(<span class="keyword">const</span> <span class="keywordtype">char</span> *modulePath) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *findModuleByPath(<span class="keyword">const</span> <span class="keywordtype">char</span> *modulePath) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#a34cfb991d0e0f74d4fafb76dd85dae9d">  234</a></span>&#160;    <a class="code" href="classomnetpp_1_1cComponent.html">cComponent</a> *<a class="code" href="classomnetpp_1_1cSimulation.html#a34cfb991d0e0f74d4fafb76dd85dae9d">getComponent</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)<span class="keyword"> const  </span>{<span class="keywordflow">return</span> id&lt;0 || id&gt;=size ? nullptr : componentv[id];}</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#a4ca7929dc35933f1605becdf1f241023">  240</a></span>&#160;    <a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *<a class="code" href="classomnetpp_1_1cSimulation.html#a4ca7929dc35933f1605becdf1f241023">getModule</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)<span class="keyword"> const  </span>{<span class="keywordflow">return</span> id&lt;0 || id&gt;=size || !componentv[id] ? nullptr : componentv[id]-&gt;<a class="code" href="classomnetpp_1_1cComponent.html#a8d2f913f542210584f2f20a4aa09b43e">isModule</a>() ? (<a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *)componentv[<span class="keywordtype">id</span>] : <span class="keyword">nullptr</span>;}</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#a1d5d05ac26ebb0d13ed2eef9bc122d2a">  246</a></span>&#160;    <a class="code" href="classomnetpp_1_1cChannel.html">cChannel</a> *<a class="code" href="classomnetpp_1_1cSimulation.html#a1d5d05ac26ebb0d13ed2eef9bc122d2a">getChannel</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)<span class="keyword"> const  </span>{<span class="keywordflow">return</span> id&lt;0 || id&gt;=size || !componentv[id] ? nullptr : componentv[id]-&gt;<a class="code" href="classomnetpp_1_1cComponent.html#a9888093c43c151208f9f647500cd8662">isChannel</a>() ? (<a class="code" href="classomnetpp_1_1cChannel.html">cChannel</a> *)componentv[<span class="keywordtype">id</span>] : <span class="keyword">nullptr</span>;}</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordtype">void</span> setSystemModule(<a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *module);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
+<div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#a5086216af597fe938cbdd99884bf3d24">  256</a></span>&#160;    <a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *<a class="code" href="classomnetpp_1_1cSimulation.html#a5086216af597fe938cbdd99884bf3d24">getSystemModule</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> systemModule;}</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> loadNedSourceFolder(<span class="keyword">const</span> <span class="keywordtype">char</span> *folderName, <span class="keyword">const</span> <span class="keywordtype">char</span> *excludedPackages=<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> loadNedFile(<span class="keyword">const</span> <span class="keywordtype">char</span> *nedFilename, <span class="keyword">const</span> <span class="keywordtype">char</span> *expectedPackage=<span class="keyword">nullptr</span>, <span class="keywordtype">bool</span> isXML=<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> loadNedText(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <span class="keyword">const</span> <span class="keywordtype">char</span> *nedText, <span class="keyword">const</span> <span class="keywordtype">char</span> *expectedPackage=<span class="keyword">nullptr</span>, <span class="keywordtype">bool</span> isXML=<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> doneLoadingNedFiles();</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keyword">static</span> std::string getNedPackageForFolder(<span class="keyword">const</span> <span class="keywordtype">char</span> *folder);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordtype">void</span> setScheduler(<a class="code" href="classomnetpp_1_1cScheduler.html">cScheduler</a> *scheduler);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
+<div class="line"><a name="l00332"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#a5441bcd14d51e9a7cd6d6e9dfaebb67e">  332</a></span>&#160;    <a class="code" href="classomnetpp_1_1cScheduler.html">cScheduler</a> *<a class="code" href="classomnetpp_1_1cSimulation.html#a5441bcd14d51e9a7cd6d6e9dfaebb67e">getScheduler</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> scheduler;}</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordtype">void</span> setFES(<a class="code" href="classomnetpp_1_1cFutureEventSet.html">cFutureEventSet</a> *fes);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
+<div class="line"><a name="l00344"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#aa759751d7ced9217938893695176d851">  344</a></span>&#160;    <a class="code" href="classomnetpp_1_1cFutureEventSet.html">cFutureEventSet</a> *<a class="code" href="classomnetpp_1_1cSimulation.html#aa759751d7ced9217938893695176d851">getFES</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> fes;}</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordtype">void</span> setSimulationTimeLimit(<a class="code" href="classomnetpp_1_1SimTime.html">simtime_t</a> simTimeLimit);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160; </div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordtype">void</span> setupNetwork(<a class="code" href="classomnetpp_1_1cModuleType.html">cModuleType</a> *networkType);</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordtype">void</span> callInitialize();</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordtype">void</span> callFinish();</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="keywordtype">void</span> deleteNetwork();</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
+<div class="line"><a name="l00385"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#a75f8429cae4a97ecd84ff603b318104c">  385</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classomnetpp_1_1cSimulation.html#a75f8429cae4a97ecd84ff603b318104c">getSimulationStage</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> simulationStage;}</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
+<div class="line"><a name="l00391"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#a431d106bf475b09b0c5c79d966f9ad81">  391</a></span>&#160;    <a class="code" href="classomnetpp_1_1cModuleType.html">cModuleType</a> *<a class="code" href="classomnetpp_1_1cSimulation.html#a431d106bf475b09b0c5c79d966f9ad81">getNetworkType</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> networkType;}</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
+<div class="line"><a name="l00398"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#a4c1ecc24ab6a24137c11e9e4f897b312">  398</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classomnetpp_1_1cSimulation.html#a4c1ecc24ab6a24137c11e9e4f897b312">setSimTime</a>(<a class="code" href="classomnetpp_1_1SimTime.html">simtime_t</a> time)  {currentSimtime = time;}</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
+<div class="line"><a name="l00405"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#a574cd99e779036e5ce2f38a9077fdb1d">  405</a></span>&#160;    <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> <a class="code" href="classomnetpp_1_1cSimulation.html#a574cd99e779036e5ce2f38a9077fdb1d">getSimTime</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> currentSimtime;}</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
+<div class="line"><a name="l00411"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#aa961710160528cac084b2887dd0d641f">  411</a></span>&#160;    <a class="code" href="group__Misc.html#gaebe35226c5c889df9d1cf602b9339aeb">eventnumber_t</a> <a class="code" href="classomnetpp_1_1cSimulation.html#aa961710160528cac084b2887dd0d641f">getEventNumber</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> currentEventNumber;}</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160; </div>
+<div class="line"><a name="l00422"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#a80c81f0fd56068971d34b5310a653193">  422</a></span>&#160;    <a class="code" href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">simtime_t_cref</a> <a class="code" href="classomnetpp_1_1cSimulation.html#a80c81f0fd56068971d34b5310a653193">getWarmupPeriod</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> warmupPeriod;}</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
+<div class="line"><a name="l00427"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#af257176f9ecb5efe33a35a745253fdd2">  427</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classomnetpp_1_1cSimulation.html#af257176f9ecb5efe33a35a745253fdd2">setWarmupPeriod</a>(<a class="code" href="classomnetpp_1_1SimTime.html">simtime_t</a> t)  {warmupPeriod = t;}</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160; </div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <a class="code" href="classomnetpp_1_1cEvent.html">cEvent</a> *guessNextEvent();</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160; </div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    <a class="code" href="classomnetpp_1_1cSimpleModule.html">cSimpleModule</a> *guessNextModule();</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160; </div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <a class="code" href="classomnetpp_1_1SimTime.html">simtime_t</a> guessNextSimtime();</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160; </div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    <a class="code" href="classomnetpp_1_1cEvent.html">cEvent</a> *takeNextEvent();</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160; </div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    <span class="keywordtype">void</span> putBackEvent(<a class="code" href="classomnetpp_1_1cEvent.html">cEvent</a> *event);</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160; </div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    <span class="keywordtype">void</span> executeEvent(<a class="code" href="classomnetpp_1_1cEvent.html">cEvent</a> *event);</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160; </div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    <span class="keywordtype">void</span> callRefreshDisplay();</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160; </div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    <span class="keywordtype">void</span> transferTo(<a class="code" href="classomnetpp_1_1cSimpleModule.html">cSimpleModule</a> *module);</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160; </div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    <span class="keywordtype">void</span> transferToMain();</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160; </div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    <span class="keywordtype">void</span> insertEvent(<a class="code" href="classomnetpp_1_1cEvent.html">cEvent</a> *event);</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160; </div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    <span class="keywordtype">void</span> setContext(<a class="code" href="classomnetpp_1_1cComponent.html">cComponent</a> *component);</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160; </div>
+<div class="line"><a name="l00506"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#a11652f89b55a7be98743a8d252bdb5c4">  506</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classomnetpp_1_1cSimulation.html#a11652f89b55a7be98743a8d252bdb5c4">setContextType</a>(ContextType type)  {contextType = type;}</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160; </div>
+<div class="line"><a name="l00511"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#a25f92228e559392272906e18d29ac3aa">  511</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classomnetpp_1_1cSimulation.html#a25f92228e559392272906e18d29ac3aa">setGlobalContext</a>()  {contextComponent=<span class="keyword">nullptr</span>; cOwnedObject::setOwningContext(&amp;globalOwningContext);}</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160; </div>
+<div class="line"><a name="l00518"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#a44a9e8c2b63906704a99931a5aa3f2b0">  518</a></span>&#160;    <a class="code" href="classomnetpp_1_1cSimpleModule.html">cSimpleModule</a> *<a class="code" href="classomnetpp_1_1cSimulation.html#a44a9e8c2b63906704a99931a5aa3f2b0">getActivityModule</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> currentActivityModule;}</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160; </div>
+<div class="line"><a name="l00523"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#afdd3614a1bc9ccfe63205d3780f7d6df">  523</a></span>&#160;    <a class="code" href="classomnetpp_1_1cComponent.html">cComponent</a> *<a class="code" href="classomnetpp_1_1cSimulation.html#afdd3614a1bc9ccfe63205d3780f7d6df">getContext</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> contextComponent;}</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160; </div>
+<div class="line"><a name="l00532"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#a6fe1c92fbf7a0f90bf71a9435963a601">  532</a></span>&#160;    ContextType <a class="code" href="classomnetpp_1_1cSimulation.html#a6fe1c92fbf7a0f90bf71a9435963a601">getContextType</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> contextType;}</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160; </div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    <a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *getContextModule() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160; </div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    <a class="code" href="classomnetpp_1_1cSimpleModule.html">cSimpleModule</a> *getContextSimpleModule() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160; </div>
+<div class="line"><a name="l00552"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#a199587e4d00b5dcfc24800ea38c7d82b">  552</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classomnetpp_1_1cSimulation.html#a199587e4d00b5dcfc24800ea38c7d82b">requestTrapOnNextEvent</a>() {trapOnNextEvent = <span class="keyword">true</span>;}</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160; </div>
+<div class="line"><a name="l00557"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#aa99eabf3f0749393de18bc4d1c680e7b">  557</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classomnetpp_1_1cSimulation.html#aa99eabf3f0749393de18bc4d1c680e7b">clearTrapOnNextEvent</a>() {trapOnNextEvent = <span class="keyword">false</span>;}</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160; </div>
+<div class="line"><a name="l00563"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#a465c2effa604b3cc7c5f26da15ff7fe0">  563</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classomnetpp_1_1cSimulation.html#a465c2effa604b3cc7c5f26da15ff7fe0">isTrapOnNextEventRequested</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> trapOnNextEvent;}</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160; </div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> getUniqueNumber();</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160; </div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    <span class="keywordtype">void</span> snapshot(<a class="code" href="classomnetpp_1_1cObject.html">cObject</a> *obj, <span class="keyword">const</span> <span class="keywordtype">char</span> *label);</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160; </div>
+<div class="line"><a name="l00587"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cSimulation.html#a56494b78793e6e1d0a502b4081d3b7cc">  587</a></span>&#160;    <a class="code" href="classomnetpp_1_1cFingerprintCalculator.html">cFingerprintCalculator</a> *<a class="code" href="classomnetpp_1_1cSimulation.html#a56494b78793e6e1d0a502b4081d3b7cc">getFingerprintCalculator</a>() {<span class="keywordflow">return</span> fingerprint;}</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160; </div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;    <span class="keywordtype">void</span> setFingerprintCalculator(<a class="code" href="classomnetpp_1_1cFingerprintCalculator.html">cFingerprintCalculator</a> *fingerprint);</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;};</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160; </div>
+<div class="line"><a name="l00601"></a><span class="lineno"><a class="line" href="group__SimTime.html#ga546abe6e6fd7a646f74d81cc944a3f08">  601</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="classomnetpp_1_1SimTime.html">simtime_t</a> <a class="code" href="group__SimTime.html#ga546abe6e6fd7a646f74d81cc944a3f08">simTime</a>() {<span class="keywordflow">return</span> <a class="code" href="classomnetpp_1_1cSimulation.html#ae677cba64809c8914558eed1bc31c1c7">cSimulation::getActiveSimulation</a>()-&gt;<a class="code" href="classomnetpp_1_1cSimulation.html#a574cd99e779036e5ce2f38a9077fdb1d">getSimTime</a>();}</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160; </div>
+<div class="line"><a name="l00608"></a><span class="lineno"><a class="line" href="group__Misc.html#ga9e1dcc79e9e31ef10df26a0e94d15b72">  608</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="classomnetpp_1_1cSimulation.html">cSimulation</a> *<a class="code" href="group__Misc.html#ga9e1dcc79e9e31ef10df26a0e94d15b72">getSimulation</a>()  {<span class="keywordflow">return</span> <a class="code" href="classomnetpp_1_1cSimulation.html#ae677cba64809c8914558eed1bc31c1c7">cSimulation::getActiveSimulation</a>();}</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160; </div>
+<div class="line"><a name="l00616"></a><span class="lineno"><a class="line" href="group__Misc.html#gadc4728c488881c627cb1f82940c69952">  616</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="classomnetpp_1_1cEnvir.html">cEnvir</a> *<a class="code" href="group__Misc.html#gadc4728c488881c627cb1f82940c69952">getEnvir</a>()  {<span class="keywordflow">return</span> <a class="code" href="classomnetpp_1_1cSimulation.html#a6944156bfb54ed66b3a6206608975f00">cSimulation::getActiveEnvir</a>();}</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160; </div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;}  <span class="comment">// namespace omnetpp</span></div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160; </div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160; </div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="agroup__SimTime_html_gaeb959690bf306a1c7909f592f74c70ee"><div class="ttname"><a href="group__SimTime.html#gaeb959690bf306a1c7909f592f74c70ee">omnetpp::simtime_t_cref</a></div><div class="ttdeci">const typedef simtime_t &amp; simtime_t_cref</div><div class="ttdoc">Constant reference to a simtime_t.</div><div class="ttdef"><b>Definition:</b> simtime_t.h:48</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cException_html"><div class="ttname"><a href="classomnetpp_1_1cException.html">omnetpp::cException</a></div><div class="ttdoc">Exception class.</div><div class="ttdef"><b>Definition:</b> cexception.h:49</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_html"><div class="ttname"><a href="classomnetpp_1_1cModule.html">omnetpp::cModule</a></div><div class="ttdoc">This class represents modules in the simulation.</div><div class="ttdef"><b>Definition:</b> cmodule.h:48</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_a574cd99e779036e5ce2f38a9077fdb1d"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#a574cd99e779036e5ce2f38a9077fdb1d">omnetpp::cSimulation::getSimTime</a></div><div class="ttdeci">simtime_t_cref getSimTime() const</div><div class="ttdef"><b>Definition:</b> csimulation.h:405</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_afdd3614a1bc9ccfe63205d3780f7d6df"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#afdd3614a1bc9ccfe63205d3780f7d6df">omnetpp::cSimulation::getContext</a></div><div class="ttdeci">cComponent * getContext() const</div><div class="ttdef"><b>Definition:</b> csimulation.h:523</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cObject_html"><div class="ttname"><a href="classomnetpp_1_1cObject.html">omnetpp::cObject</a></div><div class="ttdoc">cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy....</div><div class="ttdef"><b>Definition:</b> cobject.h:92</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_a56494b78793e6e1d0a502b4081d3b7cc"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#a56494b78793e6e1d0a502b4081d3b7cc">omnetpp::cSimulation::getFingerprintCalculator</a></div><div class="ttdeci">cFingerprintCalculator * getFingerprintCalculator()</div><div class="ttdef"><b>Definition:</b> csimulation.h:587</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_a75f8429cae4a97ecd84ff603b318104c"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#a75f8429cae4a97ecd84ff603b318104c">omnetpp::cSimulation::getSimulationStage</a></div><div class="ttdeci">int getSimulationStage() const</div><div class="ttdef"><b>Definition:</b> csimulation.h:385</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_a199587e4d00b5dcfc24800ea38c7d82b"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#a199587e4d00b5dcfc24800ea38c7d82b">omnetpp::cSimulation::requestTrapOnNextEvent</a></div><div class="ttdeci">void requestTrapOnNextEvent()</div><div class="ttdef"><b>Definition:</b> csimulation.h:552</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cFingerprintCalculator_html"><div class="ttname"><a href="classomnetpp_1_1cFingerprintCalculator.html">omnetpp::cFingerprintCalculator</a></div><div class="ttdoc">This class defines the interface for fingerprint calculators.</div><div class="ttdef"><b>Definition:</b> cfingerprint.h:35</div></div>
+<div class="ttc" id="agroup__Misc_html_gadc4728c488881c627cb1f82940c69952"><div class="ttname"><a href="group__Misc.html#gadc4728c488881c627cb1f82940c69952">omnetpp::getEnvir</a></div><div class="ttdeci">cEnvir * getEnvir()</div><div class="ttdoc">Returns the environment object for the currently active simulation. This function never returns nullp...</div><div class="ttdef"><b>Definition:</b> csimulation.h:616</div></div>
+<div class="ttc" id="aclassomnetpp_1_1noncopyable_html"><div class="ttname"><a href="classomnetpp_1_1noncopyable.html">omnetpp::noncopyable</a></div><div class="ttdoc">Utility class, to make it impossible to call the operator= and copy constructor of any class derived ...</div><div class="ttdef"><b>Definition:</b> cobject.h:415</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cEvent_html"><div class="ttname"><a href="classomnetpp_1_1cEvent.html">omnetpp::cEvent</a></div><div class="ttdoc">Represents an event in the discrete event simulator.</div><div class="ttdef"><b>Definition:</b> cevent.h:46</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html">omnetpp::cSimulation</a></div><div class="ttdoc">Simulation manager class.</div><div class="ttdef"><b>Definition:</b> csimulation.h:64</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_aa99eabf3f0749393de18bc4d1c680e7b"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#aa99eabf3f0749393de18bc4d1c680e7b">omnetpp::cSimulation::clearTrapOnNextEvent</a></div><div class="ttdeci">void clearTrapOnNextEvent()</div><div class="ttdef"><b>Definition:</b> csimulation.h:557</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cComponent_html_a9888093c43c151208f9f647500cd8662"><div class="ttname"><a href="classomnetpp_1_1cComponent.html#a9888093c43c151208f9f647500cd8662">omnetpp::cComponent::isChannel</a></div><div class="ttdeci">bool isChannel() const</div><div class="ttdef"><b>Definition:</b> ccomponent.h:475</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cFutureEventSet_html"><div class="ttname"><a href="classomnetpp_1_1cFutureEventSet.html">omnetpp::cFutureEventSet</a></div><div class="ttdoc">Abstract base class for the future event set (FES), a central data structure for discrete event simul...</div><div class="ttdef"><b>Definition:</b> cfutureeventset.h:32</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cScheduler_html"><div class="ttname"><a href="classomnetpp_1_1cScheduler.html">omnetpp::cScheduler</a></div><div class="ttdoc">Abstract class to encapsulate event scheduling.</div><div class="ttdef"><b>Definition:</b> cscheduler.h:47</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cVisitor_html"><div class="ttname"><a href="classomnetpp_1_1cVisitor.html">omnetpp::cVisitor</a></div><div class="ttdoc">Enables traversing the tree of (cObject-rooted) simulation objects.</div><div class="ttdef"><b>Definition:</b> cvisitor.h:56</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cChannel_html"><div class="ttname"><a href="classomnetpp_1_1cChannel.html">omnetpp::cChannel</a></div><div class="ttdoc">Base class for channels.</div><div class="ttdef"><b>Definition:</b> cchannel.h:46</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModuleType_html"><div class="ttname"><a href="classomnetpp_1_1cModuleType.html">omnetpp::cModuleType</a></div><div class="ttdoc">Abstract class for creating a module of a specific type.</div><div class="ttdef"><b>Definition:</b> ccomponenttype.h:211</div></div>
+<div class="ttc" id="agroup__SimTime_html_ga546abe6e6fd7a646f74d81cc944a3f08"><div class="ttname"><a href="group__SimTime.html#ga546abe6e6fd7a646f74d81cc944a3f08">omnetpp::simTime</a></div><div class="ttdeci">simtime_t simTime()</div><div class="ttdoc">Returns the current simulation time.</div><div class="ttdef"><b>Definition:</b> csimulation.h:601</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cComponent_html_a8d2f913f542210584f2f20a4aa09b43e"><div class="ttname"><a href="classomnetpp_1_1cComponent.html#a8d2f913f542210584f2f20a4aa09b43e">omnetpp::cComponent::isModule</a></div><div class="ttdeci">bool isModule() const</div><div class="ttdef"><b>Definition:</b> ccomponent.h:470</div></div>
+<div class="ttc" id="aclassomnetpp_1_1SimTime_html"><div class="ttname"><a href="classomnetpp_1_1SimTime.html">omnetpp::SimTime</a></div><div class="ttdoc">int64_t-based, base-10 fixed-point simulation time.</div><div class="ttdef"><b>Definition:</b> simtime.h:66</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_a5086216af597fe938cbdd99884bf3d24"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#a5086216af597fe938cbdd99884bf3d24">omnetpp::cSimulation::getSystemModule</a></div><div class="ttdeci">cModule * getSystemModule() const</div><div class="ttdef"><b>Definition:</b> csimulation.h:256</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_a34cfb991d0e0f74d4fafb76dd85dae9d"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#a34cfb991d0e0f74d4fafb76dd85dae9d">omnetpp::cSimulation::getComponent</a></div><div class="ttdeci">cComponent * getComponent(int id) const</div><div class="ttdef"><b>Definition:</b> csimulation.h:234</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_a465c2effa604b3cc7c5f26da15ff7fe0"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#a465c2effa604b3cc7c5f26da15ff7fe0">omnetpp::cSimulation::isTrapOnNextEventRequested</a></div><div class="ttdeci">bool isTrapOnNextEventRequested() const</div><div class="ttdef"><b>Definition:</b> csimulation.h:563</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_a5441bcd14d51e9a7cd6d6e9dfaebb67e"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#a5441bcd14d51e9a7cd6d6e9dfaebb67e">omnetpp::cSimulation::getScheduler</a></div><div class="ttdeci">cScheduler * getScheduler() const</div><div class="ttdef"><b>Definition:</b> csimulation.h:332</div></div>
+<div class="ttc" id="agroup__Misc_html_gaebe35226c5c889df9d1cf602b9339aeb"><div class="ttname"><a href="group__Misc.html#gaebe35226c5c889df9d1cf602b9339aeb">omnetpp::eventnumber_t</a></div><div class="ttdeci">int64_t eventnumber_t</div><div class="ttdoc">Sequence number of events during the simulation. Events are numbered from one. (Event number zero is ...</div><div class="ttdef"><b>Definition:</b> simkerneldefs.h:78</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_a4ca7929dc35933f1605becdf1f241023"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#a4ca7929dc35933f1605becdf1f241023">omnetpp::cSimulation::getModule</a></div><div class="ttdeci">cModule * getModule(int id) const</div><div class="ttdef"><b>Definition:</b> csimulation.h:240</div></div>
+<div class="ttc" id="agroup__Misc_html_ga9e1dcc79e9e31ef10df26a0e94d15b72"><div class="ttname"><a href="group__Misc.html#ga9e1dcc79e9e31ef10df26a0e94d15b72">omnetpp::getSimulation</a></div><div class="ttdeci">cSimulation * getSimulation()</div><div class="ttdoc">Returns the currently active simulation, or nullptr if there is none.</div><div class="ttdef"><b>Definition:</b> csimulation.h:608</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_af7d31019693943291fd46b29b3b79831"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#af7d31019693943291fd46b29b3b79831">omnetpp::cSimulation::getLastComponentId</a></div><div class="ttdeci">int getLastComponentId() const</div><div class="ttdef"><b>Definition:</b> csimulation.h:200</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cPar_html"><div class="ttname"><a href="classomnetpp_1_1cPar.html">omnetpp::cPar</a></div><div class="ttdoc">Represents a module or channel parameter.</div><div class="ttdef"><b>Definition:</b> cpar.h:70</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_a80c81f0fd56068971d34b5310a653193"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#a80c81f0fd56068971d34b5310a653193">omnetpp::cSimulation::getWarmupPeriod</a></div><div class="ttdeci">simtime_t_cref getWarmupPeriod() const</div><div class="ttdef"><b>Definition:</b> csimulation.h:422</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_a6fe1c92fbf7a0f90bf71a9435963a601"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#a6fe1c92fbf7a0f90bf71a9435963a601">omnetpp::cSimulation::getContextType</a></div><div class="ttdeci">ContextType getContextType() const</div><div class="ttdef"><b>Definition:</b> csimulation.h:532</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_af257176f9ecb5efe33a35a745253fdd2"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#af257176f9ecb5efe33a35a745253fdd2">omnetpp::cSimulation::setWarmupPeriod</a></div><div class="ttdeci">void setWarmupPeriod(simtime_t t)</div><div class="ttdef"><b>Definition:</b> csimulation.h:427</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cNamedObject_html"><div class="ttname"><a href="classomnetpp_1_1cNamedObject.html">omnetpp::cNamedObject</a></div><div class="ttdoc">Extends cObject with a name string. Also includes a &quot;flags&quot; member, with bits open for use by subclas...</div><div class="ttdef"><b>Definition:</b> cnamedobject.h:34</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cComponent_html"><div class="ttname"><a href="classomnetpp_1_1cComponent.html">omnetpp::cComponent</a></div><div class="ttdoc">Common base for module and channel classes.</div><div class="ttdef"><b>Definition:</b> ccomponent.h:49</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_aa759751d7ced9217938893695176d851"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#aa759751d7ced9217938893695176d851">omnetpp::cSimulation::getFES</a></div><div class="ttdeci">cFutureEventSet * getFES() const</div><div class="ttdef"><b>Definition:</b> csimulation.h:344</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_a1d5d05ac26ebb0d13ed2eef9bc122d2a"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#a1d5d05ac26ebb0d13ed2eef9bc122d2a">omnetpp::cSimulation::getChannel</a></div><div class="ttdeci">cChannel * getChannel(int id) const</div><div class="ttdef"><b>Definition:</b> csimulation.h:246</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_a44a9e8c2b63906704a99931a5aa3f2b0"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#a44a9e8c2b63906704a99931a5aa3f2b0">omnetpp::cSimulation::getActivityModule</a></div><div class="ttdeci">cSimpleModule * getActivityModule() const</div><div class="ttdef"><b>Definition:</b> csimulation.h:518</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cRuntimeError_html"><div class="ttname"><a href="classomnetpp_1_1cRuntimeError.html">omnetpp::cRuntimeError</a></div><div class="ttdoc">Thrown when the simulation kernel or other components detect a runtime error.</div><div class="ttdef"><b>Definition:</b> cexception.h:292</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimpleModule_html"><div class="ttname"><a href="classomnetpp_1_1cSimpleModule.html">omnetpp::cSimpleModule</a></div><div class="ttdoc">Base class for all simple module classes.</div><div class="ttdef"><b>Definition:</b> csimplemodule.h:202</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_a431d106bf475b09b0c5c79d966f9ad81"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#a431d106bf475b09b0c5c79d966f9ad81">omnetpp::cSimulation::getNetworkType</a></div><div class="ttdeci">cModuleType * getNetworkType() const</div><div class="ttdef"><b>Definition:</b> csimulation.h:391</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_a6944156bfb54ed66b3a6206608975f00"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#a6944156bfb54ed66b3a6206608975f00">omnetpp::cSimulation::getActiveEnvir</a></div><div class="ttdeci">static cEnvir * getActiveEnvir()</div><div class="ttdef"><b>Definition:</b> csimulation.h:154</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cEnvir_html"><div class="ttname"><a href="classomnetpp_1_1cEnvir.html">omnetpp::cEnvir</a></div><div class="ttdoc">cEnvir represents the &quot;environment&quot; or user interface of the simulation.</div><div class="ttdef"><b>Definition:</b> cenvir.h:75</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_a2efd8a63eda423d420f8042d0edf2834"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#a2efd8a63eda423d420f8042d0edf2834">omnetpp::cSimulation::getStaticEnvir</a></div><div class="ttdeci">static cEnvir * getStaticEnvir()</div><div class="ttdef"><b>Definition:</b> csimulation.h:172</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_ae677cba64809c8914558eed1bc31c1c7"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#ae677cba64809c8914558eed1bc31c1c7">omnetpp::cSimulation::getActiveSimulation</a></div><div class="ttdeci">static cSimulation * getActiveSimulation()</div><div class="ttdef"><b>Definition:</b> csimulation.h:148</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_a4c1ecc24ab6a24137c11e9e4f897b312"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#a4c1ecc24ab6a24137c11e9e4f897b312">omnetpp::cSimulation::setSimTime</a></div><div class="ttdeci">void setSimTime(simtime_t time)</div><div class="ttdef"><b>Definition:</b> csimulation.h:398</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_aa961710160528cac084b2887dd0d641f"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#aa961710160528cac084b2887dd0d641f">omnetpp::cSimulation::getEventNumber</a></div><div class="ttdeci">eventnumber_t getEventNumber() const</div><div class="ttdef"><b>Definition:</b> csimulation.h:411</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_a11652f89b55a7be98743a8d252bdb5c4"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#a11652f89b55a7be98743a8d252bdb5c4">omnetpp::cSimulation::setContextType</a></div><div class="ttdeci">void setContextType(ContextType type)</div><div class="ttdef"><b>Definition:</b> csimulation.h:506</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_a25f92228e559392272906e18d29ac3aa"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#a25f92228e559392272906e18d29ac3aa">omnetpp::cSimulation::setGlobalContext</a></div><div class="ttdeci">void setGlobalContext()</div><div class="ttdef"><b>Definition:</b> csimulation.h:511</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html_a0f36ad85f13c1966c5a94f4572309621"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html#a0f36ad85f13c1966c5a94f4572309621">omnetpp::cSimulation::getEnvir</a></div><div class="ttdeci">cEnvir * getEnvir() const</div><div class="ttdef"><b>Definition:</b> csimulation.h:177</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_d69ce13079b0b0a43a6d5bd8d76d2fb6.html">omnetpp</a></li><li class="navelem"><b>csimulation.h</b></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

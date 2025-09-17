@@ -1,0 +1,6 @@
+<map id="TotalCountRecorder" name="TotalCountRecorder">
+<area shape="rect" id="node1" title="Listener for recording the count of signal values, including NaN and nullptr." alt="" coords="5,155,155,181"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1CountRecorder.html" title="Listener for recording the count of signal values. Signal values do not need to be numeric to be coun..." alt="" coords="21,229,139,256"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cResultRecorder.html" title="Abstract base class for result recorders." alt="" coords="16,80,144,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cResultListener.html" title="Common abstract base class for result filters and result recorders." alt="" coords="19,5,141,32"/>
+</map>

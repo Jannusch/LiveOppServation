@@ -1,0 +1,6 @@
+<map id="cFutureEventSet" name="cFutureEventSet">
+<area shape="rect" id="node1" title="Abstract base class for the future event set (FES), a central data structure for discrete event simul..." alt="" coords="5,155,133,181"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cEventHeap.html" title="The default, binary heap based implementation of the future event set." alt="" coords="19,229,119,256"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cOwnedObject.html" title="A cObject that keeps track of its owner. It serves as base class for many classes in the OMNeT++ libr..." alt="" coords="11,80,127,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cNamedObject.html" title="Extends cObject with a name string. Also includes a &quot;flags&quot; member, with bits open for use by subclas..." alt="" coords="10,5,129,32"/>
+</map>

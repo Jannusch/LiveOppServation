@@ -1,0 +1,32 @@
+<map id="cModelChangeNotification" name="cModelChangeNotification">
+<area shape="rect" id="node1" title="Common base class for data objects that accompany PRE_MODEL_CHANGE and POST_MODEL_CHANGE signals." alt="" coords="159,669,352,696"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cPathChangeNotification.html" title="Base class for path change notifications." alt="" coords="440,81,621,108"/>
+<area shape="rect" id="node9" href="$classomnetpp_1_1cPostComponentInitializeNotification.html" title="Model change notification fired after a component is initialized." alt="" coords="437,133,625,174"/>
+<area shape="rect" id="node10" href="$classomnetpp_1_1cPostDisplayStringChangeNotification.html" title="Model change notification fired after a dispay string change." alt="" coords="434,198,627,239"/>
+<area shape="rect" id="node11" href="$classomnetpp_1_1cPostGateAddNotification.html" title="Model change notification fired after a gate or gate vector has been added to the module." alt="" coords="437,264,625,291"/>
+<area shape="rect" id="node12" href="$classomnetpp_1_1cPostGateConnectNotification.html" title="Model change notification fired after a gate has been connected." alt="" coords="423,315,639,341"/>
+<area shape="rect" id="node13" href="$classomnetpp_1_1cPostGateDeleteNotification.html" title="Model change notification fired after a gate has been deleted." alt="" coords="427,365,634,392"/>
+<area shape="rect" id="node14" href="$classomnetpp_1_1cPostGateDisconnectNotification.html" title="Model change notification fired after a gate is disconnected." alt="" coords="413,416,648,443"/>
+<area shape="rect" id="node15" href="$classomnetpp_1_1cPostGateVectorResizeNotification.html" title="Model change notification fired after a gate vector has been resized." alt="" coords="407,467,654,493"/>
+<area shape="rect" id="node16" href="$classomnetpp_1_1cPostModuleAddNotification.html" title="Model change notification fired just after a module is inserted into the network." alt="" coords="428,517,633,544"/>
+<area shape="rect" id="node17" href="$classomnetpp_1_1cPostModuleBuildNotification.html" title="Model change notification fired after a module is built." alt="" coords="424,568,637,595"/>
+<area shape="rect" id="node18" href="$classomnetpp_1_1cPostModuleDeleteNotification.html" title="Model change notification fired after a module has been deleted." alt="" coords="419,619,642,645"/>
+<area shape="rect" id="node19" href="$classomnetpp_1_1cPostModuleReparentNotification.html" title="Model change notification fired after a module has been reparented." alt="" coords="411,669,650,696"/>
+<area shape="rect" id="node20" href="$classomnetpp_1_1cPostParameterChangeNotification.html" title="Model change notification fired after a parameter change." alt="" coords="407,720,655,747"/>
+<area shape="rect" id="node21" href="$classomnetpp_1_1cPreDisplayStringChangeNotification.html" title="Model change notification fired just before a display string change." alt="" coords="400,771,661,797"/>
+<area shape="rect" id="node22" href="$classomnetpp_1_1cPreGateAddNotification.html" title="Model change notification fired just before a gate or gate vector is added to the module." alt="" coords="440,821,621,848"/>
+<area shape="rect" id="node23" href="$classomnetpp_1_1cPreGateConnectNotification.html" title="Model change notification fired just before a gate is connected." alt="" coords="426,872,635,899"/>
+<area shape="rect" id="node24" href="$classomnetpp_1_1cPreGateDeleteNotification.html" title="Model change notification fired just before a gate is deleted." alt="" coords="431,923,630,949"/>
+<area shape="rect" id="node25" href="$classomnetpp_1_1cPreGateDisconnectNotification.html" title="Model change notification fired just before a gate has been disconnected." alt="" coords="417,973,645,1000"/>
+<area shape="rect" id="node26" href="$classomnetpp_1_1cPreGateVectorResizeNotification.html" title="Model change notification fired just before a gate vector is resized." alt="" coords="411,1024,651,1051"/>
+<area shape="rect" id="node27" href="$classomnetpp_1_1cPreModuleAddNotification.html" title="Model change notification fired just before a module is inserted into the network." alt="" coords="431,1075,630,1101"/>
+<area shape="rect" id="node28" href="$classomnetpp_1_1cPreModuleDeleteNotification.html" title="Model change notification fired just before a module is deleted." alt="" coords="423,1125,639,1152"/>
+<area shape="rect" id="node29" href="$classomnetpp_1_1cPreModuleReparentNotification.html" title="Model change notification fired just before a module is reparented." alt="" coords="415,1176,647,1203"/>
+<area shape="rect" id="node30" href="$classomnetpp_1_1cPreParameterChangeNotification.html" title="Model change notification fired just before a parameter change." alt="" coords="410,1227,651,1253"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cObject.html" title="cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy...." alt="" coords="23,644,93,671"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1noncopyable.html" title="Utility class, to make it impossible to call the operator= and copy constructor of any class derived ..." alt="" coords="5,695,111,721"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cPostPathCreateNotification.html" title="Model change notification fired after a connection path has been created." alt="" coords="709,5,912,32"/>
+<area shape="rect" id="node6" href="$classomnetpp_1_1cPostPathCutNotification.html" title="Model change notification fired after a connection path has been cut." alt="" coords="719,56,902,83"/>
+<area shape="rect" id="node7" href="$classomnetpp_1_1cPrePathCreateNotification.html" title="Model change notification fired just before a connection path is created." alt="" coords="713,107,909,133"/>
+<area shape="rect" id="node8" href="$classomnetpp_1_1cPrePathCutNotification.html" title="Model change notification fired just before a connection path is cut." alt="" coords="723,157,898,184"/>
+</map>

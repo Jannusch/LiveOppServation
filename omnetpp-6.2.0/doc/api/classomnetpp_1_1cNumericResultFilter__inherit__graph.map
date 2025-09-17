@@ -1,0 +1,16 @@
+<map id="cNumericResultFilter" name="cNumericResultFilter">
+<area shape="rect" id="node1" title="Base class for filters that expect to receive an numeric value." alt="" coords="327,259,485,285"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1AverageFilter.html" title="Result filter that computes the arithmetic mean of signal values. NaN values in the input are ignored..." alt="" coords="561,5,669,32"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1CountNanFilter.html" title="Filter that counts NaN values in the input." alt="" coords="555,56,674,83"/>
+<area shape="rect" id="node6" href="$classomnetpp_1_1ErrorNanFilter.html" title="Filter that raises a runtime error if it sees a NaN in the input." alt="" coords="559,107,671,133"/>
+<area shape="rect" id="node7" href="$classomnetpp_1_1MaxFilter.html" title="Result filter that computes the maximum of signal values. NaN values in the input are ignored." alt="" coords="573,157,656,184"/>
+<area shape="rect" id="node8" href="$classomnetpp_1_1MeanFilter.html" title="Result filter that computes the (time&#45;weighted or unweighted) mean of signal values...." alt="" coords="569,208,660,235"/>
+<area shape="rect" id="node9" href="$classomnetpp_1_1MinFilter.html" title="Result filter that computes the minimum of signal values. NaN values in the input are ignored." alt="" coords="575,259,654,285"/>
+<area shape="rect" id="node10" href="$classomnetpp_1_1RemoveRepeatsFilter.html" title="Result filter that removes repeated values." alt="" coords="533,309,696,336"/>
+<area shape="rect" id="node11" href="$classomnetpp_1_1SkipNanFilter.html" title="Filter that removes (filters out) NaNs, and lets through all other values." alt="" coords="560,360,669,387"/>
+<area shape="rect" id="node12" href="$classomnetpp_1_1SumFilter.html" title="Filter that outputs the sum of signal values. NaN values in the input are ignored." alt="" coords="573,411,657,437"/>
+<area shape="rect" id="node13" href="$classomnetpp_1_1SumPerDurationFilter.html" title="Filter that outputs the sum of signal values divided by the measurement interval (simtime minus warmu..." alt="" coords="534,461,695,488"/>
+<area shape="rect" id="node14" href="$classomnetpp_1_1TimeAverageFilter.html" title="Result filter that computes the time average of signal values. NaN values in the input denote interva..." alt="" coords="544,512,685,539"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cResultFilter.html" title="Base class for result filters." alt="" coords="176,259,279,285"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cResultListener.html" title="Common abstract base class for result filters and result recorders." alt="" coords="5,259,128,285"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="cValueMap" name="cValueMap">
+<area shape="rect" id="node1" title="Key&#45;value container class based on std::map&lt;std::string,cValue&gt;." alt="" coords="23,155,116,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cValueContainer.html" title="Common base class for cValue&#45;based containers." alt="" coords="5,80,133,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cOwnedObject.html" title="A cObject that keeps track of its owner. It serves as base class for many classes in the OMNeT++ libr..." alt="" coords="11,5,127,32"/>
+</map>

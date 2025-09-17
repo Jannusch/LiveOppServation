@@ -1,0 +1,4 @@
+<map id="cFileCommBuffer" name="cFileCommBuffer">
+<area shape="rect" id="node1" title="Communication buffer that packs data in a text representation into a memory buffer." alt="" coords="9,80,144,107"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cCommBufferBase.html" title="Adds buffer (re)allocation functions to cCommBuffer. This functionality is not always needed,..." alt="" coords="5,5,148,32"/>
+</map>

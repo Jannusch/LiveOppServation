@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classomnetpp_1_1cNMPLookahead.html" title="Base class of lookahead calculations for cNullMessageProtocol which implements the &quot;null message algo..." alt="" coords="5,31,135,57"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cAdvancedLinkDelayLookahead.html" title="Lookahead calculation based on inter&#45;partition link delays only." alt="" coords="183,5,411,32"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cLinkDelayLookahead.html" title="Lookahead calculation based on inter&#45;partition link delays only." alt="" coords="215,56,379,83"/>
+</map>

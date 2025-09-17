@@ -1,0 +1,5 @@
+<map id="cPacket" name="cPacket">
+<area shape="rect" id="node1" title="A subclass of cMessage to represent packets, frames, datagrams, application messages,..." alt="" coords="13,155,84,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cMessage.html" title="The message class in OMNeT++. cMessage objects may represent events, messages, jobs or other entities..." alt="" coords="5,80,92,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cEvent.html" title="Represents an event in the discrete event simulator." alt="" coords="15,5,82,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="WarmupPeriodFilter" name="WarmupPeriodFilter">
+<area shape="rect" id="node1" title="Result filter that absorbs input values during the configured warm&#45;up period (see warmup&#45;period confi..." alt="" coords="5,155,156,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cResultFilter.html" title="Base class for result filters." alt="" coords="29,80,132,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cResultListener.html" title="Common abstract base class for result filters and result recorders." alt="" coords="19,5,142,32"/>
+</map>

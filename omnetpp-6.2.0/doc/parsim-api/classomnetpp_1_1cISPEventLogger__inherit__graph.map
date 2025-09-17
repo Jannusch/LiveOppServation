@@ -1,0 +1,5 @@
+<map id="cISPEventLogger" name="cISPEventLogger">
+<area shape="rect" id="node1" title="Implements phase one for the Ideal Simulation Protocol (ISP), namely, creating the log of &quot;external&quot; ..." alt="" coords="23,155,154,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cNullMessageProtocol.html" title="Implements the &quot;null message algorithm&quot;. Lookahead calculation is encapsulated into a separate object..." alt="" coords="5,80,172,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cParsimProtocolBase.html" title="Contains utility functions for implementing parallel simulation protocols." alt="" coords="9,5,168,32"/>
+</map>

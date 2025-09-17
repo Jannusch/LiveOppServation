@@ -1,0 +1,5 @@
+<map id="cTimestampedValue" name="cTimestampedValue">
+<area shape="rect" id="node1" title="A straightforward implementation of cITimestampedValue." alt="" coords="77,80,231,107"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cITimestampedValue.html" title="Interface for emitting timestamped values as signals, primarily for result recording." alt="" coords="5,5,164,32"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cObject.html" title="cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy...." alt="" coords="188,5,259,32"/>
+</map>

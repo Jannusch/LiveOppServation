@@ -1,0 +1,4 @@
+<map id="cHasher" name="cHasher">
+<area shape="rect" id="node1" title="Utility class to calculate the hash of some data." alt="" coords="21,80,95,107"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1noncopyable.html" title="Utility class, to make it impossible to call the operator= and copy constructor of any class derived ..." alt="" coords="5,5,111,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="TotalCountFilter" name="TotalCountFilter">
+<area shape="rect" id="node1" title="Result filter for counting the input values, including NaN and nullptr values." alt="" coords="5,155,129,181"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1CountFilter.html" title="Result filter for counting signals. Signal values do not need to be numeric to be counted...." alt="" coords="21,229,114,256"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cResultFilter.html" title="Base class for result filters." alt="" coords="16,80,119,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cResultListener.html" title="Common abstract base class for result filters and result recorders." alt="" coords="6,5,129,32"/>
+</map>

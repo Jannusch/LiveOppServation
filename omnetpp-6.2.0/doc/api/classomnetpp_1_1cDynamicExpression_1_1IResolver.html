@@ -1,0 +1,484 @@
+<!-- HTML header for doxygen 1.9.4-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OMNeT++ API: cDynamicExpression::IResolver Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/omnetpp/omnetpp" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+  <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>  
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">OMNeT++ API<span id="projectnumber">&#160;6.2.0</span>
+   </div>
+   <div id="projectbrief">Discrete Event Simulation Library</div>
+  </td>
+ </tr>
+   <!--BEGIN FULL_SIDEBAR-->
+   <tr><td colspan="2">        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td></tr>
+   <!--END FULL_SIDEBAR-->
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classomnetpp_1_1cDynamicExpression_1_1IResolver.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classomnetpp_1_1cDynamicExpression_1_1IResolver-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">cDynamicExpression::IResolver Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Description</h2>
+<div class="textblock"><p>Interface for extending <a class="el" href="classomnetpp_1_1cDynamicExpression.html" title="A stack-based expression evaluator class, for dynamically created expressions.">cDynamicExpression</a> with support for variables, member access, (extra) function calls, and method calls. If a variable/member/etc was not found, the corresponding method should return cValue(), i.e. the "undefined" value. </p>
+</div><div class="dynheader">
+Inheritance diagram for cDynamicExpression::IResolver:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classomnetpp_1_1cDynamicExpression_1_1IResolver__inherit__graph.svg" width="170" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aed6c762662ca448fab7bdfe27806ee49"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classomnetpp_1_1cDynamicExpression_1_1IResolver.html">IResolver</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classomnetpp_1_1cDynamicExpression_1_1IResolver.html#aed6c762662ca448fab7bdfe27806ee49">dup</a> () const =0</td></tr>
+<tr class="separator:aed6c762662ca448fab7bdfe27806ee49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Evaluator methods.</div></td></tr>
+<tr class="memitem:a24b4a8422556216bbba9e1cf265e9c17"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classomnetpp_1_1cValue.html">cValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classomnetpp_1_1cDynamicExpression_1_1IResolver.html#a24b4a8422556216bbba9e1cf265e9c17">readVariable</a> (<a class="el" href="classomnetpp_1_1cExpression_1_1Context.html">Context</a> *context, const char *name)</td></tr>
+<tr class="separator:a24b4a8422556216bbba9e1cf265e9c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c182d72bb8d712c98545eb8e6355160"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classomnetpp_1_1cValue.html">cValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classomnetpp_1_1cDynamicExpression_1_1IResolver.html#a9c182d72bb8d712c98545eb8e6355160">readVariable</a> (<a class="el" href="classomnetpp_1_1cExpression_1_1Context.html">Context</a> *context, const char *name, <a class="el" href="group__Misc.html#ga420ab7092e727985b01e1b13ea5992c5">intval_t</a> index)</td></tr>
+<tr class="separator:a9c182d72bb8d712c98545eb8e6355160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a818ea205aa6bfa4ef1ad8af9de07dc93"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classomnetpp_1_1cValue.html">cValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classomnetpp_1_1cDynamicExpression_1_1IResolver.html#a818ea205aa6bfa4ef1ad8af9de07dc93">readMember</a> (<a class="el" href="classomnetpp_1_1cExpression_1_1Context.html">Context</a> *context, const <a class="el" href="classomnetpp_1_1cValue.html">cValue</a> &amp;object, const char *name)</td></tr>
+<tr class="separator:a818ea205aa6bfa4ef1ad8af9de07dc93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdf74798076aecc669f31695c395604e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classomnetpp_1_1cValue.html">cValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classomnetpp_1_1cDynamicExpression_1_1IResolver.html#acdf74798076aecc669f31695c395604e">readMember</a> (<a class="el" href="classomnetpp_1_1cExpression_1_1Context.html">Context</a> *context, const <a class="el" href="classomnetpp_1_1cValue.html">cValue</a> &amp;object, const char *name, <a class="el" href="group__Misc.html#ga420ab7092e727985b01e1b13ea5992c5">intval_t</a> index)</td></tr>
+<tr class="separator:acdf74798076aecc669f31695c395604e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadb75a0f2ca3e59d4aaa54f7421a4226"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classomnetpp_1_1cValue.html">cValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classomnetpp_1_1cDynamicExpression_1_1IResolver.html#aadb75a0f2ca3e59d4aaa54f7421a4226">callFunction</a> (<a class="el" href="classomnetpp_1_1cExpression_1_1Context.html">Context</a> *context, const char *name, <a class="el" href="classomnetpp_1_1cValue.html">cValue</a> argv[], int argc)</td></tr>
+<tr class="separator:aadb75a0f2ca3e59d4aaa54f7421a4226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b42ae0a9eec813ab333946d0119e64b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classomnetpp_1_1cValue.html">cValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classomnetpp_1_1cDynamicExpression_1_1IResolver.html#a0b42ae0a9eec813ab333946d0119e64b">callMethod</a> (<a class="el" href="classomnetpp_1_1cExpression_1_1Context.html">Context</a> *context, const <a class="el" href="classomnetpp_1_1cValue.html">cValue</a> &amp;object, const char *name, <a class="el" href="classomnetpp_1_1cValue.html">cValue</a> argv[], int argc)</td></tr>
+<tr class="separator:a0b42ae0a9eec813ab333946d0119e64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aed6c762662ca448fab7bdfe27806ee49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed6c762662ca448fab7bdfe27806ee49">&#9670;&nbsp;</a></span>dup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classomnetpp_1_1cDynamicExpression_1_1IResolver.html">IResolver</a>* dup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create and return an exact copy of this object. </p>
+
+<p>Implemented in <a class="el" href="classomnetpp_1_1cDynamicExpression_1_1SymbolTable.html#abcae25e3fe610ed5fe55df33fb76dbce">cDynamicExpression::SymbolTable</a>.</p>
+
+</div>
+</div>
+<a id="a24b4a8422556216bbba9e1cf265e9c17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24b4a8422556216bbba9e1cf265e9c17">&#9670;&nbsp;</a></span>readVariable() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classomnetpp_1_1cValue.html">cValue</a> readVariable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classomnetpp_1_1cExpression_1_1Context.html">Context</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the value of a variable with the given name. </p>
+
+<p>Reimplemented in <a class="el" href="classomnetpp_1_1cDynamicExpression_1_1SymbolTable.html#a53cce619b77c7283c2511f0b661007f4">cDynamicExpression::SymbolTable</a>.</p>
+
+</div>
+</div>
+<a id="a9c182d72bb8d712c98545eb8e6355160"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c182d72bb8d712c98545eb8e6355160">&#9670;&nbsp;</a></span>readVariable() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classomnetpp_1_1cValue.html">cValue</a> readVariable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classomnetpp_1_1cExpression_1_1Context.html">Context</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Misc.html#ga420ab7092e727985b01e1b13ea5992c5">intval_t</a>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the value of an element of an array variable with the given name. Expression syntax: name[index] </p>
+
+<p>Reimplemented in <a class="el" href="classomnetpp_1_1cDynamicExpression_1_1SymbolTable.html#aad2aa366cfd78c74287505f8d3b5c201">cDynamicExpression::SymbolTable</a>.</p>
+
+</div>
+</div>
+<a id="a818ea205aa6bfa4ef1ad8af9de07dc93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a818ea205aa6bfa4ef1ad8af9de07dc93">&#9670;&nbsp;</a></span>readMember() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classomnetpp_1_1cValue.html">cValue</a> readMember </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classomnetpp_1_1cExpression_1_1Context.html">Context</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classomnetpp_1_1cValue.html">cValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the value of a member of the given object. Expression syntax: object.name </p>
+
+</div>
+</div>
+<a id="acdf74798076aecc669f31695c395604e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdf74798076aecc669f31695c395604e">&#9670;&nbsp;</a></span>readMember() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classomnetpp_1_1cValue.html">cValue</a> readMember </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classomnetpp_1_1cExpression_1_1Context.html">Context</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classomnetpp_1_1cValue.html">cValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Misc.html#ga420ab7092e727985b01e1b13ea5992c5">intval_t</a>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the value of an element of an array member of the given object. Expression syntax: object.name[index] </p>
+
+</div>
+</div>
+<a id="aadb75a0f2ca3e59d4aaa54f7421a4226"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadb75a0f2ca3e59d4aaa54f7421a4226">&#9670;&nbsp;</a></span>callFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classomnetpp_1_1cValue.html">cValue</a> callFunction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classomnetpp_1_1cExpression_1_1Context.html">Context</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classomnetpp_1_1cValue.html">cValue</a>&#160;</td>
+          <td class="paramname"><em>argv</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Evaluate a function call with the given arguments. Expression syntax: name(argv0, argv1,...) </p>
+
+</div>
+</div>
+<a id="a0b42ae0a9eec813ab333946d0119e64b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b42ae0a9eec813ab333946d0119e64b">&#9670;&nbsp;</a></span>callMethod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classomnetpp_1_1cValue.html">cValue</a> callMethod </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classomnetpp_1_1cExpression_1_1Context.html">Context</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classomnetpp_1_1cValue.html">cValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classomnetpp_1_1cValue.html">cValue</a>&#160;</td>
+          <td class="paramname"><em>argv</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Evaluate a method call on the given object with the given arguments. Expression syntax: object.name(argv0, argv1,...) </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="cdynamicexpression_8h_source.html">cdynamicexpression.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>omnetpp</b></li><li class="navelem"><a class="el" href="classomnetpp_1_1cDynamicExpression.html">cDynamicExpression</a></li><li class="navelem"><a class="el" href="classomnetpp_1_1cDynamicExpression_1_1IResolver.html">IResolver</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

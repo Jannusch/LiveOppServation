@@ -1,0 +1,5 @@
+<map id="cIdealChannel" name="cIdealChannel">
+<area shape="rect" id="node1" title="Channel with zero propagation delay, zero transmission delay (infinite datarate), and always enabled." alt="" coords="5,155,120,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cChannel.html" title="Base class for channels." alt="" coords="21,80,104,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cComponent.html" title="Common base for module and channel classes." alt="" coords="11,5,115,32"/>
+</map>

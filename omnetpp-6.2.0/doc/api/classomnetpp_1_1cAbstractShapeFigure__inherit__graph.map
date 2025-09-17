@@ -1,0 +1,11 @@
+<map id="cAbstractShapeFigure" name="cAbstractShapeFigure">
+<area shape="rect" id="node1" title="Abstract base class for various shapes." alt="" coords="301,155,464,181"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cOvalFigure.html" title="A figure that draws a circle or ellipse." alt="" coords="5,229,104,256"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cPathFigure.html" title="A figure that displays a &quot;path&quot;, a complex shape or line modeled after SVG paths." alt="" coords="129,229,226,256"/>
+<area shape="rect" id="node6" href="$classomnetpp_1_1cPieSliceFigure.html" title="A figure that displays a pie slice, that is, a section of an axis&#45;aligned disc or filled ellipse." alt="" coords="251,229,371,256"/>
+<area shape="rect" id="node7" href="$classomnetpp_1_1cPolygonFigure.html" title="A figure that displays a (closed) polygon, determined by a sequence of points." alt="" coords="395,229,517,256"/>
+<area shape="rect" id="node8" href="$classomnetpp_1_1cRectangleFigure.html" title="A figure that displays a rectangle, with optionally rounded corners." alt="" coords="541,229,675,256"/>
+<area shape="rect" id="node9" href="$classomnetpp_1_1cRingFigure.html" title="A figure that displays a ring, with explicitly controllable inner/outer radii." alt="" coords="700,229,799,256"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cFigure.html" title="A lightweight graphical object for cCanvas." alt="" coords="348,80,417,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cOwnedObject.html" title="A cObject that keeps track of its owner. It serves as base class for many classes in the OMNeT++ libr..." alt="" coords="325,5,441,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="cDelayChannel" name="cDelayChannel">
+<area shape="rect" id="node1" title="Channel with propagation delay." alt="" coords="5,155,125,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cChannel.html" title="Base class for channels." alt="" coords="24,80,107,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cComponent.html" title="Common base for module and channel classes." alt="" coords="13,5,117,32"/>
+</map>

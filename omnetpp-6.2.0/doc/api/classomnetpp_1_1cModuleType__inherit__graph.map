@@ -1,0 +1,5 @@
+<map id="cModuleType" name="cModuleType">
+<area shape="rect" id="node1" title="Abstract class for creating a module of a specific type." alt="" coords="53,155,159,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cComponentType.html" title="Common base class for cModuleType and cChannelType." alt="" coords="39,80,173,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cNoncopyableOwnedObject.html" title="Base class for cOwnedObject&#45;based classes that do not wish to support assignment and duplication." alt="" coords="5,5,207,32"/>
+</map>

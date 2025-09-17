@@ -1,0 +1,12 @@
+.cache/
+build/
+install/
+
+compile_commands.json
+
+# protbuf/grpc auto generated files
+*\.pb\.*
+*_pb2*
+
+# NFS things
+\.nfs*

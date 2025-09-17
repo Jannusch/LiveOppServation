@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classomnetpp_1_1cParsimSynchronizer.html" title="Abstract base class for parallel simulation algorithms. Subclasses implement the &quot;null message algori..." alt="" coords="5,56,163,83"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cParsimProtocolBase.html" title="Contains utility functions for implementing parallel simulation protocols." alt="" coords="211,56,369,83"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cIdealSimulationProtocol.html" title="Implements the Ideal Simulation Protocol, described in the paper &quot;Performance Evaluation of Conservat..." alt="" coords="417,5,601,32"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cNoSynchronization.html" title="&quot;Dummy&quot; implementation – just pass messages between partitions, without any synchronization...." alt="" coords="434,56,585,83"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cNullMessageProtocol.html" title="Implements the &quot;null message algorithm&quot;. Lookahead calculation is encapsulated into a separate object..." alt="" coords="426,107,593,133"/>
+<area shape="rect" id="node6" href="$classomnetpp_1_1cISPEventLogger.html" title="Implements phase one for the Ideal Simulation Protocol (ISP), namely, creating the log of &quot;external&quot; ..." alt="" coords="649,107,780,133"/>
+</map>

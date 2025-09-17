@@ -1,0 +1,5 @@
+<map id="cITimestampedValue" name="cITimestampedValue">
+<area shape="rect" id="node1" title="Interface for emitting timestamped values as signals, primarily for result recording." alt="" coords="116,5,275,32"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cChannel_1_1MessageSentSignalValue.html" title="Signal value that accompanies the &quot;messageSent&quot; signal." alt="" coords="5,80,191,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cTimestampedValue.html" title="A straightforward implementation of cITimestampedValue." alt="" coords="215,80,370,107"/>
+</map>

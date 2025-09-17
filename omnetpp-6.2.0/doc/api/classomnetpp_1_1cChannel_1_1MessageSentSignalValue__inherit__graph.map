@@ -1,0 +1,5 @@
+<map id="cChannel::MessageSentSignalValue" name="cChannel::MessageSentSignalValue">
+<area shape="rect" id="node1" title="Signal value that accompanies the &quot;messageSent&quot; signal." alt="" coords="45,80,263,121"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cITimestampedValue.html" title="Interface for emitting timestamped values as signals, primarily for result recording." alt="" coords="5,5,164,32"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cObject.html" title="cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy...." alt="" coords="188,5,259,32"/>
+</map>

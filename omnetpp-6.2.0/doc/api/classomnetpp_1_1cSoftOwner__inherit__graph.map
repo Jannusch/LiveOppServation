@@ -1,0 +1,9 @@
+<map id="cSoftOwner" name="cSoftOwner">
+<area shape="rect" id="node1" title="Internal class, used as a base class for modules and channels. It is not intended for subclassing out..." alt="" coords="82,155,178,181"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cComponent.html" title="Common base for module and channel classes." alt="" coords="78,229,182,256"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cNoncopyableOwnedObject.html" title="Base class for cOwnedObject&#45;based classes that do not wish to support assignment and duplication." alt="" coords="29,80,231,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cOwnedObject.html" title="A cObject that keeps track of its owner. It serves as base class for many classes in the OMNeT++ libr..." alt="" coords="5,5,121,32"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1noncopyable.html" title="Utility class, to make it impossible to call the operator= and copy constructor of any class derived ..." alt="" coords="145,5,251,32"/>
+<area shape="rect" id="node6" href="$classomnetpp_1_1cChannel.html" title="Base class for channels." alt="" coords="37,304,119,331"/>
+<area shape="rect" id="node7" href="$classomnetpp_1_1cModule.html" title="This class represents modules in the simulation." alt="" coords="143,304,221,331"/>
+</map>

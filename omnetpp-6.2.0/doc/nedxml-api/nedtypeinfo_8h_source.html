@@ -1,0 +1,336 @@
+<!-- HTML header for doxygen 1.9.4-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OMNeT++ NEDXML: nedtypeinfo.h Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/omnetpp/omnetpp" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+  <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>  
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">OMNeT++ NEDXML<span id="projectnumber">&#160;6.2.0</span>
+   </div>
+   <div id="projectbrief">Discrete Event Simulation Library</div>
+  </td>
+ </tr>
+   <!--BEGIN FULL_SIDEBAR-->
+   <tr><td colspan="2">        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td></tr>
+   <!--END FULL_SIDEBAR-->
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('nedtypeinfo_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">nedtypeinfo.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="nedtypeinfo_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//==========================================================================</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// NEDTYPEINFO.H -</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//                     OMNeT++/OMNEST</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//            Discrete System Simulation in C++</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//==========================================================================</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/*--------------------------------------------------------------*</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">  Copyright (C) 2002-2017 Andras Varga</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">  Copyright (C) 2006-2017 OpenSim Ltd.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">  This file is distributed WITHOUT ANY WARRANTY. See the file</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">  `license&#39; for details on this and other legal matters.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*--------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef __OMNETPP_NEDXML_NEDTYPEINFO_H</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define __OMNETPP_NEDXML_NEDTYPEINFO_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;optional&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;common/commonutil.h&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;nedelements.h&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceomnetpp.html">omnetpp</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span>nedxml {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">class </span>NedResourceCache;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="nedxmldefs_8h.html#a3915af7fb1c0a123f29e86b0339a6782">NEDXML_API</a> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html">NedTypeInfo</a></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a1d1cfd8ffb84e947f82999c682b666a7">   47</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> {SIMPLE_MODULE, COMPOUND_MODULE, MODULEINTERFACE, CHANNEL, CHANNELINTERFACE};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// the resolver this type is in</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#aca23e1f1ff3e145e494c5ccc1695f96f">   51</a></span>&#160;    <a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html">NedResourceCache</a> *<a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#aca23e1f1ff3e145e494c5ccc1695f96f">resolver</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#ab6f4e6d3fde00ce906e46494f60dfe7a">   53</a></span>&#160;    <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#ab6f4e6d3fde00ce906e46494f60dfe7a">type</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#ae3b073d6fb7946c7b34818d9238c410d">   54</a></span>&#160;    std::string <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#ae3b073d6fb7946c7b34818d9238c410d">qualifiedName</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a00356f2422f9b133b4a7ea25f74abaaf">   55</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a00356f2422f9b133b4a7ea25f74abaaf">isInner</a>;  <span class="comment">// whether it is an inner type</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a51e9cc10a0e45af8ecd0166f4f68dd82">   56</a></span>&#160;    <a class="code" href="classomnetpp_1_1nedxml_1_1ASTNode.html">ASTNode</a> *<a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a51e9cc10a0e45af8ecd0166f4f68dd82">tree</a>; <span class="comment">// points into resolver</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a327675f0af7560491bd94067ff8c07da">   58</a></span>&#160;    <span class="keywordtype">bool</span> resolved = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a6d7f3e827a1a74ebbf50d9d195656ee8">   59</a></span>&#160;    <span class="keywordtype">bool</span> resolving = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// Important: The fields below are only filled in when the &quot;resolved&quot; flag is true.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#ab8e1ede88e2ff1c3b448334e6cbd3533">   63</a></span>&#160;    <span class="keyword">typedef</span> std::vector&lt;std::string&gt; <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#ab8e1ede88e2ff1c3b448334e6cbd3533">StringVector</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a40d583e7e104d7c9eea1aa124dc5d971">   64</a></span>&#160;    <span class="keyword">typedef</span> std::map&lt;std::string,ASTNode*&gt; <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a40d583e7e104d7c9eea1aa124dc5d971">NameToElementMap</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// inheritance. Vectors contain fully qualifies names, and include</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// indirect base types/interfaces as well (transitive closure).</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#ab96f8893e6dabd377ae7580edee5bba5">   68</a></span>&#160;    <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#ab8e1ede88e2ff1c3b448334e6cbd3533">StringVector</a> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#ab96f8893e6dabd377ae7580edee5bba5">extendsNames</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a4ddb3aa4285d4ef2dab5d84f2d3be12d">   69</a></span>&#160;    <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#ab8e1ede88e2ff1c3b448334e6cbd3533">StringVector</a> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a4ddb3aa4285d4ef2dab5d84f2d3be12d">interfaceNames</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a12a9d7e0b0afa670a650f6998eb8c4d8">   71</a></span>&#160;    std::string <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a12a9d7e0b0afa670a650f6998eb8c4d8">enclosingTypeName</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// simple module/channel C++ class to instantiate</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a0bbef31a11570fa3b90465acb44b783b">   74</a></span>&#160;    std::string <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a0bbef31a11570fa3b90465acb44b783b">implClassName</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// cached return value of getDocumentation</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#aca6d5a239b2aeeb548e7de8cd287a388">   76</a></span>&#160;    <span class="keyword">mutable</span> std::optional&lt;std::string&gt; <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#aca6d5a239b2aeeb548e7de8cd287a388">documentation</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// local declarations by name</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a39b42d9fc2bc136a62faf60e039a5409">   79</a></span>&#160;    <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a40d583e7e104d7c9eea1aa124dc5d971">NameToElementMap</a> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a39b42d9fc2bc136a62faf60e039a5409">localInnerTypeDecls</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a4d94144ac6abad508b79eb648bcf1eee">   80</a></span>&#160;    <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a40d583e7e104d7c9eea1aa124dc5d971">NameToElementMap</a> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a4d94144ac6abad508b79eb648bcf1eee">localParamDecls</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a3792fa5b4a7fdf840722d81b0840698e">   81</a></span>&#160;    <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a40d583e7e104d7c9eea1aa124dc5d971">NameToElementMap</a> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a3792fa5b4a7fdf840722d81b0840698e">localGateDecls</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#aab12ad811d2f00762ad740c6ff6abbb1">   82</a></span>&#160;    <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a40d583e7e104d7c9eea1aa124dc5d971">NameToElementMap</a> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#aab12ad811d2f00762ad740c6ff6abbb1">localSubmoduleDecls</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a2b2ac3f8ddafe2e3760b83adc243245f">   83</a></span>&#160;    <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a40d583e7e104d7c9eea1aa124dc5d971">NameToElementMap</a> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a2b2ac3f8ddafe2e3760b83adc243245f">localConnectionDecls</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#ac464aeb38970e6171cbec70cc1412ca7">   84</a></span>&#160;    <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a40d583e7e104d7c9eea1aa124dc5d971">NameToElementMap</a> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#ac464aeb38970e6171cbec70cc1412ca7">allLocalDecls</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> checkComplianceToInterface(<a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html">NedTypeInfo</a> *interfaceDecl);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> collectLocalDeclarations();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> addToElementMap(<a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a40d583e7e104d7c9eea1aa124dc5d971">NameToElementMap</a>&amp; elementMap, <a class="code" href="classomnetpp_1_1nedxml_1_1ASTNode.html">ASTNode</a> *node);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> mergeElementMap(<a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a40d583e7e104d7c9eea1aa124dc5d971">NameToElementMap</a>&amp; destMap, <span class="keyword">const</span> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a40d583e7e104d7c9eea1aa124dc5d971">NameToElementMap</a>&amp; elementMap);</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a75f9c84f32409078bd1ce8f0beee6fe4">   91</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a75f9c84f32409078bd1ce8f0beee6fe4">resolveIfNeeded</a>()<span class="keyword"> const </span>{<span class="keywordflow">if</span> (!isResolved()) <span class="keyword">const_cast&lt;</span><a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html">NedTypeInfo</a>*<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;resolve(); <span class="comment">/*ouch*/</span>}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html">NedTypeInfo</a>(<a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html">NedResourceCache</a> *resolver, <span class="keyword">const</span> <span class="keywordtype">char</span> *qname, <span class="keywordtype">bool</span> isInnerType, <a class="code" href="classomnetpp_1_1nedxml_1_1ASTNode.html">ASTNode</a> *tree);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html">NedTypeInfo</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *getName() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *getFullName() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1nedxml_1_1ASTNode.html">ASTNode</a> *getTree() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a04820fa80a1c9945cc54c9a0c04da2c4">  110</a></span>&#160;    <a class="code" href="classomnetpp_1_1nedxml_1_1NedResourceCache.html">NedResourceCache</a> *<a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a04820fa80a1c9945cc54c9a0c04da2c4">getResolver</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> resolver;}</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#acb8d1fea1aae0a46217608e36f256edc">  116</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#acb8d1fea1aae0a46217608e36f256edc">getType</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> type;}</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isNetwork() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *getSourceFileName() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keyword">virtual</span> std::string getPackage() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#aed89ed6d198e956de59afe65b06cb712">  138</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#aed89ed6d198e956de59afe65b06cb712">isInnerType</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> isInner;}</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *getEnclosingTypeName() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">virtual</span> std::string str() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keyword">virtual</span> std::string getNedSource() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keyword">virtual</span> std::string getDocumentation() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a340e637059873f7d80e843f7e0501b0e">  164</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a340e637059873f7d80e843f7e0501b0e">isResolved</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> resolved;}</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> resolve();</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#ac2b0e7b8ac4966dfc5adeff8df443100">  180</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#ac2b0e7b8ac4966dfc5adeff8df443100">numExtendsNames</a>()<span class="keyword"> const  </span>{resolveIfNeeded(); <span class="keywordflow">return</span> extendsNames.size();}</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *getExtendsName(<span class="keywordtype">int</span> k) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#af5db6cbf2193b6b14a81a72919de94bf">  196</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#af5db6cbf2193b6b14a81a72919de94bf">numInterfaceNames</a>()<span class="keyword"> const  </span>{resolveIfNeeded(); <span class="keywordflow">return</span> interfaceNames.size();}</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *getInterfaceName(<span class="keywordtype">int</span> k) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> supportsInterface(<span class="keyword">const</span> <span class="keywordtype">char</span> *qname);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *getImplementationClassName() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keyword">virtual</span> std::string getPackageProperty(<span class="keyword">const</span> <span class="keywordtype">char</span> *name) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keyword">virtual</span> std::string getCxxNamespace() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html">NedTypeInfo</a> *getSuperDecl() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    TypesElement *getTypesElement() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    ParametersElement *getParametersElement() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    GatesElement *getGatesElement() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    SubmodulesElement *getSubmodulesElement() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    ConnectionsElement *getConnectionsElement() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    SubmoduleElement *getLocalSubmoduleElement(<span class="keyword">const</span> <span class="keywordtype">char</span> *submoduleName) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    ConnectionElement *getLocalConnectionElement(<span class="keywordtype">long</span> <span class="keywordtype">id</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    SubmoduleElement *getSubmoduleElement(<span class="keyword">const</span> <span class="keywordtype">char</span> *submoduleName) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    ConnectionElement *getConnectionElement(<span class="keywordtype">long</span> <span class="keywordtype">id</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    ParamElement *findLocalParamDecl(<span class="keyword">const</span> <span class="keywordtype">char</span> *name) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160; </div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    ParamElement *findParamDecl(<span class="keyword">const</span> <span class="keywordtype">char</span> *name) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    GateElement *findLocalGateDecl(<span class="keyword">const</span> <span class="keywordtype">char</span> *name) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    GateElement *findGateDecl(<span class="keyword">const</span> <span class="keywordtype">char</span> *name) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;};</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;}  <span class="comment">// namespace nedxml</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;}  <span class="comment">// namespace omnetpp</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_aab12ad811d2f00762ad740c6ff6abbb1"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#aab12ad811d2f00762ad740c6ff6abbb1">omnetpp::nedxml::NedTypeInfo::localSubmoduleDecls</a></div><div class="ttdeci">NameToElementMap localSubmoduleDecls</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:82</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedResourceCache_html"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedResourceCache.html">omnetpp::nedxml::NedResourceCache</a></div><div class="ttdoc">Stores loaded NED files, and keeps track of components in them.</div><div class="ttdef"><b>Definition:</b> nedresourcecache.h:52</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_a2b2ac3f8ddafe2e3760b83adc243245f"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a2b2ac3f8ddafe2e3760b83adc243245f">omnetpp::nedxml::NedTypeInfo::localConnectionDecls</a></div><div class="ttdeci">NameToElementMap localConnectionDecls</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:83</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_a4d94144ac6abad508b79eb648bcf1eee"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a4d94144ac6abad508b79eb648bcf1eee">omnetpp::nedxml::NedTypeInfo::localParamDecls</a></div><div class="ttdeci">NameToElementMap localParamDecls</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:80</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_a1d1cfd8ffb84e947f82999c682b666a7"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a1d1cfd8ffb84e947f82999c682b666a7">omnetpp::nedxml::NedTypeInfo::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:47</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_a4ddb3aa4285d4ef2dab5d84f2d3be12d"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a4ddb3aa4285d4ef2dab5d84f2d3be12d">omnetpp::nedxml::NedTypeInfo::interfaceNames</a></div><div class="ttdeci">StringVector interfaceNames</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:69</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_a04820fa80a1c9945cc54c9a0c04da2c4"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a04820fa80a1c9945cc54c9a0c04da2c4">omnetpp::nedxml::NedTypeInfo::getResolver</a></div><div class="ttdeci">NedResourceCache * getResolver() const</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:110</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_a0bbef31a11570fa3b90465acb44b783b"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a0bbef31a11570fa3b90465acb44b783b">omnetpp::nedxml::NedTypeInfo::implClassName</a></div><div class="ttdeci">std::string implClassName</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:74</div></div>
+<div class="ttc" id="anedxmldefs_8h_html_a3915af7fb1c0a123f29e86b0339a6782"><div class="ttname"><a href="nedxmldefs_8h.html#a3915af7fb1c0a123f29e86b0339a6782">NEDXML_API</a></div><div class="ttdeci">#define NEDXML_API</div><div class="ttdef"><b>Definition:</b> nedxmldefs.h:31</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_a51e9cc10a0e45af8ecd0166f4f68dd82"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a51e9cc10a0e45af8ecd0166f4f68dd82">omnetpp::nedxml::NedTypeInfo::tree</a></div><div class="ttdeci">ASTNode * tree</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:56</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_af5db6cbf2193b6b14a81a72919de94bf"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#af5db6cbf2193b6b14a81a72919de94bf">omnetpp::nedxml::NedTypeInfo::numInterfaceNames</a></div><div class="ttdeci">virtual int numInterfaceNames() const</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:196</div></div>
+<div class="ttc" id="anamespaceomnetpp_html"><div class="ttname"><a href="namespaceomnetpp.html">omnetpp</a></div><div class="ttdef"><b>Definition:</b> astbuilder.h:25</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_ab8e1ede88e2ff1c3b448334e6cbd3533"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#ab8e1ede88e2ff1c3b448334e6cbd3533">omnetpp::nedxml::NedTypeInfo::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:63</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_ac2b0e7b8ac4966dfc5adeff8df443100"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#ac2b0e7b8ac4966dfc5adeff8df443100">omnetpp::nedxml::NedTypeInfo::numExtendsNames</a></div><div class="ttdeci">virtual int numExtendsNames() const</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:180</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_aca23e1f1ff3e145e494c5ccc1695f96f"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#aca23e1f1ff3e145e494c5ccc1695f96f">omnetpp::nedxml::NedTypeInfo::resolver</a></div><div class="ttdeci">NedResourceCache * resolver</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:51</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_aca6d5a239b2aeeb548e7de8cd287a388"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#aca6d5a239b2aeeb548e7de8cd287a388">omnetpp::nedxml::NedTypeInfo::documentation</a></div><div class="ttdeci">std::optional&lt; std::string &gt; documentation</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:76</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_a3792fa5b4a7fdf840722d81b0840698e"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a3792fa5b4a7fdf840722d81b0840698e">omnetpp::nedxml::NedTypeInfo::localGateDecls</a></div><div class="ttdeci">NameToElementMap localGateDecls</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:81</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html">omnetpp::nedxml::NedTypeInfo</a></div><div class="ttdoc">Stores information on a NED type.</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:44</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1ASTNode_html"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1ASTNode.html">omnetpp::nedxml::ASTNode</a></div><div class="ttdef"><b>Definition:</b> astnode.h:87</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_acb8d1fea1aae0a46217608e36f256edc"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#acb8d1fea1aae0a46217608e36f256edc">omnetpp::nedxml::NedTypeInfo::getType</a></div><div class="ttdeci">virtual Type getType() const</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:116</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_ab96f8893e6dabd377ae7580edee5bba5"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#ab96f8893e6dabd377ae7580edee5bba5">omnetpp::nedxml::NedTypeInfo::extendsNames</a></div><div class="ttdeci">StringVector extendsNames</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:68</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_a40d583e7e104d7c9eea1aa124dc5d971"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a40d583e7e104d7c9eea1aa124dc5d971">omnetpp::nedxml::NedTypeInfo::NameToElementMap</a></div><div class="ttdeci">std::map&lt; std::string, ASTNode * &gt; NameToElementMap</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:64</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_a340e637059873f7d80e843f7e0501b0e"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a340e637059873f7d80e843f7e0501b0e">omnetpp::nedxml::NedTypeInfo::isResolved</a></div><div class="ttdeci">virtual bool isResolved() const</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:164</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_ac464aeb38970e6171cbec70cc1412ca7"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#ac464aeb38970e6171cbec70cc1412ca7">omnetpp::nedxml::NedTypeInfo::allLocalDecls</a></div><div class="ttdeci">NameToElementMap allLocalDecls</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:84</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_ab6f4e6d3fde00ce906e46494f60dfe7a"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#ab6f4e6d3fde00ce906e46494f60dfe7a">omnetpp::nedxml::NedTypeInfo::type</a></div><div class="ttdeci">Type type</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:53</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_a39b42d9fc2bc136a62faf60e039a5409"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a39b42d9fc2bc136a62faf60e039a5409">omnetpp::nedxml::NedTypeInfo::localInnerTypeDecls</a></div><div class="ttdeci">NameToElementMap localInnerTypeDecls</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:79</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_ae3b073d6fb7946c7b34818d9238c410d"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#ae3b073d6fb7946c7b34818d9238c410d">omnetpp::nedxml::NedTypeInfo::qualifiedName</a></div><div class="ttdeci">std::string qualifiedName</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:54</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_a12a9d7e0b0afa670a650f6998eb8c4d8"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a12a9d7e0b0afa670a650f6998eb8c4d8">omnetpp::nedxml::NedTypeInfo::enclosingTypeName</a></div><div class="ttdeci">std::string enclosingTypeName</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:71</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_aed89ed6d198e956de59afe65b06cb712"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#aed89ed6d198e956de59afe65b06cb712">omnetpp::nedxml::NedTypeInfo::isInnerType</a></div><div class="ttdeci">virtual bool isInnerType() const</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:138</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_a00356f2422f9b133b4a7ea25f74abaaf"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a00356f2422f9b133b4a7ea25f74abaaf">omnetpp::nedxml::NedTypeInfo::isInner</a></div><div class="ttdeci">bool isInner</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:55</div></div>
+<div class="ttc" id="aclassomnetpp_1_1nedxml_1_1NedTypeInfo_html_a75f9c84f32409078bd1ce8f0beee6fe4"><div class="ttname"><a href="classomnetpp_1_1nedxml_1_1NedTypeInfo.html#a75f9c84f32409078bd1ce8f0beee6fe4">omnetpp::nedxml::NedTypeInfo::resolveIfNeeded</a></div><div class="ttdeci">void resolveIfNeeded() const</div><div class="ttdef"><b>Definition:</b> nedtypeinfo.h:91</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d925dd6b67e4361569c4c803b3fbdc0b.html">nedxml</a></li><li class="navelem"><a class="el" href="nedtypeinfo_8h.html">nedtypeinfo.h</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<map id="cWatchBase" name="cWatchBase">
+<area shape="rect" id="node1" title="Helper class to make primitive types and non&#45;cOwnedObject objects inspectable in Qtenv...." alt="" coords="419,208,520,235"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cComputedExpressionWatch.html" title="Watch class for computed expressions. The watch will display the result of calling an encapsulated fu..." alt="" coords="568,5,813,32"/>
+<area shape="rect" id="node6" href="$classomnetpp_1_1cGenericAssignableWatch.html" title="Template Watch class, for any type that supports operator&lt;&lt;, and operator&gt;&gt; for assignment." alt="" coords="577,56,805,83"/>
+<area shape="rect" id="node7" href="$classomnetpp_1_1cGenericReadonlyWatch.html" title="Template Watch class, for any type that supports operator&lt;&lt;." alt="" coords="581,107,800,133"/>
+<area shape="rect" id="node8" href="$classomnetpp_1_1cWatch__bool.html" title="Watch class, specifically for bool." alt="" coords="639,157,743,184"/>
+<area shape="rect" id="node9" href="$classomnetpp_1_1cWatch__char.html" title="Watch class, specifically for char." alt="" coords="639,208,743,235"/>
+<area shape="rect" id="node10" href="$classomnetpp_1_1cWatch__cObject.html" title="Watch class, specifically for objects subclassed from cObject." alt="" coords="628,259,753,285"/>
+<area shape="rect" id="node11" href="$classomnetpp_1_1cWatch__cObjectPtr.html" title="Watch class, specifically for pointers to objects subclassed from cObject." alt="" coords="619,309,762,336"/>
+<area shape="rect" id="node12" href="$classomnetpp_1_1cWatch__stdstring.html" title="Watch class, specifically for std::string." alt="" coords="624,360,757,387"/>
+<area shape="rect" id="node13" href="$classomnetpp_1_1cWatch__uchar.html" title="Watch class, specifically for unsigned char." alt="" coords="635,411,747,437"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cNoncopyableOwnedObject.html" title="Base class for cOwnedObject&#45;based classes that do not wish to support assignment and duplication." alt="" coords="169,208,371,235"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cOwnedObject.html" title="A cObject that keeps track of its owner. It serves as base class for many classes in the OMNeT++ libr..." alt="" coords="5,183,121,209"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1noncopyable.html" title="Utility class, to make it impossible to call the operator= and copy constructor of any class derived ..." alt="" coords="11,233,116,260"/>
+</map>

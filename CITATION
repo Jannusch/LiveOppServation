@@ -1,0 +1,10 @@
+@inproceedings{bigge2025liveoppservation,
+  author = {Bigge, Jannusch and Sommer, Christoph},
+  title = {{LiveOppServation - An Open-Source Interactive Evaluation and Simulation Frontend for OMNeT++}},
+  booktitle = {29th International Symposium on Distributed Simulation and Real Time Applications (DS-RT 2025), Poster Session},
+  address = {Prague, Czechia},
+  month = {September},
+  publisher = {IEEE},
+  year = {2025},
+}
+

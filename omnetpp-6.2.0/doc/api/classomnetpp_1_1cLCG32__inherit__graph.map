@@ -1,0 +1,5 @@
+<map id="cLCG32" name="cLCG32">
+<area shape="rect" id="node1" title="Implements a 32&#45;bit (2^31&#45;2 cycle length) linear congruential random number generator." alt="" coords="5,155,76,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cRNG.html" title="Abstract interface for random number generator classes." alt="" coords="11,80,70,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cObject.html" title="cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy...." alt="" coords="5,5,76,32"/>
+</map>

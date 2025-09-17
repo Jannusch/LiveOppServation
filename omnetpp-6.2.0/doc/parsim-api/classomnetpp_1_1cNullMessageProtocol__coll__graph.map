@@ -1,0 +1,7 @@
+<map id="cNullMessageProtocol" name="cNullMessageProtocol">
+<area shape="rect" id="node1" title="Implements the &quot;null message algorithm&quot;. Lookahead calculation is encapsulated into a separate object..." alt="" coords="27,285,193,312"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cParsimProtocolBase.html" title="Contains utility functions for implementing parallel simulation protocols." alt="" coords="5,145,164,172"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cParsimSynchronizer.html" title="Abstract base class for parallel simulation algorithms. Subclasses implement the &quot;null message algori..." alt="" coords="50,5,207,32"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cParsimPartition.html" title="Represents one partition in a parallel simulation. Knows about partitions and the links between this ..." alt="" coords="132,95,259,121"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cNMPLookahead.html" title="Base class of lookahead calculations for cNullMessageProtocol which implements the &quot;null message algo..." alt="" coords="128,196,257,223"/>
+</map>

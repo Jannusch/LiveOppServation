@@ -1,0 +1,5 @@
+<map id="MergeFilter" name="MergeFilter">
+<area shape="rect" id="node1" title="Filter that merges several inputs into one output." alt="" coords="10,155,106,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1IdentityFilter.html" title="This class is a no&#45;op filter." alt="" coords="5,80,111,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cResultFilter.html" title="Base class for result filters." alt="" coords="7,5,109,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="ErrorNanRecorder" name="ErrorNanRecorder">
+<area shape="rect" id="node1" title="Recorder that raises a runtime error if it sees a NaN in the input (and never records anything)." alt="" coords="28,155,165,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cNumericResultRecorder.html" title="Abstract base class for numeric result recorders." alt="" coords="5,80,188,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cResultRecorder.html" title="Abstract base class for result recorders." alt="" coords="33,5,161,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="cRuntimeError" name="cRuntimeError">
+<area shape="rect" id="node1" title="Thrown when the simulation kernel or other components detect a runtime error." alt="" coords="5,80,120,107"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cException.html" title="Exception class." alt="" coords="16,5,109,32"/>
+</map>

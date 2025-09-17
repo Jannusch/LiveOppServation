@@ -1,0 +1,17 @@
+<map id="cResultListener" name="cResultListener">
+<area shape="rect" id="node1" title="Common abstract base class for result filters and result recorders." alt="" coords="139,309,261,336"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cResultFilter.html" title="Base class for result filters." alt="" coords="322,208,425,235"/>
+<area shape="rect" id="node13" href="$classomnetpp_1_1cResultRecorder.html" title="Abstract base class for result recorders." alt="" coords="309,411,437,437"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cObject.html" title="cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy...." alt="" coords="13,284,83,311"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cIListener.html" title="Interface for listeners in a simulation model." alt="" coords="5,335,91,361"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cNumericResultFilter.html" title="Base class for filters that expect to receive an numeric value." alt="" coords="497,5,656,32"/>
+<area shape="rect" id="node6" href="$classomnetpp_1_1cObjectResultFilter.html" title="Base class for filters that expect to receive an object." alt="" coords="504,56,649,83"/>
+<area shape="rect" id="node7" href="$classomnetpp_1_1ConstantFilter.html" title="Result filter that replaces every value with a constant. Signal values do not need to be numeric." alt="" coords="520,107,633,133"/>
+<area shape="rect" id="node8" href="$classomnetpp_1_1DemuxFilter.html" title="Result filter that demultiplexes its input to several outputs. The selector (a.ka...." alt="" coords="525,157,628,184"/>
+<area shape="rect" id="node9" href="$classomnetpp_1_1IdentityFilter.html" title="This class is a no&#45;op filter." alt="" coords="524,208,629,235"/>
+<area shape="rect" id="node10" href="$classomnetpp_1_1TimeFilter.html" title="Result filter that yields the time of emitting the signal." alt="" coords="533,259,621,285"/>
+<area shape="rect" id="node11" href="$classomnetpp_1_1TotalCountFilter.html" title="Result filter for counting the input values, including NaN and nullptr values." alt="" coords="515,309,639,336"/>
+<area shape="rect" id="node12" href="$classomnetpp_1_1WarmupPeriodFilter.html" title="Result filter that absorbs input values during the configured warm&#45;up period (see warmup&#45;period confi..." alt="" coords="501,360,652,387"/>
+<area shape="rect" id="node14" href="$classomnetpp_1_1cNumericResultRecorder.html" title="Abstract base class for numeric result recorders." alt="" coords="485,411,668,437"/>
+<area shape="rect" id="node15" href="$classomnetpp_1_1TotalCountRecorder.html" title="Listener for recording the count of signal values, including NaN and nullptr." alt="" coords="502,461,651,488"/>
+</map>

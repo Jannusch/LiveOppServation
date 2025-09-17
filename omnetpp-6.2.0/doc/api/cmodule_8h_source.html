@@ -1,0 +1,598 @@
+<!-- HTML header for doxygen 1.9.4-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OMNeT++ API: cmodule.h Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/omnetpp/omnetpp" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+  <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>  
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">OMNeT++ API<span id="projectnumber">&#160;6.2.0</span>
+   </div>
+   <div id="projectbrief">Discrete Event Simulation Library</div>
+  </td>
+ </tr>
+   <!--BEGIN FULL_SIDEBAR-->
+   <tr><td colspan="2">        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td></tr>
+   <!--END FULL_SIDEBAR-->
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('cmodule_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">cmodule.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//==========================================================================</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//   CMODULE.H  -  header for</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//                     OMNeT++/OMNEST</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//            Discrete System Simulation in C++</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//==========================================================================</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/*--------------------------------------------------------------*</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">  Copyright (C) 1992-2017 Andras Varga</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">  Copyright (C) 2006-2017 OpenSim Ltd.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">  This file is distributed WITHOUT ANY WARRANTY. See the file</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">  `license&#39; for details on this and other legal matters.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*--------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifndef __OMNETPP_CMODULE_H</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define __OMNETPP_CMODULE_H</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;ccomponent.h&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;globals.h&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;cgate.h&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;csimulation.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>omnetpp {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">class </span>cMessage;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">class </span>cGate;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class </span>cSimulation;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span>cModuleType;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">class </span>cCanvas;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">class </span>cOsgCanvas;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">struct </span>SendOptions;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule.html">   48</a></span>&#160;<span class="keyword">class </span>SIM_API <a class="code" href="classomnetpp_1_1cModule.html">cModule</a> : <span class="keyword">public</span> <a class="code" href="classomnetpp_1_1cComponent.html">cComponent</a> <span class="comment">//implies noncopyable</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classomnetpp_1_1cGate.html">cGate</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classomnetpp_1_1cSimulation.html">cSimulation</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classomnetpp_1_1cModuleType.html">cModuleType</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classomnetpp_1_1cChannelType.html">cChannelType</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule_1_1GateIterator.html">   67</a></span>&#160;    <span class="keyword">class </span>SIM_API <a class="code" href="classomnetpp_1_1cModule_1_1GateIterator.html">GateIterator</a></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">const</span> <a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *module;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">int</span> descIndex;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">bool</span> isOutput;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">int</span> index;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordtype">void</span> bump();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">void</span> advance();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="classomnetpp_1_1cGate.html">cGate</a> *current() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule_1_1GateIterator.html#a65f9c7bb3e4c18a153501f52a3e4a771">   84</a></span>&#160;        <a class="code" href="classomnetpp_1_1cModule_1_1GateIterator.html#a65f9c7bb3e4c18a153501f52a3e4a771">GateIterator</a>(<span class="keyword">const</span> <a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *module) : module(module) {reset();}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">void</span> reset();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule_1_1GateIterator.html#a670ee68f8685f8908e62c0262e06793b">   95</a></span>&#160;        <a class="code" href="classomnetpp_1_1cGate.html">cGate</a> *<a class="code" href="classomnetpp_1_1cModule_1_1GateIterator.html#a670ee68f8685f8908e62c0262e06793b">operator*</a>()<span class="keyword"> const </span>{<a class="code" href="classomnetpp_1_1cGate.html">cGate</a> *result=current(); ASSERT(result||end()); <span class="keywordflow">return</span> result;}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">bool</span> end() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule_1_1GateIterator.html#a13e89c095f97413810a8cfb74967f2b0">  107</a></span>&#160;        <a class="code" href="classomnetpp_1_1cModule_1_1GateIterator.html">GateIterator</a>&amp; <a class="code" href="classomnetpp_1_1cModule_1_1GateIterator.html#a13e89c095f97413810a8cfb74967f2b0">operator++</a>() {<span class="keywordflow">if</span> (!end()) advance(); <span class="keywordflow">return</span> *<span class="keyword">this</span>;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule_1_1GateIterator.html#ae2054f383e70d0fbd09bbff35ff46931">  114</a></span>&#160;        <a class="code" href="classomnetpp_1_1cModule_1_1GateIterator.html">GateIterator</a> <a class="code" href="classomnetpp_1_1cModule_1_1GateIterator.html#ae2054f383e70d0fbd09bbff35ff46931">operator++</a>(<span class="keywordtype">int</span>) {<a class="code" href="classomnetpp_1_1cModule_1_1GateIterator.html">GateIterator</a> tmp(*<span class="keyword">this</span>); <span class="keywordflow">if</span> (!end()) advance(); <span class="keywordflow">return</span> tmp;}</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    };</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule_1_1SubmoduleIterator.html">  148</a></span>&#160;    <span class="keyword">class </span>SIM_API <a class="code" href="classomnetpp_1_1cModule_1_1SubmoduleIterator.html">SubmoduleIterator</a></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keyword">const</span> <a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *parent;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordtype">int</span> scalarsSlot;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordtype">int</span> vectorsSlot;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordtype">int</span> vectorIndex;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *currentScalar;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *currentVector;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *current; <span class="comment">// element the iterator is at</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordtype">int</span> initialModuleChangeCount;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordtype">void</span> advance();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordtype">void</span> bumpScalars();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordtype">void</span> bumpVectors();</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule_1_1SubmoduleIterator.html#a3badc8955bdfa23cfbf236a49767127f">  169</a></span>&#160;        <a class="code" href="classomnetpp_1_1cModule_1_1SubmoduleIterator.html#a3badc8955bdfa23cfbf236a49767127f">SubmoduleIterator</a>(<span class="keyword">const</span> <a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *module) : parent(module) {reset();}</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordtype">void</span> reset();</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule_1_1SubmoduleIterator.html#a6054eafa7d4afe503579e1fb0565730d">  180</a></span>&#160;        <a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *<a class="code" href="classomnetpp_1_1cModule_1_1SubmoduleIterator.html#a6054eafa7d4afe503579e1fb0565730d">operator*</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> current;}</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule_1_1SubmoduleIterator.html#af729c6dc6f0946ed62d77f891bc2ccbf">  185</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classomnetpp_1_1cModule_1_1SubmoduleIterator.html#af729c6dc6f0946ed62d77f891bc2ccbf">end</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> current == <span class="keyword">nullptr</span>;}</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule_1_1SubmoduleIterator.html#af72512ff1ac9663dbc7364bd77d2930a">  192</a></span>&#160;        <a class="code" href="classomnetpp_1_1cModule_1_1SubmoduleIterator.html">SubmoduleIterator</a>&amp; <a class="code" href="classomnetpp_1_1cModule_1_1SubmoduleIterator.html#af72512ff1ac9663dbc7364bd77d2930a">operator++</a>() {advance(); <span class="keywordflow">return</span> *<span class="keyword">this</span>;}</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule_1_1SubmoduleIterator.html#a258e7e5d1ac926c886c0900dfed627f0">  199</a></span>&#160;        <a class="code" href="classomnetpp_1_1cModule_1_1SubmoduleIterator.html">SubmoduleIterator</a> <a class="code" href="classomnetpp_1_1cModule_1_1SubmoduleIterator.html#a258e7e5d1ac926c886c0900dfed627f0">operator++</a>(<span class="keywordtype">int</span>) {<a class="code" href="classomnetpp_1_1cModule_1_1SubmoduleIterator.html">SubmoduleIterator</a> tmp(*<span class="keyword">this</span>); advance(); <span class="keywordflow">return</span> tmp;}</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordtype">bool</span> changesDetected() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    };</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
+<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule_1_1ChannelIterator.html">  227</a></span>&#160;    <span class="keyword">class </span>SIM_API <a class="code" href="classomnetpp_1_1cModule_1_1ChannelIterator.html">ChannelIterator</a></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;      <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keyword">const</span> <a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *parent;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keywordtype">int</span> slot; <span class="comment">// index into the channels[] array</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <a class="code" href="classomnetpp_1_1cChannel.html">cChannel</a> *current;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;      <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordtype">void</span> advance();</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule_1_1ChannelIterator.html#a8c43db3224609292ad08152c736b04ba">  241</a></span>&#160;        <a class="code" href="classomnetpp_1_1cModule_1_1ChannelIterator.html#a8c43db3224609292ad08152c736b04ba">ChannelIterator</a>(<span class="keyword">const</span> <a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *module) : parent(module) {reset();}</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordtype">void</span> reset();</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule_1_1ChannelIterator.html#ab42c0397e8c56daa659994a4bcd4fc1c">  252</a></span>&#160;        <a class="code" href="classomnetpp_1_1cChannel.html">cChannel</a> *<a class="code" href="classomnetpp_1_1cModule_1_1ChannelIterator.html#ab42c0397e8c56daa659994a4bcd4fc1c">operator*</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> current;}</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule_1_1ChannelIterator.html#af729c6dc6f0946ed62d77f891bc2ccbf">  257</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classomnetpp_1_1cModule_1_1ChannelIterator.html#af729c6dc6f0946ed62d77f891bc2ccbf">end</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> current == <span class="keyword">nullptr</span>;}</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule_1_1ChannelIterator.html#a7ba8b4efe9a0139ae36dac30f781a742">  264</a></span>&#160;        <a class="code" href="classomnetpp_1_1cModule_1_1ChannelIterator.html">ChannelIterator</a>&amp; <a class="code" href="classomnetpp_1_1cModule_1_1ChannelIterator.html#a7ba8b4efe9a0139ae36dac30f781a742">operator++</a>() { advance(); <span class="keywordflow">return</span> *<span class="keyword">this</span>;}</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
+<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule_1_1ChannelIterator.html#a7ec5c5f61c30bdbd5b53df69ebcb3afb">  271</a></span>&#160;        <a class="code" href="classomnetpp_1_1cModule_1_1ChannelIterator.html">ChannelIterator</a> <a class="code" href="classomnetpp_1_1cModule_1_1ChannelIterator.html#a7ec5c5f61c30bdbd5b53df69ebcb3afb">operator++</a>(<span class="keywordtype">int</span>) {<a class="code" href="classomnetpp_1_1cModule_1_1ChannelIterator.html">ChannelIterator</a> tmp(*<span class="keyword">this</span>); advance(); <span class="keywordflow">return</span> tmp;}</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    };</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        FL_BUILDINSIDE_CALLED = 1 &lt;&lt; 10, <span class="comment">// whether buildInside() has been called</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        FL_RECORD_EVENTS      = 1 &lt;&lt; 11, <span class="comment">// enables recording events in this module</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        FL_BUILTIN_ANIMATIONS = 1 &lt;&lt; 12, <span class="comment">// whether built-in animations are requested on this module&#39;s graphical inspector</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    };</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keyword">mutable</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *fullPath = <span class="keyword">nullptr</span>; <span class="comment">// module full path string (computed lazily)</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keyword">mutable</span> opp_pooledstring fullName = <span class="keyword">nullptr</span>; <span class="comment">// buffer to store full name of object</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    cModule *parentModule = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keyword">struct </span>SubmoduleVector {</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        std::string name;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        std::vector&lt;cModule*&gt; array;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    };</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keyword">struct </span>SubcomponentData {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        std::vector&lt;cModule*&gt; scalarSubmodules; <span class="comment">// scalar submodules in creation order</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        std::vector&lt;SubmoduleVector&gt; submoduleVectors; <span class="comment">// submodule vectors in creation order</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        std::vector&lt;cChannel*&gt; channels;  <span class="comment">// channels among submodules</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="keywordtype">int</span> submoduleChangeCount = 0;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    };</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    SubcomponentData *subcomponentData = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keyword">typedef</span> std::set&lt;cGate::Name&gt; GateNamePool;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keyword">static</span> GateNamePool gateNamePool;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    cGate::Desc *gateDescArray = <span class="keyword">nullptr</span>;  <span class="comment">// array with one element per gate or gate vector</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keywordtype">int</span> gateDescArraySize = 0;  <span class="comment">// size of the descv array</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordtype">int</span> vectorIndex = -1;       <span class="comment">// index if module vector, -1 otherwise</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keyword">mutable</span> cCanvas *canvas = <span class="keyword">nullptr</span>;        <span class="comment">// nullptr when unused</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keyword">mutable</span> cOsgCanvas *osgCanvas = <span class="keyword">nullptr</span>;  <span class="comment">// nullptr when unused</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="comment">// internal: currently used by init</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordtype">void</span> setRecordEvents(<span class="keywordtype">bool</span> e)  {setFlag(FL_RECORD_EVENTS,e);}</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordtype">bool</span> isRecordEvents()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> flags&amp;FL_RECORD_EVENTS;}</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="comment">// internal: called from destructor, recursively unsubscribes all listeners</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keywordtype">void</span> releaseListeners();</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160; </div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="comment">// internal: has initialize() been called?</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordtype">bool</span> buildInsideCalled()<span class="keyword"> const </span>{<span class="keywordflow">return</span> flags&amp;FL_BUILDINSIDE_CALLED;}</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="comment">// internal: called from callInitialize(). Does one stage for this submodule</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="comment">// tree, and returns true if there are more stages to do</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> initializeModules(<span class="keywordtype">int</span> stage);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="comment">// internal: called from callInitialize(). Does one stage for channels in this</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="comment">// submodule tree, and returns true if there are more stages to do</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> initializeChannels(<span class="keywordtype">int</span> stage);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="comment">// internal: sets module name and its index within vector (if module is</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="comment">// part of a module vector). Called as part of the module creation process.</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setInitialNameAndIndex(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="comment">// internal: called from setName() and setIndex()</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordtype">void</span> updateFullName();</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="comment">// internal: called from setName(), setIndex(), and changeParentTo()</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordtype">void</span> invalidateFullPathRec();</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="comment">// internal: used by changeParentTo()</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordtype">void</span> reassignModuleIdRec();</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="comment">// internal: inserts a submodule. Called as part of the module creation process.</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keywordtype">void</span> insertSubmodule(cModule *mod);</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="comment">// internal: removes a submodule</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordtype">void</span> removeSubmodule(cModule *mod);</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="comment">// internal: inserts a channel. Called from cGate::connectTo()</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordtype">void</span> insertChannel(cChannel *channel);</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="comment">// internal: removes a channel</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keywordtype">void</span> removeChannel(cChannel *channel);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="comment">// internal: returns the ptr array for a submodule vector, exception if not found</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    std::vector&lt;cModule*&gt;&amp; getSubmoduleArray(<span class="keyword">const</span> <span class="keywordtype">char</span> *name) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="comment">// internal: &quot;virtual ctor&quot; for cGate, because in cPlaceholderModule we need</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="comment">// different gate objects; type should be INPUT or OUTPUT, but not INOUT</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keyword">virtual</span> cGate *createGateObject(<a class="code" href="classomnetpp_1_1cGate.html#a1d1cfd8ffb84e947f82999c682b666a7">cGate::Type</a> type);</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="comment">// internal: called from deleteGate()</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keywordtype">void</span> disposeGateDesc(cGate::Desc *desc, <span class="keywordtype">bool</span> checkConnected);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160; </div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="comment">// internal: called from deleteGate()</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="keywordtype">void</span> disposeGateObject(cGate *gate, <span class="keywordtype">bool</span> checkConnected);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="comment">// internal: add a new gatedesc by expanding gatedescv[]</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    cGate::Desc *addGateDesc(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <a class="code" href="classomnetpp_1_1cGate.html#a1d1cfd8ffb84e947f82999c682b666a7">cGate::Type</a> type, <span class="keywordtype">bool</span> isVector);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160; </div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="comment">// internal: finds a gate descriptor with the given name in gatedescv[];</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="comment">// ignores (but returns) potential &quot;$i&quot;/&quot;$o&quot; suffix in gatename</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordtype">int</span> findGateDesc(<span class="keyword">const</span> <span class="keywordtype">char</span> *gatename, <span class="keywordtype">char</span>&amp; suffix) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="comment">// internal: like findGateDesc(), but throws an error if the gate does not exist</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    cGate::Desc *gateDesc(<span class="keyword">const</span> <span class="keywordtype">char</span> *gatename, <span class="keywordtype">char</span>&amp; suffix) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160; </div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="comment">// internal: helper for setGateSize()</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="keywordtype">void</span> adjustGateDesc(cGate *g, cGate::Desc *newvec);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="comment">// internal: called as part of the destructor</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="keywordtype">void</span> clearGates();</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="comment">// internal: builds submodules and internal connections for this module</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> doBuildInside();</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="comment">// internal: helper for deleteModule()</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> doDeleteModule();</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="comment">// helper for findModuleByPath()</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keyword">virtual</span> cModule *doFindModuleByPath(<span class="keyword">const</span> <span class="keywordtype">char</span> *s) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160; </div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="comment">// internal: may only be called between simulations, when no modules exist</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> clearNamePools();</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="comment">// internal utility function. Takes O(n) time as it iterates on the gates</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="keywordtype">int</span> gateCount() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="comment">// internal utility function. Takes O(n) time as it iterates on the gates</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    cGate *gateByOrdinal(<span class="keywordtype">int</span> k) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="comment">// internal: calls refreshDisplay() recursively</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> callRefreshDisplay() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160; </div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="comment">// internal: calls preDelete() recursively</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> callPreDelete(cComponent *root) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="comment">// internal: return the canvas if exists, or nullptr if not (i.e. no create-on-demand)</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    cCanvas *getCanvasIfExists() {<span class="keywordflow">return</span> canvas;}</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160; </div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="comment">// internal: return the 3D canvas if exists, or nullptr if not (i.e. no create-on-demand)</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    cOsgCanvas *getOsgCanvasIfExists() {<span class="keywordflow">return</span> osgCanvas;}</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160; </div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    cModule();</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <span class="keyword">virtual</span> ~cModule();</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> forEachChild(cVisitor *v) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160; </div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setName(<span class="keyword">const</span> <span class="keywordtype">char</span> *s) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160; </div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *getFullName() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160; </div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    <span class="keyword">virtual</span> std::string getFullPath() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160; </div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    <span class="keyword">virtual</span> std::string str() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160; </div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setIndex(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160; </div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setNameAndIndex(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <span class="keywordtype">int</span> index=-1);</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160; </div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    <span class="keyword">virtual</span> cGate *addGate(<span class="keyword">const</span> <span class="keywordtype">char</span> *gatename, <a class="code" href="classomnetpp_1_1cGate.html#a1d1cfd8ffb84e947f82999c682b666a7">cGate::Type</a> type);</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160; </div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> addGateVector(<span class="keyword">const</span> <span class="keywordtype">char</span> *gatename, <a class="code" href="classomnetpp_1_1cGate.html#a1d1cfd8ffb84e947f82999c682b666a7">cGate::Type</a> type, <span class="keywordtype">int</span> size);</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160; </div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setGateSize(<span class="keyword">const</span> <span class="keywordtype">char</span> *gatename, <span class="keywordtype">int</span> size);</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160; </div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    <span class="keyword">virtual</span> cGate *getOrCreateFirstUnconnectedGate(<span class="keyword">const</span> <span class="keywordtype">char</span> *gatename, <span class="keywordtype">char</span> suffix,</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;                                                   <span class="keywordtype">bool</span> inside, <span class="keywordtype">bool</span> expand);</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160; </div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> getOrCreateFirstUnconnectedGatePair(<span class="keyword">const</span> <span class="keywordtype">char</span> *gatename,</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;                                                     <span class="keywordtype">bool</span> inside, <span class="keywordtype">bool</span> expand,</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;                                                     cGate *&amp;gatein, cGate *&amp;gateout);</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160; </div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> finalizeParameters() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160; </div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    <span class="keywordtype">void</span> buildInside();</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160; </div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160; </div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isSimple() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160; </div>
+<div class="line"><a name="l00586"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule.html#afc9caed92f155dabde94f8cf2f0b66ce">  586</a></span>&#160;    <span class="keyword">virtual</span> ComponentKind <a class="code" href="classomnetpp_1_1cModule.html#afc9caed92f155dabde94f8cf2f0b66ce">getComponentKind</a>()<span class="keyword"> const override  </span>{<span class="keywordflow">return</span> KIND_MODULE;}</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160; </div>
+<div class="line"><a name="l00592"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule.html#a762894a61a3a6591154e6fb6d66adad9">  592</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classomnetpp_1_1cModule.html#a762894a61a3a6591154e6fb6d66adad9">isPlaceholder</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> <span class="keyword">false</span>;}</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160; </div>
+<div class="line"><a name="l00598"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule.html#a6273eb514331e0e44130844d637b8b4c">  598</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *<a class="code" href="classomnetpp_1_1cModule.html#a6273eb514331e0e44130844d637b8b4c">getParentModule</a>()<span class="keyword"> const override  </span>{ <span class="keywordflow">return</span> parentModule; }</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160; </div>
+<div class="line"><a name="l00603"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule.html#aa7d5fedf36e754be2a21f50e5641b26d">  603</a></span>&#160;    <a class="code" href="classomnetpp_1_1cModuleType.html">cModuleType</a> *<a class="code" href="classomnetpp_1_1cModule.html#aa7d5fedf36e754be2a21f50e5641b26d">getModuleType</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> (<a class="code" href="classomnetpp_1_1cModuleType.html">cModuleType</a> *)getComponentType();}</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160; </div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1cProperties.html">cProperties</a> *getProperties() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160; </div>
+<div class="line"><a name="l00614"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule.html#a434d8fdd91756a54ea935ba21de4f4f6">  614</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classomnetpp_1_1cModule.html#a434d8fdd91756a54ea935ba21de4f4f6">isVector</a>()<span class="keyword"> const  </span>{<span class="keywordflow">return</span> vectorIndex != -1;}</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160; </div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    <span class="keywordtype">int</span> getIndex() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160; </div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    <span class="keywordtype">int</span> getVectorSize() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160; </div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> hasSubmodules() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160; </div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> hasSubmoduleVector(<span class="keyword">const</span> <span class="keywordtype">char</span> *name) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160; </div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    <span class="keyword">virtual</span> std::vector&lt;std::string&gt; getSubmoduleVectorNames() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160; </div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> getSubmoduleVectorSize(<span class="keyword">const</span> <span class="keywordtype">char</span> *name) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160; </div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> addSubmoduleVector(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <span class="keywordtype">int</span> size);</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160; </div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> deleteSubmoduleVector(<span class="keyword">const</span> <span class="keywordtype">char</span> *name);</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160; </div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setSubmoduleVectorSize(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <span class="keywordtype">int</span> size);</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160; </div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *addSubmodule(<a class="code" href="classomnetpp_1_1cModuleType.html">cModuleType</a> *type, <span class="keyword">const</span> <span class="keywordtype">char</span> *name, <span class="keywordtype">int</span> index=-1);</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160; </div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> hasSubmodule(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <span class="keywordtype">int</span> index=-1) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160; </div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> findSubmodule(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <span class="keywordtype">int</span> index=-1) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160; </div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *getSubmodule(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <span class="keywordtype">int</span> index=-1) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160; </div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    <span class="keyword">virtual</span> std::vector&lt;std::string&gt; getSubmoduleNames() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160; </div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> containsModule(<a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *module) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160; </div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160; </div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> hasGates() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160; </div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1cGate.html">cGate</a> *gate(<span class="keyword">const</span> <span class="keywordtype">char</span> *gatename, <span class="keywordtype">int</span> index=-1);</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160; </div>
+<div class="line"><a name="l00760"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule.html#a7db80a4f88808d7c5072707bdad09233">  760</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classomnetpp_1_1cGate.html">cGate</a> *<a class="code" href="classomnetpp_1_1cModule.html#a7db80a4f88808d7c5072707bdad09233">gate</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *gatename, <span class="keywordtype">int</span> index=-1)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">const_cast&lt;</span><a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;gate(gatename, index);</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;    }</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160; </div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1cGate.html">cGate</a> *gateHalf(<span class="keyword">const</span> <span class="keywordtype">char</span> *gatename, <a class="code" href="classomnetpp_1_1cGate.html#a1d1cfd8ffb84e947f82999c682b666a7">cGate::Type</a> type, <span class="keywordtype">int</span> index=-1);</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160; </div>
+<div class="line"><a name="l00780"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule.html#a3ede4c3c433e283ef335e4b6f0fa6a5f">  780</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classomnetpp_1_1cGate.html">cGate</a> *<a class="code" href="classomnetpp_1_1cModule.html#a3ede4c3c433e283ef335e4b6f0fa6a5f">gateHalf</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *gatename, <a class="code" href="classomnetpp_1_1cGate.html#a1d1cfd8ffb84e947f82999c682b666a7">cGate::Type</a> type, <span class="keywordtype">int</span> index=-1)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">const_cast&lt;</span><a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;gateHalf(gatename, type, index);</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;    }</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160; </div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> hasGate(<span class="keyword">const</span> <span class="keywordtype">char</span> *gatename, <span class="keywordtype">int</span> index=-1) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160; </div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> findGate(<span class="keyword">const</span> <span class="keywordtype">char</span> *gatename, <span class="keywordtype">int</span> index=-1) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160; </div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1cGate.html">cGate</a> *gate(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160; </div>
+<div class="line"><a name="l00818"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule.html#adc0639b3d5303625616fafb3ff9b4cb2">  818</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classomnetpp_1_1cGate.html">cGate</a> *<a class="code" href="classomnetpp_1_1cModule.html#adc0639b3d5303625616fafb3ff9b4cb2">gate</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)<span class="keyword"> const </span>{<span class="keywordflow">return</span> <span class="keyword">const_cast&lt;</span><a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code" href="classomnetpp_1_1cModule.html#adc0639b3d5303625616fafb3ff9b4cb2">gate</a>(<span class="keywordtype">id</span>);}</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160; </div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> deleteGate(<span class="keyword">const</span> <span class="keywordtype">char</span> *gatename);</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160; </div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;    <span class="keyword">virtual</span> std::vector&lt;std::string&gt; getGateNames() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160; </div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1cGate.html#a1d1cfd8ffb84e947f82999c682b666a7">cGate::Type</a> gateType(<span class="keyword">const</span> <span class="keywordtype">char</span> *gatename) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160; </div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> hasGateVector(<span class="keyword">const</span> <span class="keywordtype">char</span> *gatename) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160; </div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isGateVector(<span class="keyword">const</span> <span class="keywordtype">char</span> *gatename) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160; </div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> gateSize(<span class="keyword">const</span> <span class="keywordtype">char</span> *gatename) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160; </div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> gateBaseId(<span class="keyword">const</span> <span class="keywordtype">char</span> *gatename) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160; </div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> checkInternalConnections() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160; </div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> arrived(<a class="code" href="classomnetpp_1_1cMessage.html">cMessage</a> *msg, <a class="code" href="classomnetpp_1_1cGate.html">cGate</a> *ongate, <span class="keyword">const</span> <a class="code" href="structomnetpp_1_1SendOptions.html">SendOptions</a>&amp; options, <a class="code" href="classomnetpp_1_1SimTime.html">simtime_t</a> t);</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160; </div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;    [[deprecated]] <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1cPar.html">cPar</a>&amp; getAncestorPar(<span class="keyword">const</span> <span class="keywordtype">char</span> *parname);</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160; </div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1cCanvas.html">cCanvas</a> *getCanvas() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160; </div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classomnetpp_1_1cOsgCanvas.html">cOsgCanvas</a> *getOsgCanvas() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160; </div>
+<div class="line"><a name="l00922"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule.html#aeb7ac355bb3f999325097e1ea19a67fd">  922</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classomnetpp_1_1cModule.html#aeb7ac355bb3f999325097e1ea19a67fd">setBuiltinAnimationsAllowed</a>(<span class="keywordtype">bool</span> enabled) {setFlag(FL_BUILTIN_ANIMATIONS, enabled);}</div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160; </div>
+<div class="line"><a name="l00928"></a><span class="lineno"><a class="line" href="classomnetpp_1_1cModule.html#a28f58e16eb0ac701b63a46820faa68b4">  928</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classomnetpp_1_1cModule.html#a28f58e16eb0ac701b63a46820faa68b4">getBuiltinAnimationsAllowed</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> flags &amp; FL_BUILTIN_ANIMATIONS;}</div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160; </div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> callInitialize() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160; </div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> callInitialize(<span class="keywordtype">int</span> stage) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160; </div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> callFinish() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160; </div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160; </div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> scheduleStart(<a class="code" href="classomnetpp_1_1SimTime.html">simtime_t</a> t);</div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160; </div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> deleteModule();</div>
+<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160; </div>
+<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> changeParentTo(<a class="code" href="classomnetpp_1_1cModule.html">cModule</a> *mod);</div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;};</div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160; </div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;}  <span class="comment">// namespace omnetpp</span></div>
+<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160; </div>
+<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclassomnetpp_1_1cModule_1_1ChannelIterator_html"><div class="ttname"><a href="classomnetpp_1_1cModule_1_1ChannelIterator.html">omnetpp::cModule::ChannelIterator</a></div><div class="ttdoc">Walks along the channels inside a module, that is, the channels among the module and its submodules.</div><div class="ttdef"><b>Definition:</b> cmodule.h:227</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_1_1GateIterator_html_a65f9c7bb3e4c18a153501f52a3e4a771"><div class="ttname"><a href="classomnetpp_1_1cModule_1_1GateIterator.html#a65f9c7bb3e4c18a153501f52a3e4a771">omnetpp::cModule::GateIterator::GateIterator</a></div><div class="ttdeci">GateIterator(const cModule *module)</div><div class="ttdef"><b>Definition:</b> cmodule.h:84</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_html"><div class="ttname"><a href="classomnetpp_1_1cModule.html">omnetpp::cModule</a></div><div class="ttdoc">This class represents modules in the simulation.</div><div class="ttdef"><b>Definition:</b> cmodule.h:48</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_html_a28f58e16eb0ac701b63a46820faa68b4"><div class="ttname"><a href="classomnetpp_1_1cModule.html#a28f58e16eb0ac701b63a46820faa68b4">omnetpp::cModule::getBuiltinAnimationsAllowed</a></div><div class="ttdeci">virtual bool getBuiltinAnimationsAllowed() const</div><div class="ttdef"><b>Definition:</b> cmodule.h:928</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_1_1SubmoduleIterator_html_af72512ff1ac9663dbc7364bd77d2930a"><div class="ttname"><a href="classomnetpp_1_1cModule_1_1SubmoduleIterator.html#af72512ff1ac9663dbc7364bd77d2930a">omnetpp::cModule::SubmoduleIterator::operator++</a></div><div class="ttdeci">SubmoduleIterator &amp; operator++()</div><div class="ttdef"><b>Definition:</b> cmodule.h:192</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_html_a7db80a4f88808d7c5072707bdad09233"><div class="ttname"><a href="classomnetpp_1_1cModule.html#a7db80a4f88808d7c5072707bdad09233">omnetpp::cModule::gate</a></div><div class="ttdeci">const cGate * gate(const char *gatename, int index=-1) const</div><div class="ttdef"><b>Definition:</b> cmodule.h:760</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_1_1ChannelIterator_html_a7ec5c5f61c30bdbd5b53df69ebcb3afb"><div class="ttname"><a href="classomnetpp_1_1cModule_1_1ChannelIterator.html#a7ec5c5f61c30bdbd5b53df69ebcb3afb">omnetpp::cModule::ChannelIterator::operator++</a></div><div class="ttdeci">ChannelIterator operator++(int)</div><div class="ttdef"><b>Definition:</b> cmodule.h:271</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_html_aa7d5fedf36e754be2a21f50e5641b26d"><div class="ttname"><a href="classomnetpp_1_1cModule.html#aa7d5fedf36e754be2a21f50e5641b26d">omnetpp::cModule::getModuleType</a></div><div class="ttdeci">cModuleType * getModuleType() const</div><div class="ttdef"><b>Definition:</b> cmodule.h:603</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cSimulation_html"><div class="ttname"><a href="classomnetpp_1_1cSimulation.html">omnetpp::cSimulation</a></div><div class="ttdoc">Simulation manager class.</div><div class="ttdef"><b>Definition:</b> csimulation.h:64</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_html_a434d8fdd91756a54ea935ba21de4f4f6"><div class="ttname"><a href="classomnetpp_1_1cModule.html#a434d8fdd91756a54ea935ba21de4f4f6">omnetpp::cModule::isVector</a></div><div class="ttdeci">bool isVector() const</div><div class="ttdef"><b>Definition:</b> cmodule.h:614</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_1_1ChannelIterator_html_af729c6dc6f0946ed62d77f891bc2ccbf"><div class="ttname"><a href="classomnetpp_1_1cModule_1_1ChannelIterator.html#af729c6dc6f0946ed62d77f891bc2ccbf">omnetpp::cModule::ChannelIterator::end</a></div><div class="ttdeci">bool end() const</div><div class="ttdef"><b>Definition:</b> cmodule.h:257</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_html_a762894a61a3a6591154e6fb6d66adad9"><div class="ttname"><a href="classomnetpp_1_1cModule.html#a762894a61a3a6591154e6fb6d66adad9">omnetpp::cModule::isPlaceholder</a></div><div class="ttdeci">virtual bool isPlaceholder() const</div><div class="ttdef"><b>Definition:</b> cmodule.h:592</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cGate_html_a1d1cfd8ffb84e947f82999c682b666a7"><div class="ttname"><a href="classomnetpp_1_1cGate.html#a1d1cfd8ffb84e947f82999c682b666a7">omnetpp::cGate::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> cgate.h:72</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cChannel_html"><div class="ttname"><a href="classomnetpp_1_1cChannel.html">omnetpp::cChannel</a></div><div class="ttdoc">Base class for channels.</div><div class="ttdef"><b>Definition:</b> cchannel.h:46</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_1_1ChannelIterator_html_ab42c0397e8c56daa659994a4bcd4fc1c"><div class="ttname"><a href="classomnetpp_1_1cModule_1_1ChannelIterator.html#ab42c0397e8c56daa659994a4bcd4fc1c">omnetpp::cModule::ChannelIterator::operator*</a></div><div class="ttdeci">cChannel * operator*() const</div><div class="ttdef"><b>Definition:</b> cmodule.h:252</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cCanvas_html"><div class="ttname"><a href="classomnetpp_1_1cCanvas.html">omnetpp::cCanvas</a></div><div class="ttdoc">Provides a scene graph based 2D drawing API for modules.</div><div class="ttdef"><b>Definition:</b> ccanvas.h:3057</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModuleType_html"><div class="ttname"><a href="classomnetpp_1_1cModuleType.html">omnetpp::cModuleType</a></div><div class="ttdoc">Abstract class for creating a module of a specific type.</div><div class="ttdef"><b>Definition:</b> ccomponenttype.h:211</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_1_1ChannelIterator_html_a8c43db3224609292ad08152c736b04ba"><div class="ttname"><a href="classomnetpp_1_1cModule_1_1ChannelIterator.html#a8c43db3224609292ad08152c736b04ba">omnetpp::cModule::ChannelIterator::ChannelIterator</a></div><div class="ttdeci">ChannelIterator(const cModule *module)</div><div class="ttdef"><b>Definition:</b> cmodule.h:241</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_1_1SubmoduleIterator_html_af729c6dc6f0946ed62d77f891bc2ccbf"><div class="ttname"><a href="classomnetpp_1_1cModule_1_1SubmoduleIterator.html#af729c6dc6f0946ed62d77f891bc2ccbf">omnetpp::cModule::SubmoduleIterator::end</a></div><div class="ttdeci">bool end() const</div><div class="ttdef"><b>Definition:</b> cmodule.h:185</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_1_1GateIterator_html_ae2054f383e70d0fbd09bbff35ff46931"><div class="ttname"><a href="classomnetpp_1_1cModule_1_1GateIterator.html#ae2054f383e70d0fbd09bbff35ff46931">omnetpp::cModule::GateIterator::operator++</a></div><div class="ttdeci">GateIterator operator++(int)</div><div class="ttdef"><b>Definition:</b> cmodule.h:114</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_html_a3ede4c3c433e283ef335e4b6f0fa6a5f"><div class="ttname"><a href="classomnetpp_1_1cModule.html#a3ede4c3c433e283ef335e4b6f0fa6a5f">omnetpp::cModule::gateHalf</a></div><div class="ttdeci">const cGate * gateHalf(const char *gatename, cGate::Type type, int index=-1) const</div><div class="ttdef"><b>Definition:</b> cmodule.h:780</div></div>
+<div class="ttc" id="aclassomnetpp_1_1SimTime_html"><div class="ttname"><a href="classomnetpp_1_1SimTime.html">omnetpp::SimTime</a></div><div class="ttdoc">int64_t-based, base-10 fixed-point simulation time.</div><div class="ttdef"><b>Definition:</b> simtime.h:66</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_1_1GateIterator_html_a670ee68f8685f8908e62c0262e06793b"><div class="ttname"><a href="classomnetpp_1_1cModule_1_1GateIterator.html#a670ee68f8685f8908e62c0262e06793b">omnetpp::cModule::GateIterator::operator*</a></div><div class="ttdeci">cGate * operator*() const</div><div class="ttdef"><b>Definition:</b> cmodule.h:95</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_1_1GateIterator_html"><div class="ttname"><a href="classomnetpp_1_1cModule_1_1GateIterator.html">omnetpp::cModule::GateIterator</a></div><div class="ttdoc">Iterates through the gates of a module.</div><div class="ttdef"><b>Definition:</b> cmodule.h:67</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_1_1GateIterator_html_a13e89c095f97413810a8cfb74967f2b0"><div class="ttname"><a href="classomnetpp_1_1cModule_1_1GateIterator.html#a13e89c095f97413810a8cfb74967f2b0">omnetpp::cModule::GateIterator::operator++</a></div><div class="ttdeci">GateIterator &amp; operator++()</div><div class="ttdef"><b>Definition:</b> cmodule.h:107</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_html_afc9caed92f155dabde94f8cf2f0b66ce"><div class="ttname"><a href="classomnetpp_1_1cModule.html#afc9caed92f155dabde94f8cf2f0b66ce">omnetpp::cModule::getComponentKind</a></div><div class="ttdeci">virtual ComponentKind getComponentKind() const override</div><div class="ttdef"><b>Definition:</b> cmodule.h:586</div></div>
+<div class="ttc" id="astructomnetpp_1_1SendOptions_html"><div class="ttname"><a href="structomnetpp_1_1SendOptions.html">omnetpp::SendOptions</a></div><div class="ttdoc">Options for the cSimpleModule::send() and cSimpleModule::sendDirect() calls.</div><div class="ttdef"><b>Definition:</b> csimplemodule.h:82</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cGate_html"><div class="ttname"><a href="classomnetpp_1_1cGate.html">omnetpp::cGate</a></div><div class="ttdoc">Represents a module gate.</div><div class="ttdef"><b>Definition:</b> cgate.h:62</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cProperties_html"><div class="ttname"><a href="classomnetpp_1_1cProperties.html">omnetpp::cProperties</a></div><div class="ttdoc">A collection of properties (cProperty).</div><div class="ttdef"><b>Definition:</b> cproperties.h:34</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cPar_html"><div class="ttname"><a href="classomnetpp_1_1cPar.html">omnetpp::cPar</a></div><div class="ttdoc">Represents a module or channel parameter.</div><div class="ttdef"><b>Definition:</b> cpar.h:70</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_html_aeb7ac355bb3f999325097e1ea19a67fd"><div class="ttname"><a href="classomnetpp_1_1cModule.html#aeb7ac355bb3f999325097e1ea19a67fd">omnetpp::cModule::setBuiltinAnimationsAllowed</a></div><div class="ttdeci">virtual void setBuiltinAnimationsAllowed(bool enabled)</div><div class="ttdef"><b>Definition:</b> cmodule.h:922</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_1_1ChannelIterator_html_a7ba8b4efe9a0139ae36dac30f781a742"><div class="ttname"><a href="classomnetpp_1_1cModule_1_1ChannelIterator.html#a7ba8b4efe9a0139ae36dac30f781a742">omnetpp::cModule::ChannelIterator::operator++</a></div><div class="ttdeci">ChannelIterator &amp; operator++()</div><div class="ttdef"><b>Definition:</b> cmodule.h:264</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_1_1SubmoduleIterator_html"><div class="ttname"><a href="classomnetpp_1_1cModule_1_1SubmoduleIterator.html">omnetpp::cModule::SubmoduleIterator</a></div><div class="ttdoc">Iterates through the submodules of a compound module. Iteration order corresponds to declaration orde...</div><div class="ttdef"><b>Definition:</b> cmodule.h:148</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cChannelType_html"><div class="ttname"><a href="classomnetpp_1_1cChannelType.html">omnetpp::cChannelType</a></div><div class="ttdoc">Abstract base class for creating a channel of a given type.</div><div class="ttdef"><b>Definition:</b> ccomponenttype.h:331</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cMessage_html"><div class="ttname"><a href="classomnetpp_1_1cMessage.html">omnetpp::cMessage</a></div><div class="ttdoc">The message class in OMNeT++. cMessage objects may represent events, messages, jobs or other entities...</div><div class="ttdef"><b>Definition:</b> cmessage.h:95</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_1_1SubmoduleIterator_html_a3badc8955bdfa23cfbf236a49767127f"><div class="ttname"><a href="classomnetpp_1_1cModule_1_1SubmoduleIterator.html#a3badc8955bdfa23cfbf236a49767127f">omnetpp::cModule::SubmoduleIterator::SubmoduleIterator</a></div><div class="ttdeci">SubmoduleIterator(const cModule *module)</div><div class="ttdef"><b>Definition:</b> cmodule.h:169</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_1_1SubmoduleIterator_html_a258e7e5d1ac926c886c0900dfed627f0"><div class="ttname"><a href="classomnetpp_1_1cModule_1_1SubmoduleIterator.html#a258e7e5d1ac926c886c0900dfed627f0">omnetpp::cModule::SubmoduleIterator::operator++</a></div><div class="ttdeci">SubmoduleIterator operator++(int)</div><div class="ttdef"><b>Definition:</b> cmodule.h:199</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cComponent_html"><div class="ttname"><a href="classomnetpp_1_1cComponent.html">omnetpp::cComponent</a></div><div class="ttdoc">Common base for module and channel classes.</div><div class="ttdef"><b>Definition:</b> ccomponent.h:49</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_1_1SubmoduleIterator_html_a6054eafa7d4afe503579e1fb0565730d"><div class="ttname"><a href="classomnetpp_1_1cModule_1_1SubmoduleIterator.html#a6054eafa7d4afe503579e1fb0565730d">omnetpp::cModule::SubmoduleIterator::operator*</a></div><div class="ttdeci">cModule * operator*() const</div><div class="ttdef"><b>Definition:</b> cmodule.h:180</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_html_adc0639b3d5303625616fafb3ff9b4cb2"><div class="ttname"><a href="classomnetpp_1_1cModule.html#adc0639b3d5303625616fafb3ff9b4cb2">omnetpp::cModule::gate</a></div><div class="ttdeci">const cGate * gate(int id) const</div><div class="ttdef"><b>Definition:</b> cmodule.h:818</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cOsgCanvas_html"><div class="ttname"><a href="classomnetpp_1_1cOsgCanvas.html">omnetpp::cOsgCanvas</a></div><div class="ttdoc">Wraps an OpenSceneGraph scene, allowing 3D visualization in graphical user interfaces that support it...</div><div class="ttdef"><b>Definition:</b> cosgcanvas.h:42</div></div>
+<div class="ttc" id="aclassomnetpp_1_1cModule_html_a6273eb514331e0e44130844d637b8b4c"><div class="ttname"><a href="classomnetpp_1_1cModule.html#a6273eb514331e0e44130844d637b8b4c">omnetpp::cModule::getParentModule</a></div><div class="ttdeci">virtual cModule * getParentModule() const override</div><div class="ttdef"><b>Definition:</b> cmodule.h:598</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_d69ce13079b0b0a43a6d5bd8d76d2fb6.html">omnetpp</a></li><li class="navelem"><b>cmodule.h</b></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

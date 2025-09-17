@@ -1,0 +1,8 @@
+<map id="cChannel" name="cChannel">
+<area shape="rect" id="node1" title="Base class for channels." alt="" coords="187,155,269,181"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cDatarateChannel.html" title="A transmission channel model that supports propagation delay, transmission duration computed from a d..." alt="" coords="5,229,144,256"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cDelayChannel.html" title="Channel with propagation delay." alt="" coords="168,229,288,256"/>
+<area shape="rect" id="node6" href="$classomnetpp_1_1cIdealChannel.html" title="Channel with zero propagation delay, zero transmission delay (infinite datarate), and always enabled." alt="" coords="312,229,427,256"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cComponent.html" title="Common base for module and channel classes." alt="" coords="176,80,280,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cSoftOwner.html" title="Internal class, used as a base class for modules and channels. It is not intended for subclassing out..." alt="" coords="180,5,276,32"/>
+</map>

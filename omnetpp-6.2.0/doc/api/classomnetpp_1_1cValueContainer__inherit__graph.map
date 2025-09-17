@@ -1,0 +1,8 @@
+<map id="cValueContainer" name="cValueContainer">
+<area shape="rect" id="node1" title="Common base class for cValue&#45;based containers." alt="" coords="119,155,247,181"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cValueArray.html" title="Container class based on std::vector&lt;cValue&gt; objects." alt="" coords="5,229,105,256"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cValueHolder.html" title="cOwnedObject&#45;based container/wrapper to hold a single cValue." alt="" coords="129,229,237,256"/>
+<area shape="rect" id="node6" href="$classomnetpp_1_1cValueMap.html" title="Key&#45;value container class based on std::map&lt;std::string,cValue&gt;." alt="" coords="262,229,355,256"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cOwnedObject.html" title="A cObject that keeps track of its owner. It serves as base class for many classes in the OMNeT++ libr..." alt="" coords="125,80,241,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cNamedObject.html" title="Extends cObject with a name string. Also includes a &quot;flags&quot; member, with bits open for use by subclas..." alt="" coords="124,5,243,32"/>
+</map>

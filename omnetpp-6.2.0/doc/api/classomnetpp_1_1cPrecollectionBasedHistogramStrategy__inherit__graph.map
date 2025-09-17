@@ -1,0 +1,7 @@
+<map id="cPrecollectionBasedHistogramStrategy" name="cPrecollectionBasedHistogramStrategy">
+<area shape="rect" id="node1" title="Base class for histogram strategies that employ a precollection phase in order to gather input for se..." alt="" coords="123,155,345,196"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1cAutoRangeHistogramStrategy.html" title="A generic, very configurable histogram strategy that is meant to provide a good quality histogram for..." alt="" coords="5,244,228,271"/>
+<area shape="rect" id="node5" href="$classomnetpp_1_1cDefaultHistogramStrategy.html" title="A strategy class used by the default setup of cHistogram. It is meant to provide a good quality unifo..." alt="" coords="251,244,451,271"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cIHistogramStrategy.html" title="Interface for histogram strategy classes. Histogram strategies encapsulate the task of setting up and..." alt="" coords="156,80,312,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cObject.html" title="cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy...." alt="" coords="199,5,269,32"/>
+</map>

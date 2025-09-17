@@ -1,0 +1,4 @@
+<map id="cMatchableString" name="cMatchableString">
+<area shape="rect" id="node1" title="Wrapper to make a string matchable with cMatchExpression." alt="" coords="5,80,140,107"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cMatchExpression_1_1Matchable.html" title="Objects to be matched must implement this interface." alt="" coords="27,5,118,32"/>
+</map>

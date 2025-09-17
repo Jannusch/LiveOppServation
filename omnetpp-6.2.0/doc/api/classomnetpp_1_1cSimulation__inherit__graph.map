@@ -1,0 +1,6 @@
+<map id="cSimulation" name="cSimulation">
+<area shape="rect" id="node1" title="Simulation manager class." alt="" coords="83,155,182,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cNamedObject.html" title="Extends cObject with a name string. Also includes a &quot;flags&quot; member, with bits open for use by subclas..." alt="" coords="5,80,124,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cObject.html" title="cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy...." alt="" coords="29,5,100,32"/>
+<area shape="rect" id="node4" href="$classomnetpp_1_1noncopyable.html" title="Utility class, to make it impossible to call the operator= and copy constructor of any class derived ..." alt="" coords="148,80,253,107"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="cMersenneTwister" name="cMersenneTwister">
+<area shape="rect" id="node1" title="Wraps the Mersenne Twister RNG by Makoto Matsumoto and Takuji Nishimura." alt="" coords="5,155,144,181"/>
+<area shape="rect" id="node2" href="$classomnetpp_1_1cRNG.html" title="Abstract interface for random number generator classes." alt="" coords="45,80,104,107"/>
+<area shape="rect" id="node3" href="$classomnetpp_1_1cObject.html" title="cObject is a lightweight class which serves as the root of the OMNeT++ class hierarchy...." alt="" coords="39,5,110,32"/>
+</map>
