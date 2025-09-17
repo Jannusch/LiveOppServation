@@ -29,6 +29,9 @@ done
 
 
 pushd omnetpp
+
+cp configure.user.dist configure.user
+
 . setenv
 
 if [ "$INSTALL_OMNETPP" -eq 1 ]; then
